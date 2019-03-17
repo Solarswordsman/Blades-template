@@ -46,18 +46,18 @@ if (config.enableBabel && !config.pretty) {
 
 // Build CSS file
 sass.render({
-	file: "Source/blades.scss",
+	file: "Source/beamsaber.scss",
 	outputStyle: config.pretty ? "expanded" : "compressed",
 }, (error, result) => {
 	if (!error) {
 		const cssOutput = result.css.toString("utf8").replace(/^@charset "UTF-8";\s*/, "").replace(/^\uFEFF/, "").replace(/\n\n/g, "\n");
-		fs.writeFile("blades.css", cssOutput, printOutput);
+		fs.writeFile("beamsaber.css", cssOutput, printOutput);
 	} else {
 		console.log(`An error occured in the CSS build.\n${error.line}:${error.column} ${error.message}.`);
 	}
 });
 
 // Build HTML
-const htmlOutput = pug.renderFile("Source/Blades.pug", options).trim().replace(/\n+/g, "\n");
-fs.writeFile("blades.html", `${htmlOutput}\n`, printOutput);
+const htmlOutput = pug.renderFile("Source/beamsaber.pug", options).trim().replace(/\n+/g, "\n");
+fs.writeFile("beamsaber.html", `${htmlOutput}\n`, printOutput);
 
