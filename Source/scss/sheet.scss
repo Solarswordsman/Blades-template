@@ -418,6 +418,9 @@ $redtext: #c43c35;
 .sheet-col24b {
 	width: 24.25%;
 }
+.sheet-col10 {
+	width: 10%;
+}
 .sheet-col50 {
 	width: 50%;
 }
@@ -632,7 +635,7 @@ textarea.sheet-smallcaps {
 .sheet-bladeslogo {
 	border-right: 12px solid transparent;
 	height: 43px;
-	background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/logo.png');
+	background-image: url('https://raw.githubusercontent.com/Solarswordsman/roll20-character-sheets/beamsaber/Beam%20Saber/Assets/logo.png');
 	background-size: 102% auto;
 	background-repeat: no-repeat;
 }
@@ -782,6 +785,7 @@ textarea.sheet-smallcaps {
 .sheet-header {
 	flex-wrap: wrap;
 	align-items: flex-end;
+	justify-content: space-between;
 	label {
 		flex-wrap: wrap;
 	}

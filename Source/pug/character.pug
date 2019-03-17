@@ -8,34 +8,29 @@
 			label.col45.header
 				+text-input('crew')
 				.label.text.title(data-i18n='crew')
-			label.col55
+			label.col37
 				+text-input('name')
 				.label.text.title(data-i18n='name')
+			label.col10
+				+text-input('pronoun')
+				.label.text.title(data-i18n='pronoun')
 			label.col45
-				+text-input('alias')
-				.label.text.title(data-i18n='alias')
-			label.col100
+				+text-input('callsign')
+				.label.text.title(data-i18n='callsign')
+			label.col55
 				+text-input('look')
 				.label.text.title(data-i18n='look')
-			label.col55
-				+autoexpand('heritage')
-				+hidden-input('heritage')(value='')
-				.text
-					span.label.title(data-i18n='heritage')
-					span.uppercase.info(data-i18n='heritage_info')
 			label.col45
-				+autoexpand('background')
-				+hidden-input('background')(value='')
-				.text
-					span.label.title(data-i18n='background')
-					span.uppercase.info(data-i18n='background_info')
+				+text-input('tragedy')
+				.label.text.title(data-i18n='tragedy')
+			label.col55
+				+text-input('history')
+				.label.text.title(data-i18n='history')
+			label.col45
+				+text-input('opening')
+				.label.text.title(data-i18n='opening')
 			label.col100.vice.normal
-				+autoexpand('vice_purveyor')
-				+hidden-input('vice_purveyor')(value='')
-				.text
-					span.label.title(data-i18n='vice_purveyor')
-					span.uppercase.info(data-i18n='vice_info')
-				+roll('Vice', '{{{{subtitle=^{viceroll1}@{stress}&nbsp;^{stress}^{viceroll2}}} {{vice=1}} {{title=^{vice}}} @{vice_formula}')(data-i18n='indulge_vice').vicebutton.borderbutton
+				+roll('Vice', '{{{{subtitle=^{viceroll1}@{stress}&nbsp;^{stress}^{viceroll2}}} {{vice=1}} {{title=Cut Loose}} @{vice_formula}')(data-i18n='cut_loose').vicebutton.borderbutton
 				+hidden-input('vice_formula')(value=zerodiceFormula)
 		// Stress and Trauma
 		.col100.flex.stress.def-margin

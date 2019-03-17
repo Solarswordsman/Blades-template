@@ -6,9 +6,9 @@
 	"factions": {
 	},
 	"actions": {
-		"insight": ["hunt", "study", "survey", "tinker"],
-		"prowess": ["finesse", "prowl", "skirmish", "wreck"],
-		"resolve": ["attune", "command", "consort", "sway"]
+		"insight": ["hunt", "study", "survey", "engineer"],
+		"prowess": ["finesse", "prowl", "struggle", "wreck"],
+		"resolve": ["command", "consort", "sway", "interface"]
 	},
 	"traumas": ["cold", "haunted", "obsessed", "paranoid", "reckless", "soft", "unstable", "vicious"],
 	"items": [],
