@@ -27,6 +27,8 @@
 			+checkbox('generate_friend')(data-i18n='add_friends')
 		label.generatebutton
 			+checkbox('generate_playbookitem')(data-i18n='add_items')
+		label.generatebutton
+			+checkbox('generate_playbookvehicleitem')(data-i18n='add_vehicle_items')
 	.setting-crew.generaterow
 		select(name='attr_generate_source_crew', title='Choose source')
 			each crew in crews
@@ -85,6 +87,18 @@
 			span(data-i18n='normal')
 		label
 			+number-input('setting_load_h')(value='6')
+			span(data-i18n='heavy')
+	//- Default vehicle load numbers
+	.setting-char
+		span(data-i18n='vehicle_load:')
+		label
+			+number-input('setting_vehicle_load_l')(value='3')
+			span(data-i18n='light')
+		label
+			+number-input('setting_vehicle_load_n')(value='5')
+			span(data-i18n='normal')
+		label
+			+number-input('setting_vehicle_load_h')(value='6')
 			span(data-i18n='heavy')
 	.setting-char.setting-crew.setting-faction
 		label

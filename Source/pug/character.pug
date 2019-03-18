@@ -122,8 +122,7 @@
 							if (num % 10 === 0)
 								br
 		// Vehicle Section
-		//.blackheader.col100.def-margin
-		//	.label.text.title(data-i18n="vehicle")
+		//.Some cleanup with more mixins for duplicated sections could be good.  A few have been done here, like the action rolls and harm tracker.
 		.col100.def-margin
 			input.title-checkbox(type='checkbox', name='attr_show_vehicle', value='1')
 			span.label.plainheader(data-i18n='vehicle')
@@ -170,7 +169,7 @@
 										label
 											+checkbox(val).checkbox.squarebox
 				// Vehicle Actions
-				.col100.def-margin
+				.col100.def-margin.flex
 					.col47.actioncolumn.small-margin
 						// Vehicle advancement (upgrade)
 						.attribute.attribute-title.flex.col100
@@ -182,6 +181,71 @@
 									+radio("vehicle_xp")(value=num).tooth.xptooth
 						each actions, attribute in vehicleActionData
 							+actionSet(actions, attribute)
+					// Items and Planning
+					.col53.itemcolumn.small-margin.right-column
+						// Load
+						.loadheader.flex.col100
+							.label(data-i18n='load')
+							each val in ['light', 'normal', 'heavy']
+								label
+									+checkbox('vehicle_load')(value=val).checkbox
+									span.loadnumber(name=`attr_setting_vehicle_load_${val[0]}`)
+									span(data-i18n=val)
+						.itemheader.small-margin.col100.flex
+							.label(data-i18n='items')
+							span.italic(data-i18n='italics_dont_count')
+							label.text-button
+								+checkbox('reset_items')(data-i18n='reset?')
+						// Items
+						.itemholder.col100.items
+							// Vehicle Playbook items
+							.playbookitems.col100.free-repcontrol
+								fieldset.repeating_playbookvehicleitem
+									+hidden-input('boxes_chosen')(value='0').boxes-chosen
+									.item.numboxes-chooser
+										div(data-i18n='how_much_load')
+										+number-input('numboxes')(min='0', max='3', value='0')
+										label
+											+checkbox('bold')(data-i18n='bold')
+										label
+											+checkbox('boxes_chosen')(data-i18n='ok')
+									.item
+										+hidden-input('bold')(value='0').input-bold
+										+hidden-input('numboxes')(value='0').numboxes
+										+checkbox('check_1').checkbox.squarebox
+										span.floatingbar.boxesgeq2
+										+checkbox('check_2', 'boxesgeq2').checkbox.squarebox
+										span.floatingbar.boxesgeq3.boxesgeq2
+										+checkbox('check_3', 'boxesgeq2 boxesgeq3').checkbox.squarebox
+										+autoexpand('name')(data-i18n-placeholder='item_name').itemname
+									.item-description
+										+checkbox('expand').expand
+										+textarea('description')(data-i18n-placeholder='description')
+							// Vehicle Regular items
+							.regularitems.col100.free-repcontrol.free-repcontrol
+								fieldset.repeating_vehicleitem
+									+hidden-input('short')(value='0').input-short
+									+hidden-input('expand')(value='0').input-expand
+									.item-container
+										+hidden-input('boxes_chosen')(value='0').boxes-chosen
+										.item.numboxes-chooser
+											div(data-i18n='how_much_load')
+											+number-input('numboxes')(min='0', max='3', value='0')
+											label
+												+checkbox('short')(data-i18n='short')
+											label
+												+checkbox('boxes_chosen')(data-i18n='ok')
+										.item
+											+hidden-input('numboxes')(value='0').numboxes
+											+checkbox('check_1').checkbox.squarebox
+											span.floatingbar.boxesgeq2
+											+checkbox('check_2', 'boxesgeq2').checkbox.squarebox
+											span.floatingbar.boxesgeq3.boxesgeq2
+											+checkbox('check_3', 'boxesgeq2 boxesgeq3').checkbox.squarebox
+											+text-input('name')(data-i18n-placeholder='item_name').itemname
+										.item-description
+											+checkbox('expand').expand
+											+textarea('description')(data-i18n-placeholder='description')
 		// Special abilities
 		.col100.def-margin
 			.specialheader.col100.label(data-i18n='special_abilities')

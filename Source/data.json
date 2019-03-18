@@ -2,6 +2,63 @@
 	"crew": {
 	},
 	"playbook": {
+		"ace": {
+			"ability": ["veteran"],
+			"base": {
+				"engineer": "1",
+				"maneuver": "2",
+				"friends_title": "friends",
+				"gatherinfo1": "gatherinfo_what_is_their_vehicle_capable_of",
+				"gatherinfo2": "gatherinfo_when_are_their_vehicles_unattended",
+				"gatherinfo3": "gatherinfo_what_do_they_intend",
+				"gatherinfo4": "gatherinfo_how_can_I_get_them",
+				"gatherinfo5": "gatherinfo_whats_the_best_way_through",
+				"gatherinfo6": "gatherinfo_where_did_x_go",
+				"playbook_description": "playbook_ace_description",
+				"xp_condition": "playbook_ace_xp_condition"
+			},
+			"playbookitem": [{
+				"name": "playbook_item_grav_chute",
+				"numboxes": "1"
+			}, {
+				"bold": "1",
+				"name": "playbook_item_fine_remote_vehicle_control",
+				"numboxes": "1"
+			}, {
+				"name": "playbook_item_self_destruct_remote",
+				"numboxes": "0"
+			}, {
+				"bold": "1",
+				"name": "playbook_item_fine_environmental_suit_wearing",
+				"numboxes": "0"
+			}, {
+				"bold": "1",
+				"name": "playbook_item_fine_environmental_suit_carried",
+				"numboxes": "2"
+			}, {
+				"name": "playbook_item_your_custom_vehicle",
+				"numboxes": "0"
+			}],
+			"playbookvehicleitem": [{
+				"bold": "1",
+				"name": "playbook_vehicle_item_fine_mobility_suite",
+				"numboxes": "2"
+			}, {
+				"name": "playbook_vehicle_item_boosted_reactor",
+				"numboxes": "1"
+			}, {
+				"bold": "1",
+				"name": "playbook_vehicle_item_fine_machine_gun",
+				"numboxes": "1"
+			}, {
+				"bold": "1",
+				"name": "playbook_vehicle_item_fine_shield_or_forcefield",
+				"numboxes": "1"
+			}, {
+				"name": "playbook_vehicle_item_rage",
+				"numboxes": "0"
+			}]
+		}
 	},
 	"factions": {
 	},
@@ -15,7 +72,109 @@
 		"acuity": ["bombard", "manipulate", "scan"]
 	},
 	"traumas": ["cold", "haunted", "obsessed", "paranoid", "reckless", "soft", "unstable", "vicious"],
-	"items": [],
+	"items": [{
+		"name": "a_blade_or_two",
+		"description": "a_blade_or_two_description",
+		"numboxes": "1"
+	}, {
+		"name": "throwing_knives",
+		"description": "throwing_knives_description",
+		"numboxes": "1"
+	}, {
+		"name": "a_heavy_weapon",
+		"description": "a_heavy_weapon_description",
+		"numboxes": "2"
+	}, {
+		"name": "an_unusual_weapon",
+		"description": "an_unusual_weapon_description",
+		"numboxes": "1"
+	}, {
+		"name": "burglary_gear",
+		"description": "burglary_gear_description",
+		"numboxes": "1"
+	}, {
+		"name": "climbing_gear",
+		"description": "climbing_gear_description",
+		"numboxes": "2"
+	}, {
+		"name": "a_pistol",
+		"description": "a_pistol_description",
+		"numboxes": "1"
+	}, {
+		"name": "a_rifle_or_shotgun",
+		"description": "a_rifle_or_shotgun_description",
+		"numboxes": "2"
+	}, {
+		"name": "palm_computer_with_useful_programs",
+		"description": "palm_computer_with_useful_programs_description",
+		"numboxes": "1"
+	}, {
+		"name": "documents",
+		"description": "documents_description",
+		"numboxes": "1"
+	}, {
+		"name": "subterfuge_supplies",
+		"description": "subterfuge_supplies_description",
+		"numboxes": "1"
+	}, {
+		"name": "demolition_tools",
+		"description": "demolition_tools_description",
+		"numboxes": "2"
+	}, {
+		"name": "placed_explosives",
+		"description": "placed_explosives_description",
+		"numboxes": "1"
+	}, {
+		"name": "flashlight_flares_or_glow_sticks",
+		"description": "flashlight_flares_or_glow_sticks_description",
+		"numboxes": "1"
+	}, {
+		"name": "intrusion_countermeasures_program_icp",
+		"description": "intrusion_countermeasures_program_icp_description",
+		"numboxes": "0"
+	}, {
+		"name": "armor",
+		"description": "armor_description",
+		"numboxes": "2",
+		"short": "1"
+	}, {
+		"name": "+heavy",
+		"description": "+heavy_description",
+		"numboxes": "3",
+		"short": "1"
+	}, {
+		"name": "intel",
+		"description": "intel_description",
+		"numboxes": "0"
+	}, {
+		"name": "parachute",
+		"description": "parachute_description",
+		"numboxes": "2"
+	}, {
+		"name": "throat_mic_transceiver",
+		"description": "throat_mic_transceiver_description",
+		"numboxes": "0"
+	}, {
+		"name": "long_range_transmitter",
+		"description": "long_range_transmitter_description",
+		"numboxes": "1"
+	}, {
+		"name": "smartphone",
+		"description": "smartphone_description",
+		"numboxes": "0"
+	}, {
+		"name": "environmental_suit_wearing",
+		"description": "environmental_suit_description",
+		"numboxes": "0"
+	}, {
+		"name": "environmental_suit_carried",
+		"description": "environmental_suit_description",
+		"numboxes": "2"
+	}, {
+		"name": "remote_vehicle_control",
+		"description": "remote_vehicle_control_description",
+		"numboxes": "1"
+	}],
 	"translatedDefaults": {
 		"cohort1_name": "cohort",
 		"contacts_title": "contacts",
@@ -53,7 +212,7 @@
 		"tinker": "0",
 		"wreck": "0"
 	},
-	"maxFriendsPerPlaybook": 5,
+	"maxFriendsPerPlaybook": 4,
 	"maxContactsPerCrew": 6,
 	"friendlessPlaybooks": [],
 	"translatedCrewAttributes": ["crew_description", "crew_xp_condition"],
