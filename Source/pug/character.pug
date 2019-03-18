@@ -181,6 +181,22 @@
 									+radio("vehicle_xp")(value=num).tooth.xptooth
 						each actions, attribute in vehicleActionData
 							+actionSet(actions, attribute)
+						// Quirks and breakdown
+						.attribute.attribute-title.flex.col100.def-margin
+							.col52b.label.title(data-i18n='quirks')
+							.col24b.label.align-right.title(data-i18n='breakdown')
+							.attribute-xp-box.flex
+								//- generate 4 breakdown boxes
+								+radio("breakdown")(value='0', checked).tooth.zero
+								each num in range(1,4)
+									+radio("breakdown")(value=num).tooth.xptooth
+						.regularitems.quirkcontrol.col100.free-repcontrol.free-repcontrol
+							fieldset.repeating_quirk
+								.quirk-container
+									.quirk.flex
+										+checkbox('check').checkbox.squarebox
+										span.floatingbar.boxesgeq2
+										+text-input('name')(data-i18n-placeholder='quirk').itemname
 					// Vehicle Items section
 					.col53.itemcolumn.small-margin.right-column
 						// Load

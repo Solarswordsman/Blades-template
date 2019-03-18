@@ -456,6 +456,10 @@ textarea.sheet-smallcaps {
 	font-variant: small-caps;
 	font-weight: bold;
 }
+
+.sheet-align-right {
+	text-align: right;
+}
 /* INFO BOXES */
 .sheet-gatherinfo {
 	ul {
@@ -493,7 +497,7 @@ textarea.sheet-smallcaps {
 .sheet-itemholder > div {
 	padding: 5px;
 }
-.sheet-item-container {
+.sheet-item-container, .sheet-quirk-container {
 	flex-grow: 1;
 }
 .sheet-playbookitems {
@@ -516,7 +520,7 @@ textarea.sheet-smallcaps {
 		position: relative;
 	}
 }
-.sheet-item {
+.sheet-item, .sheet-quirk {
 	display: flex;
 	align-items: start;
 
@@ -1712,9 +1716,11 @@ input.sheet-zero {
 .itemcontrol {
 	z-index: 20;
 }
-.sheet-itemholder .itemcontrol .btn {
-	padding: 0px 7px;
-	line-height: 16px;
+.sheet-itemholder, .sheet-quirkcontrol {
+	.itemcontrol .btn {
+		padding: 0px 7px;
+		line-height: 16px;
+	}
 }
 .sheet-factions .itemcontrol .btn {
 	padding: 1px 7px;
