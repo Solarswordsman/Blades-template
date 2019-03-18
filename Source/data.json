@@ -175,6 +175,95 @@
 		"description": "remote_vehicle_control_description",
 		"numboxes": "1"
 	}],
+	"vehicleitems": [{
+		"name": "supply_reserves",
+		"description": "supply_reserves_description",
+		"numboxes": "2"
+	}, {
+		"name": "armor",
+		"description": "vehicle_armor_description",
+		"numboxes": "2",
+		"short": "1"
+	}, {
+		"name": "+armor",
+		"description": "vehicle_armor_description",
+		"numboxes": "2",
+		"short": "1"
+	}, {
+		"name": "+armor",
+		"description": "vehicle_armor_description",
+		"numboxes": "2",
+		"short": "1"
+	}, {
+		"name": "+armor",
+		"description": "vehicle_armor_description",
+		"numboxes": "2",
+		"short": "1"
+	}, {
+		"name": "a_melee_weapon_or_two",
+		"description": "a_melee_weapon_or_two_description",
+		"numboxes": "1"
+	}, {
+		"name": "a_rack_of_missiles_or_rockets",
+		"description": "a_rack_of_missiles_or_rockets_description",
+		"numboxes": "1"
+	}, {
+		"name": "a_machine_gun",
+		"description": "a_machine_gun_description",
+		"numboxes": "1"
+	}, {
+		"name": "a_heavy_cannon",
+		"description": "a_heavy_cannon_description",
+		"numboxes": "2"
+	}, {
+		"name": "a_flamethrower",
+		"description": "a_flamethrower_description",
+		"numboxes": "1"
+	}, {
+		"name": "a_directed_energy_weapon",
+		"description": "a_directed_energy_weapon_description",
+		"numboxes": "1"
+	}, {
+		"name": "a_shield_or_forcefield",
+		"description": "a_shield_or_forcefield_description",
+		"numboxes": "1"
+	}, {
+		"name": "a_spotlight_or_flare_mortar",
+		"description": "a_spotlight_or_flare_mortar_description",
+		"numboxes": "1"
+	}, {
+		"name": "mobility_suite",
+		"description": "mobility_suite_description",
+		"numboxes": "2"
+	}, {
+		"name": "grapnel_anchor_system",
+		"description": "grapnel_anchor_system_description",
+		"numboxes": "1"
+	}, {
+		"name": "intrusion_countermeasures_electronics_ice",
+		"description": "intrusion_countermeasures_electronics_ice_description",
+		"numboxes": "1"
+	}, {
+		"name": "programming_suite",
+		"description": "programming_suite_description",
+		"numboxes": "0"
+	}, {
+		"name": "retrieval_software",
+		"description": "retrieval_software_description",
+		"numboxes": "0"
+	}, {
+		"name": "cargo_space",
+		"description": "cargo_space_description",
+		"numboxes": "1"
+	}, {
+		"name": "anti_infantry_defenses",
+		"description": "anti_infantry_defenses_description",
+		"numboxes": "1"
+	}, {
+		"name": "passenger_space",
+		"description": "passenger_space_description",
+		"numboxes": "1"
+	}],
 	"translatedDefaults": {
 		"cohort1_name": "cohort",
 		"contacts_title": "contacts",
@@ -199,18 +288,24 @@
 		"xp_condition3": "xp_vice"
 	},
 	"defaultValues": {
-		"attune": "0",
 		"command": "0",
 		"consort": "0",
+		"engineer": "0",
 		"finesse": "0",
 		"hunt": "0",
+		"interface": "0",
 		"prowl": "0",
-		"skirmish": "0",
+		"struggle": "0",
 		"study": "0",
 		"survey": "0",
 		"sway": "0",
-		"tinker": "0",
-		"wreck": "0"
+		"wreck": "0",
+		"battle": "0",
+		"destroy": "0",
+		"maneuver": "0",
+		"bombard": "0",
+		"manipulate": "0",
+		"scan": "0"
 	},
 	"maxFriendsPerPlaybook": 4,
 	"maxContactsPerCrew": 6,

@@ -32,6 +32,11 @@ data.items.forEach(item => {
 	item.name = getTranslation(item.name);
 	item.description = getTranslationByKey(item.description) || "";
 });
+data.vehicleitems.forEach(item => {
+	item.boxes_chosen = "1";
+	item.name = getTranslation(item.name);
+	item.description = getTranslationByKey(item.description) || "";
+});
 Object.keys(data.translatedDefaults).forEach(k => {
 	data.translatedDefaults[k] = getTranslation(data.translatedDefaults[k]);
 });
@@ -436,7 +441,7 @@ on("change:char_cohort_quality change:char_cohort_impaired change:setting_show_c
 handleBoxesFill("upgrade_24_check_", true);
 handleBoxesFill("bandolier1_check_");
 handleBoxesFill("bandolier2_check_");
-["item", "playbookitem", "playbookvehicleitem", "upgrade"].forEach(sName => handleBoxesFill(`repeating_${sName}:check_`));
+["item", "playbookitem", "vehicleitem", "playbookvehicleitem", "upgrade"].forEach(sName => handleBoxesFill(`repeating_${sName}:check_`));
 /* Pseudo-radios */
 ["crew_tier", ...actionsFlat].forEach(name => {
 	on(`change:${name}`, event => {
@@ -541,6 +546,7 @@ on("sheet:opened", () => {
 					}, {});
 				mySetAttrs(setting);
 				fillRepeatingSectionFromData("item", data.items);
+				fillRepeatingSectionFromData("vehicleitem", data.vehicleitems);
 				/* Set translated default values */
 				getAttrs(Object.keys(data.translatedDefaults), v => {
 					const setting = {};

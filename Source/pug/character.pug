@@ -146,16 +146,16 @@
 						// Healing
 						.col100.healing
 							.blackheader.col100
-								+fortuneroll('Recovery', '{{resist=1}} {{short=1}} {{title=^{repair}}} {{subtitle=^{rolls_for}}}')(data-i18n='healing').label.rollbutton.inherit
-							.col100.healing-progress(data-i18n='progress_clock', data-i18n-title='recoveryblurb')
-							// Healing clock
+								+fortuneroll('Recovery', '{{resist=1}} {{short=1}} {{title=^{repair}}} {{subtitle=^{rolls_for}}}')(data-i18n='repair').label.rollbutton.inherit
+							.col100.healing-progress(data-i18n='progress_clock', data-i18n-title='repairblurb')
+							// Repair clock
 							+hidden-input('repair_max')(value='4').size
 							.clock-container
 								.spoke-0.all
 								.spoke-90.all
 								+radio('repair')(value='0', checked).zero.input-progress
 								each num in range(1,4)
-									input.input-progress.all(type='radio', name='attr_repair', value=num, data-i18n-title='recoveryblurb')
+									input.input-progress.all(type='radio', name='attr_repair', value=num, data-i18n-title='repairblurb')
 								.clock
 						// Armor
 						.col100.armor.def-margin
@@ -181,7 +181,7 @@
 									+radio("vehicle_xp")(value=num).tooth.xptooth
 						each actions, attribute in vehicleActionData
 							+actionSet(actions, attribute)
-					// Items and Planning
+					// Vehicle Items section
 					.col53.itemcolumn.small-margin.right-column
 						// Load
 						.loadheader.flex.col100
@@ -380,23 +380,6 @@
 							.item-description
 								+checkbox('expand').expand
 								+textarea('description')(data-i18n-placeholder='description')
-			// Alchemicals
-			.col100.def-margin
-				input.title-checkbox(type='checkbox', name='attr_show_alchemicals', value='1')
-				span.label.plainheader(data-i18n='alchemicals')
-				.alchemicals.free-repcontrol
-					.bandolier.item
-						span.bandoliers-name(data-i18n='bandoliers')
-						each bannum in [1,2]
-							each checknum in range(1,3)
-								+checkbox(`bandolier${bannum}_check_${checknum}`).checkbox.squarebox
-								if (checknum !== 3)
-									span.floatingbar
-					.bandolier-desc(data-i18n='when_you_use_bandolier')
-					fieldset.repeating_alchemical
-						+checkbox('expand').alchemicals-expand
-						+autoexpand('name')
-						+textarea('description').alchemicals-info
 			// Planning and Load
 			.planning.col100.def-margin
 				input.title-checkbox(type='checkbox', name='attr_show_planning', value='1', checked)
@@ -407,8 +390,8 @@
 						span.bold(data-i18n='assault')
 						span.italic(data-i18n='detail_assault')
 					.teamworkbox
-						span.bold(data-i18n='occult')
-						span.italic(data-i18n='detail_occult')
+						span.bold(data-i18n='scientific')
+						span.italic(data-i18n='detail_scientific')
 					.teamworkbox
 						span.bold(data-i18n='deception')
 						span.italic(data-i18n='detail_deception')
