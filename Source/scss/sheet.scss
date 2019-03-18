@@ -22,7 +22,7 @@ $redtext: #c43c35;
 	cursor: default;
 	box-sizing: border-box;
 	padding: 0 !important;
-	font-family: Georgia, "Bitstream Charter", "Times New Roman", serif;
+	font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
 
 	div, span, textarea, ul, li, span, label {
 		box-sizing: border-box;
@@ -1499,6 +1499,17 @@ input.sheet-zero {
 		font-size: 11px;
 		text-align: center;
 		line-height: 18px;
+		justify-content: space-evenly;
+	}
+	.sheet-flex-wrap {
+		label {
+			margin: 2px;
+		}
+		.sheet-label {
+			padding: 12px;
+			padding-left: 30px;
+			font-size: 15px;
+		}
 	}
 	.sheet-label {
 		flex-grow: 1;
@@ -2023,6 +2034,9 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 	padding: 0 3px;
 	align-items: center;
 	justify-content: space-between;
+}
+.sheet-attribute-title .sheet-label {
+	font-size: 12px;
 }
 .sheet-attribute-xp-box {
 	width: 97px;

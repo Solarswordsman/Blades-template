@@ -10,6 +10,10 @@
 		"prowess": ["finesse", "prowl", "struggle", "wreck"],
 		"resolve": ["command", "consort", "sway", "interface"]
 	},
+	"vehicleActions": {
+		"expertise": ["battle", "destroy", "maneuver"],
+		"acuity": ["bombard", "manipulate", "scan"]
+	},
 	"traumas": ["cold", "haunted", "obsessed", "paranoid", "reckless", "soft", "unstable", "vicious"],
 	"items": [],
 	"translatedDefaults": {

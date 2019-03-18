@@ -1,6 +1,7 @@
 -
 	const translation = locals.translation,
 		actionData = locals.data.actions,
+		vehicleActionData = locals.data.vehicleActions,
 		traumaData = locals.data.traumas,
 		playbooks = Object.keys(locals.data.playbook),
 		crews = Object.keys(locals.data.crew);
@@ -63,6 +64,50 @@ mixin fortuneroll(name, templatedata, useNotes)
 //- Creates a broadcast button
 mixin broadcast(name, content)
 	button.broadcast-button(type='roll', name=`roll_${name}`, value!= `&{template:bitd-broadcast} ${content} {{charimage=@{chat_image}}}`, data-i18n-title='send_details_to_chat') :
+
+// Creates an attribute & action roll set
+mixin actionSet(actions, attribute)
+	.attribute.col100
+		.attribute-title.flex.col100
+			+roll(attribute,
+				'{{resist=1}} {{subtitle=^{resists} @{consequence_query} ^{with}}} {{title=^{'+attribute+'}}} @{'+attribute+'_formula}')(data-i18n=attribute, data-i18n-title=`${attribute}_description`).rollbutton.label
+			+hidden-input(`${attribute}`)(value='0')
+			+hidden-input(`${attribute}_formula`)(value=zerodiceFormula)
+			+hidden-input(`${attribute}_xp_max`)(value='6')
+			.attribute-xp-box.flex
+				//- generate 6 xp boxes
+				+radio(`${attribute}_xp`)(value='0', checked).tooth.zero
+				each num in range(1,6)
+					+radio(`${attribute}_xp`)(value=num).tooth.xptooth
+		.actions.col100
+			each action in actions
+				.action.flex.col100
+					+hidden-input(`${action}_formula`)(value=zerodiceFormula)
+					+hidden-checkbox(action)(value='0', checked).fakeradio
+					+checkbox(action)(value='1').checkbox.circlebox.fakeradio
+					.divider
+					each num in range(2,4)
+						+checkbox(action)(value=num).checkbox.circlebox.fakeradio
+					+roll(action, '{{action=1}} {{subtitle=^{rolls}}} {{title=^{'+action+'}}} {{@{position_query}}} {{effect=@{effect_query}}} @{'+action+'_formula}')(data-i18n=action, data-i18n-title=`${action}_description`).rollbutton.label
+
+// Creates a harm section
+mixin harmSection(harmAttr)
+	.harm.col63
+		.blackheader.col100
+			.label(data-i18n=`${harmAttr}`)
+			+broadcast(`${harmAttr}`, `{{charname=@{character_name}}} {{harm=1}} {{harmTitle=${harmAttr}}} {{harm3=@{${harmAttr}3}}} {{harm2_1=@{${harmAttr}2_1}}} {{harm2_2=@{${harmAttr}2_2}}} {{harm1_1=@{${harmAttr}1_1}}} {{harm1_2=@{${harmAttr}1_2}}}`)
+		.harmbody
+			.flex-center.harmnumber 3
+			+textarea(`${harmAttr}3`).twocols
+			.flex-center.harmeffect(data-i18n='need_help')
+			.flex-center.harmnumber 2
+			+textarea(`${harmAttr}2_1`)
+			+textarea(`${harmAttr}2_2`)
+			.flex-center.harmeffect(data-i18n='minus1d')
+			.flex-center.harmnumber 1
+			+textarea(`${harmAttr}1_1`)
+			+textarea(`${harmAttr}1_2`)
+			.flex-center.harmeffect(data-i18n='less_effect')
 
 //- Cohort section
 	isCharacter === true shows an input for quality, instead of generating it from the crew quality
