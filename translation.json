@@ -392,5 +392,8 @@
     "passenger_space_description": "A contained area suitable for a few to travel in comfort, or many to travel in cramped conditions. A vehicle without passenger space can uncomfortably fit two people, including the pilot, in the cockpit or equivalent.",
     "quirks": "Quirks",
     "breakdown": "Breakdown",
-    "quirk": "Quirk"
+    "quirk": "Quirk",
+    "connections": "Connections",
+    "enter_a_belief": "Enter a belief",
+    "enter_a_name": "Enter a name"
 }
