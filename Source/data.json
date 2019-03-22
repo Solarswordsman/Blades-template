@@ -294,8 +294,8 @@
 		"upgrade_23_description": "upgrade_personal_description",
 		"upgrade_24_name": "mastery",
 		"upgrade_24_description": "upgrade_mastery_description",
-		"xp_condition2": "xp_beliefs",
-		"xp_condition3": "xp_vice"
+		"xp_condition2": "xp_backstory",
+		"xp_condition3": "xp_struggle"
 	},
 	"defaultValues": {
 		"command": "0",
