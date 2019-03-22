@@ -7,10 +7,14 @@ $greyborder: #8c8c8c;
 $headergrey: #808080;
 $lightblack: #777;
 $lighterblack: #555;
-$fontblack: #333;
+$fontblack: white;
 
 /* red */
 $redtext: #c43c35;
+
+/* neon teal */
+$neonteal: #0fb49a;
+$paletteteal: #354B45;
 
 /* GENERALITIES */
 .charsheet {
@@ -193,7 +197,7 @@ $redtext: #c43c35;
 		height: 20px;
 	}
 	&:hover {
-		color: red;
+		color: neonteal;
 	}
 	.sheet-3waybox:not(:checked) + .sheet-3waybox,
 	input[value="character"]:not(:checked) ~ span[data-i18n="character_mode"],
@@ -307,7 +311,7 @@ $redtext: #c43c35;
 }
 /* USEFUL GENERAL LAYOUT*/
 .sheet-blackheader {
-	background: black;
+	background: $neonteal;
 	color: white;
 	&.sheet-rep1, &.sheet-hold1 {
 		padding-top: 3px;
@@ -327,7 +331,7 @@ $redtext: #c43c35;
 	padding: 1px 2px 0 4px;
 }
 .sheet-black-on-grey, .sheet-greyheader {
-	background: $darkgrey;
+	background: $neonteal; // Was a darker grey -- should highlight / darken this
 }
 .sheet-black-on-grey {
 	text-align: center;
@@ -345,7 +349,7 @@ $redtext: #c43c35;
 	line-height: 22px;
 }
 .sheet-specialheader {
-	background: $darkgrey;
+	background: $neonteal;
 	height: 20px;
 	font-size: 11px;
 	line-height: 20px;
@@ -364,7 +368,7 @@ $redtext: #c43c35;
 	font-weight: bold;
 }
 .sheet-greyholder {
-	background: $lightest;
+	background: $paletteteal;
 }
 .sheet-def-margin {
 	margin-top: 10px;
@@ -373,7 +377,7 @@ $redtext: #c43c35;
 	margin-top: 5px;
 }
 .sheet-blackborder {
-	border-top: 3px solid black;
+	border-top: 3px solid $neonteal;  // don't judge me, I'll rename these I swear
 }
 .sheet-tier {
 	background: $lightest;
@@ -477,7 +481,7 @@ textarea.sheet-smallcaps {
 	width: 95%;
 	padding: 5px;
 	margin-bottom: 5px;
-	background: $lightest;
+	background: $paletteteal;
 	font-size: 12px;
 	line-height: 15px;
 }
@@ -501,7 +505,7 @@ textarea.sheet-smallcaps {
 	flex-grow: 1;
 }
 .sheet-playbookitems {
-	background: $lightest;
+	background: $paletteteal;
 }
 .sheet-regularitems {
 	.repcontainer {
@@ -653,7 +657,7 @@ textarea.sheet-smallcaps {
 /* LOAD */
 .sheet-itemheader,
 .sheet-loadheader {
-	background: $darkgrey;
+	background: $neonteal;
 	height: 20px;
 	font-size: 10px;
 	padding: 3px 2px 1px 4px;
@@ -683,10 +687,10 @@ textarea.sheet-smallcaps {
 		margin-left: auto;
 		input[type=checkbox] + span {
 			opacity: 1;
-			color: $fontblack;
+			color: $lighter;
 		}
 		&:hover input[type=checkbox] + span {
-			color: red;
+			color: $neonteal;
 		}
 	}
 }
@@ -718,7 +722,7 @@ textarea.sheet-smallcaps {
 }
 .sheet-advancement-desc {
 	width: 99%;
-	background: $lightest;
+	background: $paletteteal;
 	padding: 15px 10px 4px 11px;
 	li {
 		font-style: italic;
@@ -735,7 +739,7 @@ textarea.sheet-smallcaps {
 	align-items: center;
 	height: 50px;
 	position: relative;
-	background: $lightest;
+	background: $paletteteal;
 	input[type=text] {
 		flex: 0 0 auto;
 		margin: 0 2px;
@@ -795,14 +799,14 @@ textarea.sheet-smallcaps {
 	}
 	input[type=text], .sheet-auto-expand {
 		width: 100%;
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid white;
 		font-size: 14px;
 		line-height: 1.3;
 		text-align: left;
 		padding: 3px 0 0 2px;
 		margin: 3px 0 0;
 		min-height: 22px;
-		color: $redtext;
+		color: $neonteal;
 	}
 	input[type="hidden"] {
 		&[value=""] + div > .sheet-title::after {
@@ -816,7 +820,7 @@ textarea.sheet-smallcaps {
 		padding-right: 2.5%;
 	}
 	.sheet-text {
-		color: black;
+		color: white;
 		text-align: justify;
 		padding: 3px 0 2px;
 		line-height: 13px;
@@ -851,7 +855,7 @@ textarea.sheet-smallcaps {
 	.repitem {
 		display: flex;
 		padding: 4px 2px;
-		background: $lightest;
+		background: $paletteteal;
 		align-items: start;
 	}
 	.itemcontrol {
@@ -1230,7 +1234,7 @@ textarea.sheet-smallcaps {
 .sheet-text-button {
 	font-weight: bold;
 	input:checked + span {
-		color: red;
+		color: $neonteal;
 	}
 }
 .sheet-size-choice > .sheet-text-button {
@@ -1262,7 +1266,7 @@ input.sheet-tooth {
 	}
 }
 .sheet-tooth + span {
-	width: 8px;
+	width: 12px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	&:last-child {
@@ -1273,26 +1277,28 @@ input.sheet-tooth {
 	opacity: 0.7;
 }
 .sheet-xptooth + span {
-	background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/teeth/xptooth-red.png');
+	background-image: url('https://raw.githubusercontent.com/Solarswordsman/roll20-character-sheets/80787d36d54dbfed6130e185edd63719ed9d1f95/Beam%20Saber/Assets/toothfilled.png');
 	margin-right: 4px;
 }
 .sheet-tooth:checked ~ .sheet-xptooth + span {
-	background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/teeth/xptooth-white.png');
+	background-image: url('https://raw.githubusercontent.com/Solarswordsman/roll20-character-sheets/80787d36d54dbfed6130e185edd63719ed9d1f95/Beam%20Saber/Assets/toothempty.png');
 }
 .sheet-stresstooth[type=radio] + span,
 .sheet-stresstooth[type=checkbox]:checked + span,
 .sheet-holdtooth:checked + span {
-	background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/teeth/stresstooth-red.png');
+	background-image: url('https://raw.githubusercontent.com/Solarswordsman/roll20-character-sheets/80787d36d54dbfed6130e185edd63719ed9d1f95/Beam%20Saber/Assets/toothfilled.png');
 }
 .sheet-stresstooth[type=checkbox] + span,
 .sheet-tooth:checked ~ .sheet-stresstooth[type=radio] + span,
 .sheet-holdtooth + span {
-	background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/teeth/stresstooth-white.png');
+	background-image: url('https://raw.githubusercontent.com/Solarswordsman/roll20-character-sheets/80787d36d54dbfed6130e185edd63719ed9d1f95/Beam%20Saber/Assets/toothempty.png');
 }
 .sheet-regulartooth + span {
+	width: 8px;
 	background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/teeth/shorttooth-red.png');
 }
 .sheet-tooth:checked ~ .sheet-regulartooth + span {
+	width: 8px;
 	background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/teeth/shorttooth-grey.png');
 }
 input.sheet-zero {
@@ -1374,7 +1380,7 @@ input.sheet-zero {
 /* SPECIAL ABILITIES*/
 .sheet-specialability,
 .sheet-friend-contact {
-	border-bottom: 1px solid $darkgrey;
+	border-bottom: 1px solid $paletteteal;
 	width: 100%;
 	align-items: start;
 }
@@ -1428,7 +1434,7 @@ input.sheet-zero {
 }
 .sheet-friend-contact .sheet-auto-expand {
 	font-size: 12px;
-	color: $lighterblack;
+	color: $lightest;
 	min-height: 20px;
 	line-height: 16px;
 	flex: 1 1 0;
@@ -1445,12 +1451,12 @@ input.sheet-zero {
 	text-transform: uppercase;
 	text-align: center;
 	div {
-		background: #d6d8d9;
+		background: $paletteteal;
 		border-bottom: 1px solid black;
 	}
 	.sheet-harmeffect {
 		width: 59px;
-		color: $lighterblack;
+		//color: $lighterblack;
 		font-size: 10px;
 		letter-spacing: 1px;
 		line-height: 1.4;
@@ -1465,7 +1471,7 @@ input.sheet-zero {
 	textarea {
 		font-size: 12px;
 		padding: 10px 4px 3px;
-		color: $redtext;
+		color: $neonteal;
 		overflow: hidden;
 		height: 52px;
 		resize: none;
@@ -1486,6 +1492,12 @@ input.sheet-zero {
 }
 .sheet-healing {
 	position: relative;
+	button[type=roll].sheet-rollbutton {
+		color: white;
+		&:hover {
+			color: white;
+		}
+	}
 	.sheet-healing-progress {
 		line-height: 14px;
 		text-align: center;
@@ -1520,10 +1532,10 @@ input.sheet-zero {
 		order: 1;
 	}
 	input:checked ~ span {
-		color: red;
+		color: $neonteal;
 	}
 	.sheet-checkbox + span {
-		border: 1px solid black;
+		border: 1px solid white;
 		margin: 3px;
 		order: 2;
 	}
@@ -1618,7 +1630,7 @@ input.sheet-zero {
 }
 .sheet-coin, .sheet-crewcoin {
 	.sheet-radiobox + span {
-		background: red;
+		background: $neonteal;
 		border: 1px solid black;
 	}
 	input:checked ~ .sheet-radiobox + span {
@@ -1626,12 +1638,18 @@ input.sheet-zero {
 	}
 }
 .sheet-stash {
+	button[type=roll].sheet-rollbutton {
+		color: white;
+		&:hover {
+			color: white;
+		}
+	}
 	.sheet-radiobox + span {
-		background: black;
+		background: $paletteteal;
 		margin-right: calc((100% - 126px)/9);
 	}
 	input:checked ~ .sheet-radiobox + span {
-		background: $lighter;
+		background: white;
 	}
 	input.sheet-radiobox:nth-of-type(10n+1) {
 		margin: -2px -17px 0 3px;
@@ -1641,7 +1659,7 @@ input.sheet-zero {
 	.sheet-radiobox:nth-of-type(10n+1) + span {
 		width: 14px;
 		height: 14px;
-		border: 1px solid black;
+		border: 1px solid white;
 		margin-left: 3px;
 		margin-right: 0;
 		position:relative;
@@ -1673,7 +1691,7 @@ input.sheet-zero {
 	font-weight: bold;
 }
 .sheet-bonusdietext {
-	background: $lightest;
+	background: $paletteteal;
 	width: 90%;
 	padding: 3px;
 	font-size: 11px;
@@ -1814,7 +1832,7 @@ input.sheet-zero {
 .sheet-notes {
 	margin-left: 1%;
 	font-family: "Shadows Into Light", cursive;
-	color: $redtext;
+	color: $neonteal;
 	font-size: 20px;
 	width: 98%;
 	background: linear-gradient(transparent 26px,#a7a7a7 1px) 0 0 / 100% 27px;
@@ -1823,6 +1841,7 @@ input.sheet-zero {
 	min-height: 378px;
 }
 .sheet-type-character, .sheet-type-crew {
+	background-color: #111;
 	.sheet-notes {
 	margin-top: 15px;
 	}
@@ -1837,6 +1856,7 @@ input.sheet-zero {
 }
 /* ROLL BUTTONS */
 button[type=roll].sheet-rollbutton {
+	color: $lighter;
 	display: flex;
 	border: none;
 	margin: 0;
@@ -1888,7 +1908,7 @@ button[type=roll].sheet-engagementbutton {
 	margin: 10px 10px 0;
 }
 button[type=roll].sheet-rollbutton:hover {
-	color: red;
+	color: $neonteal;
 }
 button[type=roll].sheet-borderbutton:hover {
 	color: black;
@@ -1907,7 +1927,7 @@ input.sheet-checkbox, .sheet-checkbox + span {
 	border: 1px solid $greyborder;
 }
 .sheet-checkbox:checked + span {
-	background: red;
+	background: $neonteal;
 }
 .sheet-checkbox:hover + span {
 	opacity: 0.7;
@@ -1941,7 +1961,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 .sheet-specialability .sheet-checkbox:checked ~ .sheet-abilityname,
 .sheet-item .sheet-checkbox:checked ~ .sheet-itemname,
 .sheet-friend .sheet-friendstate[value="up"] ~ .sheet-auto-expand {
-	color: red;
+	color: $neonteal;
 }
 .sheet-friend-contact .sheet-friendstate:not([value="0"]) ~ .sheet-auto-expand {
 	font-weight: bold;
@@ -1971,7 +1991,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 }
 /* Fake radios */
 .sheet-checkbox.sheet-fakeradio + span {
-	background: red;
+	background: $neonteal;
 }
 .sheet-action .sheet-fakeradio:checked ~ .sheet-fakeradio + span {
 	background: $lighter;
@@ -2002,7 +2022,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 			border-bottom-color: white;
 		}
 		.sheet-checkbox:checked + span {
-			border-bottom-color: red;
+			border-bottom-color: $neonteal;
 		}
 	}
 	&.sheet-down {
@@ -2036,10 +2056,16 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 	height: 21px;
 	line-height: 21px;
 	color: white;
-	background: black;
+	background: $neonteal;
 	padding: 0 3px;
 	align-items: center;
 	justify-content: space-between;
+	input[type=radio].sheet-xptooth {
+		margin-top:5px;
+		& + span {
+			margin-top: 5px;
+		}
+	}
 }
 .sheet-attribute-title .sheet-label {
 	font-size: 12px;
@@ -2080,7 +2106,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 	}
 }
 .sheet-cohort-info {
-	background: black;
+	background: $neonteal;
 	height: 13px;
 	font-size: 9px;
 	color: white;
@@ -2141,7 +2167,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 		height: 13px;
 		z-index: 10;
 		&:checked + span {
-			color: red;
+			color: $neonteal;
 		}
 	}
 }
@@ -2247,7 +2273,7 @@ input.sheet-title-checkbox {
 	height: 24px;
 }
 .sheet-title-checkbox:hover + span {
-	color: red;
+	color: $neonteal;
 }
 .sheet-alchemicals {
 	padding: 0 5px;
@@ -2314,7 +2340,7 @@ input.sheet-title-checkbox {
 		font-family: serif;
 	}
 	.sheet-alchemicals-expand:checked + span {
-		color: red;
+		color: $neonteal;
 	}
 	.itemcontrol .btn {
 		padding: 0 4px;

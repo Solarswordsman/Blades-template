@@ -187,6 +187,8 @@ mixin makeclock(isFaction)
 .preload
 	each tooth in teeth
 		img(src=`https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/teeth/${tooth}.png`)
+	each tooth in ['toothfilled', 'toothempty']
+		img(src=`https://raw.githubusercontent.com/Solarswordsman/roll20-character-sheets/80787d36d54dbfed6130e185edd63719ed9d1f95/Beam%20Saber/Assets/${tooth}.png`)
 
 //- Global setttings
 +hidden-input('setting_focus_shadow')(value='1').focus-shadow
