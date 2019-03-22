@@ -1649,7 +1649,7 @@ input.sheet-zero {
 		margin-right: calc((100% - 126px)/9);
 	}
 	input:checked ~ .sheet-radiobox + span {
-		background: white;
+		background: #AAA;
 	}
 	input.sheet-radiobox:nth-of-type(10n+1) {
 		margin: -2px -17px 0 3px;
@@ -1994,7 +1994,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 	background: $neonteal;
 }
 .sheet-action .sheet-fakeradio:checked ~ .sheet-fakeradio + span {
-	background: $lighter;
+	background: #333;
 }
 .sheet-tier .sheet-fakeradio:checked ~ .sheet-fakeradio + span {
 	background: white;
