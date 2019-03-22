@@ -3,7 +3,17 @@
 	},
 	"playbook": {
 		"ace": {
-			"ability": ["veteran"],
+			"ability": [
+				"adaptable",
+				"more_than_meets_the_eye",
+				"meat_is_cheap_save_the_metal",
+				"last_stand",
+				"advanced_prototype",
+				"bloodlust",
+				"red_comet",
+				"travelling_companion",
+				"veteran"
+			],
 			"base": {
 				"engineer": "1",
 				"maneuver": "2",
