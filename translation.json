@@ -350,6 +350,8 @@
     "playbook_ability_last_stand_description": "When you take a dire action because your vehicle has exhausted its last Quirk you can continue to act on a 4, 5, or 6, instead of just on 6s. If your vehicle currently has 3 or more Breakdown ticks take +1d to all dire actions.",
     "playbook_ability_advanced_prototype": "Advanced Prototype",
     "playbook_ability_advanced_prototype_description": "When declaring vehicular gear you can state that it’s experimental. That gear has its load reduced by 1 (to a minimum of 0). When you push your vehicle using that gear take increased effect AND +1d. You can only have 1 experimental item at a time.",
+    "playbook_ability_bloodlust": "Bloodlust",
+    "playbook_ability_bloodlust_description": "Gain the Tragedy \"Seeks violence.\" When you defeat a worthy foe (or a gang of the unworthy) in battle heal 2 pilot stress.",
     "playbook_ability_veteran": "Veteran",
     "playbook_ability_veteran_description": "Choose an ability from another source. This can be taken 3 times.",
     "playbook_ace_friend_0": "Denari, a gruff mechanic",
