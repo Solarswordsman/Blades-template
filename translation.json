@@ -354,6 +354,8 @@
     "playbook_ability_bloodlust_description": "Gain the Tragedy \"Seeks violence.\" When you defeat a worthy foe (or a gang of the unworthy) in battle heal 2 pilot stress.",
     "playbook_ability_red_comet": "Red Comet",
     "playbook_ability_red_comet_description": "You have a reputation as a pilot of great skill (whether earned fairly or not). When you try to impress or dismay someone using your reputation take +1d. When you reveal yourself with a dramatic action those around you are briebly stunned.",
+    "playbook_ability_travelling_companion": "Travelling Companion",
+    "playbook_ability_travelling_companion_description": "You can exhaust 1 Quirk or spend 2 Stress to Push Yourself on Vehicle actions.",
     "playbook_ability_veteran": "Veteran",
     "playbook_ability_veteran_description": "Choose an ability from another source. This can be taken 3 times.",
     "playbook_ace_friend_0": "Denari, a gruff mechanic",
