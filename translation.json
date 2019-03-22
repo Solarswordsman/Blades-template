@@ -346,6 +346,8 @@
     "playbook_ability_more_than_meets_the_eye_description": "Your custom vehicle has the ability to transform into a secondary form. Detail that second form. Select 2 Load worth of vehicle gear and 4 points of action ratings that your vehicle lacks. It has this gear and action ratings when in its secondary form. Select 2 Load worth of vehicle gear and 4 points of action ratings that your vehicle has. It lacks this gear and action ratings when in its secondary form.",
     "playbook_ability_meat_is_cheap_save_the_metal": "Meat is Cheap, Save the Metal",
     "playbook_ability_meat_is_cheap_save_the_metal_description": "When the vehicle you are piloting takes damage you can choose for the pilot to take an equal level of harm instead. If you resist this harm take -1d to the resist roll. Pilot armor cannot be used to prevent this damage.",
+    "playbook_ability_last_stand": "Last Stand",
+    "playbook_ability_last_stand_description": "When you take a dire action because your vehicle has exhausted its last Quirk you can continue to act on a 4, 5, or 6, instead of just on 6s. If your vehicle currently has 3 or more Breakdown ticks take +1d to all dire actions.",
     "playbook_ability_veteran": "Veteran",
     "playbook_ability_veteran_description": "Choose an ability from another source. This can be taken 3 times.",
     "playbook_ace_friend_0": "Denari, a gruff mechanic",
