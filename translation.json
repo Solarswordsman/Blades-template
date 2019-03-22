@@ -340,6 +340,8 @@
     "playbook_item_fine_environmental_suit_carried": "Fine environmental suit (C)",
     "playbook_item_your_custom_vehicle": "Your custom vehicle",
     "ace": "Ace",
+    "playbook_ability_adaptable": "Adaptable",
+    "playbook_ability_adaptable_description": "You may expend your special armor to make up to two points of your vehicle’s Load undeclared or to push yourself in a vehicular maneuver.",
     "playbook_ability_veteran": "Veteran",
     "playbook_ability_veteran_description": "Choose an ability from another source. This can be taken 3 times.",
     "playbook_ace_friend_0": "Denari, a gruff mechanic",

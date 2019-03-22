@@ -3,7 +3,10 @@
 	},
 	"playbook": {
 		"ace": {
-			"ability": ["veteran"],
+			"ability": [
+				"adaptable",
+				"veteran"
+			],
 			"base": {
 				"engineer": "1",
 				"maneuver": "2",
