@@ -15,6 +15,7 @@
     "assist_a_teammate": "<strong>Assist</strong> a teammate",
     "autofill_reminder_crew": "To generate crew abilities, upgrades, contacts, and claims, enter the name of the crew type above:",
     "autofill_reminder_playbook": "To generate playbook abilities, items, and friends, enter the name of the playbook above:",
+    "bandoliers": "Bandoliers",
     "bandolier_neutralize": "Neutralize the effects of other chemicals.",
     "bandolier_fuse": "Permanently fuse two surfaces until parted with a neutralizer or extreme (and damaging effort).",
     "bandolier_drowning": "Cause an incapacitating sensation of drowning.",
@@ -34,6 +35,7 @@
     "callsign": "Call Sign",
     "character_mode": "Character Mode",
     "chat_image": "Image to show alongside chat rolls",
+    "chemicals": "Chemicals",
     "clock_name": "Clock Name",
     "clocks": "Clocks",
     "clocks_only": "Show clocks only",
@@ -471,5 +473,6 @@
     "quirk": "Quirk",
     "connections": "Connections",
     "enter_a_belief": "Enter a belief",
-    "enter_a_name": "Enter a name"
+    "enter_a_name": "Enter a name",
+    "when_you_use_bandolier": "When you use a bandolier slot, choose a chemical:"
 }
