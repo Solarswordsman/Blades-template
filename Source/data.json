@@ -111,12 +111,12 @@
 				"description": "playbook_item_airgun_darts_syringe_description",
 				"numboxes": 1
 			}, {
-				"name": "playbook_item_bandolier",
-				"description": "playbook_item_bandolier_description",
+				"name": "playbook_item_bandolier_of_alchemicals_(3)",
+				"description": "playbook_item_bandolier_of_alchemicals_(3)_description",
 				"numboxes": 1
 			}, {
-				"name": "playbook_item_bandolier",
-				"description": "playbook_item_bandolier_description",
+				"name": "playbook_item_bandolier_of_alchemicals_(3)",
+				"description": "playbook_item_bandolier_of_alchemicals_(3)_description",
 				"numboxes": 1
 			}, {
 				"name": "playbook_item_gadgets",
