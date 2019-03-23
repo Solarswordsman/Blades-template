@@ -88,7 +88,7 @@ $paletteteal: #354B45;
 
 	input[type=number] {
 		border-color: $lighter;
-		color: $fontblack;
+		color: #222;
 		box-shadow: none;
 	}
 
@@ -163,6 +163,7 @@ $paletteteal: #354B45;
 		content: " ";
 	}
 	.sheet-settings-checkbox {
+		color: #222;
 		margin-right: 10px;
 		width: 20px;
 		height: 20px;
@@ -218,8 +219,8 @@ $paletteteal: #354B45;
 	position: absolute;
 	right: 0;
 	width: 415px;
-	border: 1px solid black;
-	background: white;
+	border: 1px solid white;
+	background: #222;
 	z-index: 100;
 	padding: 5px;
 	border-radius: 5px;
@@ -246,7 +247,7 @@ $paletteteal: #354B45;
 		margin-right: 6px;
 	}
 	.sheet-checkbox:checked + span {
-		background: black;
+		background: $neonteal;
 	}
 	:not(input) + span {
 		padding-right: 4px;
@@ -344,7 +345,7 @@ $paletteteal: #354B45;
 }
 .sheet-plainheader {
 	width: 100%;
-	border-top: 2px solid black;
+	border-top: 2px solid white;
 	font-size: 12px;
 	line-height: 22px;
 }
@@ -401,6 +402,9 @@ $paletteteal: #354B45;
 	align-content: flex-start;
 	align-items: flex-start;
 }
+.sheet-flex-grow {
+	flex-grow: 1;
+}
 .sheet-flex-center {
 	text-align: center;
 	display: flex;
@@ -419,11 +423,11 @@ $paletteteal: #354B45;
 .sheet-col37 {
 	width: 37%;
 }
-.sheet-col24b {
-	width: 24.25%;
-}
 .sheet-col10 {
 	width: 10%;
+}
+.sheet-col24b {
+	width: 24.25%;
 }
 .sheet-col50 {
 	width: 50%;
@@ -873,6 +877,15 @@ textarea.sheet-smallcaps {
 		min-height: 28px;
 	}
 }
+.sheet-connections {
+	.repcontainer {
+		grid-template-columns: 1fr;
+	}
+	.sheet-clock-container {
+		margin-top: 14px;
+		margin-left: 4px;
+	}
+}
 .sheet-clock-container {
 	position: relative;
 	padding: 2px;
@@ -899,7 +912,6 @@ textarea.sheet-smallcaps {
 	}
 }
 .sheet-clock {
-	border: 2px solid black;
 	border-radius: 50%;
 	background: white;
 	width: 100%;
@@ -916,7 +928,7 @@ textarea.sheet-smallcaps {
 	display: none;
 	left: 0;
 	top: 0;
-	background: black;
+	background: transparent;
 }
 .sheet-spoke-0 {
 	transform: translateX(21px);
@@ -1178,33 +1190,37 @@ textarea.sheet-smallcaps {
 	display: none;
 }
 .sheet-clock-container .sheet-input-progress[value="0"]:checked ~ .sheet-clock {
-	@include clock(0);
+//	@include clock(0);
 }
 .sheet-size[value="4"] ~ .sheet-clock-container .sheet-input-progress {
-	&[value="1"]:checked ~ .sheet-clock {@include clock(90);}
-	&[value="2"]:checked ~ .sheet-clock {@include clock(180);}
-	&[value="3"]:checked ~ .sheet-clock {@include clock(270);}
-	&[value="4"]:checked ~ .sheet-clock {@include clock(360);}
+	&[value="0"]:checked ~ .sheet-clock {@include beamclock(4, 0);}
+	&[value="1"]:checked ~ .sheet-clock {@include beamclock(4, 1);}
+	&[value="2"]:checked ~ .sheet-clock {@include beamclock(4, 2);}
+	&[value="3"]:checked ~ .sheet-clock {@include beamclock(4, 3);}
+	&[value="4"]:checked ~ .sheet-clock {@include beamclock(4, 4);}
 }
 .sheet-size[value="6"] ~ .sheet-clock-container .sheet-input-progress {
-	&[value="1"]:checked ~ .sheet-clock {@include clock(60);}
-	&[value="2"]:checked ~ .sheet-clock {@include clock(120);}
-	&[value="3"]:checked ~ .sheet-clock {@include clock(180);}
-	&[value="4"]:checked ~ .sheet-clock {@include clock(240);}
-	&[value="5"]:checked ~ .sheet-clock {@include clock(300);}
-	&[value="6"]:checked ~ .sheet-clock {@include clock(360);}
+	&[value="0"]:checked ~ .sheet-clock {@include beamclock(6, 0);}
+	&[value="1"]:checked ~ .sheet-clock {@include beamclock(6, 1);}
+	&[value="2"]:checked ~ .sheet-clock {@include beamclock(6, 2);}
+	&[value="3"]:checked ~ .sheet-clock {@include beamclock(6, 3);}
+	&[value="4"]:checked ~ .sheet-clock {@include beamclock(6, 4);}
+	&[value="5"]:checked ~ .sheet-clock {@include beamclock(6, 5);}
+	&[value="6"]:checked ~ .sheet-clock {@include beamclock(6, 6);}
 }
 .sheet-size[value="8"] ~ .sheet-clock-container .sheet-input-progress {
-	&[value="1"]:checked ~ .sheet-clock {@include clock(45);}
-	&[value="2"]:checked ~ .sheet-clock {@include clock(90);}
-	&[value="3"]:checked ~ .sheet-clock {@include clock(135);}
-	&[value="4"]:checked ~ .sheet-clock {@include clock(180);}
-	&[value="5"]:checked ~ .sheet-clock {@include clock(225);}
-	&[value="6"]:checked ~ .sheet-clock {@include clock(270);}
-	&[value="7"]:checked ~ .sheet-clock {@include clock(315);}
-	&[value="8"]:checked ~ .sheet-clock {@include clock(360);}
+	&[value="0"]:checked ~ .sheet-clock {@include beamclock(8, 0);}
+	&[value="1"]:checked ~ .sheet-clock {@include beamclock(8, 1);}
+	&[value="2"]:checked ~ .sheet-clock {@include beamclock(8, 2);}
+	&[value="3"]:checked ~ .sheet-clock {@include beamclock(8, 3);}
+	&[value="4"]:checked ~ .sheet-clock {@include beamclock(8, 4);}
+	&[value="5"]:checked ~ .sheet-clock {@include beamclock(8, 5);}
+	&[value="6"]:checked ~ .sheet-clock {@include beamclock(8, 6);}
+	&[value="7"]:checked ~ .sheet-clock {@include beamclock(8, 7);}
+	&[value="8"]:checked ~ .sheet-clock {@include beamclock(8, 8);}
 }
 .sheet-size[value="10"] ~ .sheet-clock-container .sheet-input-progress {
+	&[value="0"]:checked ~ .sheet-clock {@include clock(0);}
 	&[value="1"]:checked ~ .sheet-clock {@include clock(36);}
 	&[value="2"]:checked ~ .sheet-clock {@include clock(72);}
 	&[value="3"]:checked ~ .sheet-clock {@include clock(108);}
@@ -1217,18 +1233,19 @@ textarea.sheet-smallcaps {
 	&[value="10"]:checked ~ .sheet-clock {@include clock(360);}
 }
 .sheet-size[value="12"] ~ .sheet-clock-container .sheet-input-progress {
-	&[value="1"]:checked ~ .sheet-clock {@include clock(30);}
-	&[value="2"]:checked ~ .sheet-clock {@include clock(60);}
-	&[value="3"]:checked ~ .sheet-clock {@include clock(90);}
-	&[value="4"]:checked ~ .sheet-clock {@include clock(120);}
-	&[value="5"]:checked ~ .sheet-clock {@include clock(150);}
-	&[value="6"]:checked ~ .sheet-clock {@include clock(180);}
-	&[value="7"]:checked ~ .sheet-clock {@include clock(210);}
-	&[value="8"]:checked ~ .sheet-clock {@include clock(240);}
-	&[value="9"]:checked ~ .sheet-clock {@include clock(270);}
-	&[value="10"]:checked ~ .sheet-clock {@include clock(300);}
-	&[value="11"]:checked ~ .sheet-clock {@include clock(330);}
-	&[value="12"]:checked ~ .sheet-clock {@include clock(360);}
+	&[value="0"]:checked ~ .sheet-clock {@include beamclock(12, 0);}
+	&[value="1"]:checked ~ .sheet-clock {@include beamclock(12, 1);}
+	&[value="2"]:checked ~ .sheet-clock {@include beamclock(12, 2);}
+	&[value="3"]:checked ~ .sheet-clock {@include beamclock(12, 3);}
+	&[value="4"]:checked ~ .sheet-clock {@include beamclock(12, 4);}
+	&[value="5"]:checked ~ .sheet-clock {@include beamclock(12, 5);}
+	&[value="6"]:checked ~ .sheet-clock {@include beamclock(12, 6);}
+	&[value="7"]:checked ~ .sheet-clock {@include beamclock(12, 7);}
+	&[value="8"]:checked ~ .sheet-clock {@include beamclock(12, 8);}
+	&[value="9"]:checked ~ .sheet-clock {@include beamclock(12, 9);}
+	&[value="12"]:checked ~ .sheet-clock {@include beamclock(12, 10);}
+	&[value="10"]:checked ~ .sheet-clock {@include beamclock(12, 11);}
+	&[value="11"]:checked ~ .sheet-clock {@include beamclock(12, 12);}
 }
 /* TEXT INPUTS FOR TRAUMA AND CLOCKS */
 .sheet-text-button {
@@ -1841,6 +1858,10 @@ input.sheet-zero {
 	min-height: 378px;
 }
 .sheet-type-character, .sheet-type-crew {
+	position: relative;
+	left: -2%;
+	width: 102%;
+	padding: 0 1%;
 	background-color: #111;
 	.sheet-notes {
 	margin-top: 15px;
@@ -2065,6 +2086,9 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 		& + span {
 			margin-top: 5px;
 		}
+	}
+	&.sheet-quirk-title .sheet-attribute-xp-box {
+		transform: scaleY(-1);
 	}
 }
 .sheet-attribute-title .sheet-label {

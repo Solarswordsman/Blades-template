@@ -47,7 +47,7 @@
 			// Trauma markers
 			.stress3
 				.blackheader
-					.label(data-i18n="trauma")
+					.label(data-i18n="scars")
 				.traumaholder.flex
 					+radio('trauma')(value='0', checked).tooth.zero
 					//- This will generate 5 trauma boxes and show 4 by default
@@ -182,7 +182,7 @@
 						each actions, attribute in vehicleActionData
 							+actionSet(actions, attribute)
 						// Quirks and breakdown
-						.attribute.attribute-title.flex.col100.def-margin
+						.attribute.attribute-title.quirk-title.flex.col100.def-margin
 							.col24b.label.title(data-i18n='quirks')
 							.col24b.label.align-right.title(data-i18n='breakdown')
 							.attribute-xp-box.flex
@@ -457,14 +457,14 @@
 			// Roll Fortune
 			+fortuneroll('Fortune', '{{fortune=1}} {{subtitle=^{rolls}}} {{title=^{fortune}}}', true)(data-i18n='roll_fortune').fortunebutton.borderbutton
 		// Connections
-		.col100.clocks.def-margin.free-repcontrol
+		.col100.clocks.connections.def-margin.free-repcontrol
 			.specialheader.label(data-i18n='connections')
 			fieldset.repeating_connections
-				+hidden-input('beliefclock_max')(value='4').size
 				.flex-wrap
 					.col100
 						+text-input('name')(data-i18n-placeholder='enter_a_name')
 					.col100.flex-wrap
+						+hidden-input('beliefclock_max')(value='4').size
 						.clock-container
 							.spoke-0.all
 							.spoke-90.all
@@ -472,7 +472,7 @@
 							each num in range(1,4)
 								input.input-progress.all(type='radio', name='attr_beliefclock', value=num)
 							.clock
-						.belief-container.flex-wrap.col63.right-column
+						.belief-container.flex-wrap.flex-grow.col63.right-column
 							each num in range(1,4)
 								.col100
 									+text-input(`belief_${num}`)(data-i18n-placeholder='enter_a_belief')

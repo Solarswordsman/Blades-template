@@ -101,6 +101,10 @@ const mySetAttrs = (attrs, options, callback) => {
 		}, {});
 		setAttrs(finalAttrs, options, callback);
 	},
+	mergeObj = (obj1, obj2) => {
+		let combinedObj = obj1;
+		return Object.assign(combinedObj, obj2);
+	},
 	setAttr = (name, value) => {
 		getAttrs([name], v => {
 			const setting = {};
@@ -248,12 +252,13 @@ const mySetAttrs = (attrs, options, callback) => {
 			});
 			setAttrs(setting);
 		});
-	};
+	}
 /* CONSTANTS */
 const crewAttributes = [...new Set([].concat(...Object.keys(data.crew).map(x => Object.keys(data.crew[x].base))))],
 	playbookAttributes = [...new Set([].concat(...Object.keys(data.playbook).map(x => Object.keys(data.playbook[x].base))))],
 	watchedAttributes = new Set(crewAttributes.concat(playbookAttributes)),
-	actionsFlat = [].concat(...Object.keys(data.actions).map(x => data.actions[x])),
+	allActions = mergeObj(data.actions, data.vehicleActions),
+	actionsFlat = [].concat(...Object.keys(allActions).map(x => allActions[x])),
 	autoExpandFields = [
 		"repeating_ability:name",
 		"repeating_ability:description",
@@ -377,8 +382,8 @@ watchedAttributes.forEach(name => {
 	});
 });
 /* Register attribute/action event handlers */
-Object.keys(data.actions).forEach(attrName => {
-	on([...data.actions[attrName], `setting_resbonus_${attrName}`]
+Object.keys(allActions).forEach(attrName => {
+	on([...allActions[attrName], `setting_resbonus_${attrName}`]
 		.map(x => `change:${x}`).join(" "), () => calculateResistance(attrName)
 	);
 	on(`change:${attrName}`, calculateVice);

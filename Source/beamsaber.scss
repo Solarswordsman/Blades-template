@@ -10,5 +10,10 @@
 	}
 }
 
+@mixin beamclock($size, $progress) {
+	background: url("https://raw.githubusercontent.com/Solarswordsman/roll20-character-sheets/beamsaber/Beam%20Saber/Assets/#{$size}Clock/#{$size}clock_#{$progress}.png");
+	background-size: 100%;
+}
+
 @import 'scss/sheet.scss';
 @import 'scss/rolltemplate.scss';
