@@ -2324,7 +2324,9 @@ input.sheet-title-checkbox {
 	}
 	.repitem {
 		font-size: 11px;
-		width: 50%;
+		width: 100%;
+		display: flex;
+		align-items: center;
 	}
 	.sheet-auto-expand {
 		margin: 0 1px 0 7px;
@@ -2332,6 +2334,9 @@ input.sheet-title-checkbox {
 		min-height: 16px;
 		line-height: 14px;
 		width: calc(100% - 8px);
+	}
+	.sheet-checkbox:checked ~ .sheet-auto-expand {
+		color: $neonteal;
 	}
 	input.sheet-alchemicals-expand {
 		width: 10px;
@@ -2377,7 +2382,7 @@ input.sheet-title-checkbox {
 	.repcontainer.editmode .repitem .itemcontrol {
 		display: flex;
 		justify-content: space-between;
-		align-items: start;
+		align-items: center;
 	}
 }
 /* FACTIONS PAGE */

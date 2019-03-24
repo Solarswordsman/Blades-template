@@ -396,6 +396,22 @@
 							.item-description
 								+checkbox('expand').expand
 								+textarea('description')(data-i18n-placeholder='description')
+			// Chemicals
+			.col100.def-margin
+				input.title-checkbox(type='checkbox', name='attr_show_alchemicals', value='1')
+				span.label.plainheader(data-i18n='chemicals')
+				.alchemicals.free-repcontrol
+					.bandolier.item
+						span.bandoliers-name(data-i18n='bandoliers')
+						each bannum in [1,2]
+							each checknum in range(1,3)
+								+checkbox(`bandolier${bannum}_check_${checknum}`).checkbox.squarebox
+								if (checknum !== 3)
+									span.floatingbar
+					.bandolier-desc(data-i18n='when_you_use_bandolier')
+					fieldset.repeating_alchemical
+						+checkbox('check').checkbox.squarebox
+						+autoexpand('name')(data-i18n-placeholder='description').chemical_name
 			// Planning and Load
 			.planning.col100.def-margin
 				input.title-checkbox(type='checkbox', name='attr_show_planning', value='1', checked)

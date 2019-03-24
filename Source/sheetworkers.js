@@ -46,6 +46,11 @@ Object.keys(data.factions).forEach(x => {
 		faction.name = getTranslation(faction.name);
 	});
 });
+data.alchemicals.forEach((v, k) => {
+	data.alchemicals[k] = {
+		name: getTranslation(v)
+	};
+});
 Object.keys(data.playbook).forEach(playbook => {
 	const base = data.playbook[playbook].base;
 	Object.keys(base).forEach(attr => {
@@ -223,6 +228,16 @@ const mySetAttrs = (attrs, options, callback) => {
 			setAttr(`${name}_formula`, buildRollFormula(total + parseInt(v[`setting_resbonus_${name}`])));
 		});
 	},
+	calculateBandolier = (sectionName, containerName) => {
+		getSectionIDs(sectionName, ids => {
+			getAttrs(ids.map(id => `repeating_${sectionName}_${id}_check`), v => {
+				function getSum(total, num) {
+					return total + num;
+				}
+				const total = Object.values(v).map(ticked => ticked == "1" ? 1 : 0).reduce(getSum);
+			});
+		});
+	},
 	calculateVice = () => {
 		getAttrs(Object.keys(data.actions), v => {
 			const total = Math.min(...Object.keys(v).map(x => parseInt(v[x]) || 0));
@@ -259,6 +274,7 @@ const crewAttributes = [...new Set([].concat(...Object.keys(data.crew).map(x => 
 	watchedAttributes = new Set(crewAttributes.concat(playbookAttributes)),
 	allActions = mergeObj(data.actions, data.vehicleActions),
 	actionsFlat = [].concat(...Object.keys(allActions).map(x => allActions[x])),
+	bandolierSets = {"alchemical":"bandolier"},
 	autoExpandFields = [
 		"repeating_ability:name",
 		"repeating_ability:description",
@@ -336,6 +352,7 @@ on("change:crew_type change:playbook", event => {
 			fillRepeatingSectionFromData("playbookitem", data.playbook[sourceName].playbookitem, true);
 			fillRepeatingSectionFromData("playbookvehicleitem", data.playbook[sourceName].playbookvehicleitem, true);
 			fillBaseData(data.playbook[sourceName].base, playbookAttributes);
+			if (sourceName === "technician") fillRepeatingSectionFromData("alchemical", data.alchemicals);
 		}
 	});
 });
@@ -387,6 +404,11 @@ Object.keys(allActions).forEach(attrName => {
 		.map(x => `change:${x}`).join(" "), () => calculateResistance(attrName)
 	);
 	on(`change:${attrName}`, calculateVice);
+});
+/* Register bandolier event handlers */
+Object.keys(bandolierSets).forEach(sectionName => {
+	const containerName = bandolierSets[sectionName];
+	on(`change:repeating_${sectionName}`, () => calculateBandolier(sectionName, containerName))
 });
 /* Calculate stash */
 on("change:stash", calculateStashFormula);

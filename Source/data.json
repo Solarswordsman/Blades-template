@@ -115,10 +115,6 @@
 				"description": "playbook_item_bandolier_description",
 				"numboxes": 1
 			}, {
-				"name": "playbook_item_bandolier",
-				"description": "playbook_item_bandolier_description",
-				"numboxes": 1
-			}, {
 				"name": "playbook_item_gadgets",
 				"description": "playbook_item_gadgets_description",
 				"numboxes": 1
