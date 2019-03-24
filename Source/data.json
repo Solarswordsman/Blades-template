@@ -47,6 +47,7 @@
 				"numboxes": "2"
 			}, {
 				"name": "playbook_item_your_custom_vehicle",
+				"description": "playbook_item_your_custom_vehicle_description",
 				"numboxes": "0"
 			}],
 			"playbookvehicleitem": [{
@@ -67,6 +68,91 @@
 			}, {
 				"name": "playbook_vehicle_item_rage",
 				"numboxes": "0"
+			}]
+		},
+		"technician": {
+			"ability": [
+				"chemist",
+				"jury_rig",
+				"mechanic",
+				"fortitude",
+				"road_master",
+				"doctor",
+				"saboteur",
+				"custom_implant",
+				"veteran"
+			],
+			"base": {
+				"engineer": "2",
+				"wreck": "1",
+				"friends_title": "friends",
+				"gatherinfo1": "gatherinfo_what_do_they_intend",
+				"gatherinfo2": "gatherinfo_how_can_I_get_them",
+				"gatherinfo3": "gatherinfo_are_they_telling_the_truth",
+				"gatherinfo4": "gatherinfo_what_can_i_tinker_with_here",
+				"gatherinfo5": "gatherinfo_what_might_happen",
+				"gatherinfo6": "gatherinfo_how_can_i_find",
+				"gatherinfo7": "gatherinfo_whats_going_on",
+				"playbook_description": "playbook_technician_description",
+				"xp_condition": "playbook_technician_xp_condition"
+			},
+			"playbookitem": [{
+				"bold": 1,
+				"name": "playbook_item_fine_engineering_tools",
+				"description": "playbook_item_fine_engineering_tools_description",
+				"numboxes": 1
+			}, {
+				"bold": 1,
+				"name": "playbook_item_fine_demolition_tools",
+				"description": "playbook_item_fine_demolition_tools_description",
+				"numboxes": 2
+			}, {
+				"name": "playbook_item_airgun_darts_syringe",
+				"description": "playbook_item_airgun_darts_syringe_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_bandolier",
+				"description": "playbook_item_bandolier_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_bandolier",
+				"description": "playbook_item_bandolier_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_gadgets",
+				"description": "playbook_item_gadgets_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_gadgets",
+				"description": "playbook_item_gadgets_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_your_custom_vehicle",
+				"description": "playbook_item_your_custom_vehicle_description",
+				"numboxes": "0"
+			}],
+			"playbookvehicleitem": [ {
+				"bold": 1,
+				"name": "playbook_vehicle_item_fine_modding_tools",
+				"description": "playbook_vehicle_item_fine_modding_tools_description",
+				"numboxes": 1
+			}, {
+				"bold": 1,
+				"name": "playbook_vehicle_item_fine_destruction_tools",
+				"description": "playbook_vehicle_item_fine_destruction_tools_description",
+				"numboxes": 2
+			}, {
+				"name": "playbook_vehicle_item_payload_bay",
+				"description": "playbook_vehicle_item_payload_bay_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_assisted_repair_system",
+				"description": "playbook_vehicle_item_assisted_repair_system_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_analytics_suite",
+				"description": "playbook_vehicle_item_analytics_suite_description",
+				"numboxes": 1
 			}]
 		}
 	},
@@ -274,6 +360,20 @@
 		"description": "passenger_space_description",
 		"numboxes": "1"
 	}],
+	"alchemicals": [
+		"bandolier_neutralize",
+		"bandolier_fuse",
+		"bandolier_drowning",
+		"bandolier_blindness",
+		"bandolier_flame",
+		"bandolier_shrapnel",
+		"bandolier_obsessive_interface",
+		"bandolier_incapacitating_cramps",
+		"bandolier_smoke_cloud",
+		"bandolier_electrical_vigor",
+		"bandolier_temporary_paralysis",
+		"bandolier_calm_suggestible"
+	],
 	"translatedDefaults": {
 		"cohort1_name": "cohort",
 		"contacts_title": "contacts",
