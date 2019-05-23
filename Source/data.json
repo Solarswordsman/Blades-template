@@ -21,7 +21,7 @@
 				"gatherinfo1": "gatherinfo_what_is_their_vehicle_capable_of",
 				"gatherinfo2": "gatherinfo_when_are_their_vehicles_unattended",
 				"gatherinfo3": "gatherinfo_what_do_they_intend",
-				"gatherinfo4": "gatherinfo_how_can_I_get_them",
+				"gatherinfo4": "gatherinfo_how_can_i_get_them",
 				"gatherinfo5": "gatherinfo_whats_the_best_way_through",
 				"gatherinfo6": "gatherinfo_where_did_x_go",
 				"playbook_description": "playbook_ace_description",
@@ -70,6 +70,152 @@
 				"numboxes": "0"
 			}]
 		},
+		"bureaucrat": {
+			"ability": [
+				"stay_late",
+				"cook_the_books",
+				"red_tape",
+				"connected",
+				"beneath_notice",
+				"work_hard_play_hard",
+				"rainy_day",
+				"forgettable",
+				"veteran"
+			],
+			"base": {
+				"study": "1",
+				"command": "2",
+				"friends_title": "friends",
+				"gatherinfo1": "gatherinfo_what_loophole",
+				"gatherinfo2": "gatherinfo_what_protocol",
+				"gatherinfo3": "gatherinfo_what_do_they_intend",
+				"gatherinfo4": "gatherinfo_how_can_i_get_them",
+				"gatherinfo5": "gatherinfo_are_they_telling_the_truth",
+				"gatherinfo6": "gatherinfo_how_can_i_find",
+				"gatherinfo7": "gatherinfo_whats_going_on",
+				"playbook_description": "playbook_bureaucrat_description",
+				"xp_condition": "playbook_bureaucrat_xp_condition"
+			},
+			"playbookitem": [{
+				"name": "playbook_item_fine_official_documents",
+				"description": "playbook_item_fine_official_documents_description",
+				"numboxes": "1",
+				"bold": "1"
+			}, {
+				"name": "playbook_item_body_scanner_wand",
+				"description": "playbook_item_body_scanner_wand_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_travel_reports",
+				"description": "playbook_item_travel_reports_description",
+				"numboxes": 0
+			}, {
+				"name": "playbook_item_high_priority_comm_decoder",
+				"description": "playbook_item_high_priority_comm_decoder_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_barricade_tape_projector",
+				"description": "playbook_item_barricade_tape_projector_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_item_your_custom_vehicle",
+				"description": "playbook_item_your_custom_vehicle_description",
+				"numboxes": "0"
+			}],
+			"playbookvehicleitem": [{
+				"name": "playbook_vehicle_item_inconspicuous_style",
+				"description": "playbook_vehicle_item_inconspicuous_style_description",
+				"numboxes": "0"
+			}, {
+				"name": "playbook_vehicle_item_several_hand_tool_sets",
+				"description": "playbook_vehicle_item_several_hand_tool_sets_description",
+				"numboxes": "1"
+			}, {
+				"bold": "1",
+				"name": "playbook_vehicle_item_fine_cargo_container",
+				"description": "playbook_vehicle_item_fine_cargo_container_description",
+				"bold": "1",
+				"numboxes": "1"
+			}, {
+				"name": "playbook_vehicle_item_inhibitor_clamp",
+				"description": "playbook_vehicle_item_inhibitor_clamp_description",
+				"numboxes": "1"
+			}]
+		},
+		"empath": {
+			"ability": [
+				"telepathy",
+				"broadcast",
+				"farsight",
+				"emoji",
+				"carouse",
+				"everybody_hurts",
+				"share_the_burden",
+				"good_hearted",
+				"veteran"
+			],
+			"base": {
+				"study": "2",
+				"survey": "1",
+				"friends_title": "friends",
+				"gatherinfo1": "gatherinfo_how_is_this_person_hurt",
+				"gatherinfo2": "gatherinfo_how_is_this_person_vulnerable",
+				"gatherinfo3": "gatherinfo_are_they_telling_the_truth",
+				"gatherinfo4": "gatherinfo_what_drives_them",
+				"gatherinfo5": "gatherinfo_what_are_they_really",
+				"gatherinfo6": "gatherinfo_who_is_most_afraid_of_me",
+				"gatherinfo7": "gatherinfo_whats_going_on",
+				"playbook_description": "playbook_empath_description",
+				"xp_condition": "playbook_empath_xp_condition"
+			},
+			"playbookitem": [{
+				"name": "playbook_item_prognostication_tools",
+				"description": "playbook_item_prognostication_tools_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_fine_artistic_tools",
+				"description": "playbook_item_fine_artistic_tools_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_item_personal_emblem",
+				"description": "playbook_item_personal_emblem_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_symbol_of_hope",
+				"description": "playbook_item_symbol_of_hope_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_fine_stun_gun",
+				"description": "playbook_item_fine_stun_gun_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_item_your_custom_vehicle",
+				"description": "playbook_item_your_custom_vehicle_description",
+				"numboxes": "0"
+			}],
+			"playbookvehicleitem": [{
+				"name": "playbook_vehicle_item_inspiring_appearance",
+				"description": "playbook_vehicle_item_inspiring_appearance_description",
+				"numboxes": 1
+			}, {
+				"bold": 1,
+				"name": "playbook_vehicle_item_fine_broadcast_system",
+				"description": "playbook_vehicle_item_fine_broadcast_system_description",
+				"numboxes": 1
+			}, {
+				"bold": 1,
+				"name": "playbook_vehicle_item_fine_social_data_retrieval_program",
+				"description": "playbook_vehicle_item_fine_social_data_retrieval_program_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_psionic_amplifier",
+				"description": "playbook_vehicle_item_psionic_amplifier_description",
+				"numboxes": 1
+		  }]
+		},
 		"technician": {
 			"ability": [
 				"chemist",
@@ -87,7 +233,7 @@
 				"wreck": "1",
 				"friends_title": "friends",
 				"gatherinfo1": "gatherinfo_what_do_they_intend",
-				"gatherinfo2": "gatherinfo_how_can_I_get_them",
+				"gatherinfo2": "gatherinfo_how_can_i_get_them",
 				"gatherinfo3": "gatherinfo_are_they_telling_the_truth",
 				"gatherinfo4": "gatherinfo_what_can_i_tinker_with_here",
 				"gatherinfo5": "gatherinfo_what_might_happen",
@@ -151,6 +297,7 @@
 				"numboxes": 1
 			}]
 		}
+
 	},
 	"factions": {
 	},
