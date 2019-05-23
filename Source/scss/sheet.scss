@@ -1310,6 +1310,9 @@ input.sheet-tooth {
 .sheet-holdtooth + span {
 	background-image: url('https://raw.githubusercontent.com/Solarswordsman/roll20-character-sheets/80787d36d54dbfed6130e185edd63719ed9d1f95/Beam%20Saber/Assets/toothempty.png');
 }
+.sheet-stresstooth[type=radio] ~ .sheet-stresstooth.sheet-turf6 + span {
+	background-image: url('https://raw.githubusercontent.com/Solarswordsman/roll20-character-sheets/d7cdd2394f448603c9b4e18588fe6393dece9686/Beam%20Saber/Assets/hearttooth-filled.png');
+}
 .sheet-regulartooth + span {
 	width: 8px;
 	background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/teeth/shorttooth-red.png');
@@ -1389,10 +1392,10 @@ input.sheet-zero {
 .sheet-turf-input[value="4"] ~ input[type=radio].sheet-turf4 + span,
 .sheet-turf-input[value="5"] ~ input[type=radio].sheet-turf5 + span,
 .sheet-turf-input[value="6"] ~ input[type=radio].sheet-turf6 + span {
-	background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/teeth/stresstooth-black.png');
+	background-image: url('https://raw.githubusercontent.com/Solarswordsman/roll20-character-sheets/d7cdd2394f448603c9b4e18588fe6393dece9686/Beam%20Saber/Assets/hearttooth-blocked.png');
 }
 .sheet-tooth:checked ~ .sheet-stresstooth.sheet-turf6 + span {
-	background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/teeth/stresstooth-halfgrey.png');
+	background-image: url('https://raw.githubusercontent.com/Solarswordsman/roll20-character-sheets/d7cdd2394f448603c9b4e18588fe6393dece9686/Beam%20Saber/Assets/hearttooth-empty.png');
 }
 /* SPECIAL ABILITIES*/
 .sheet-specialability,
