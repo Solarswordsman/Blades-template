@@ -70,6 +70,79 @@
 				"numboxes": "0"
 			}]
 		},
+		"empath": {
+			"ability": [
+				"telepathy",
+				"broadcast",
+				"farsight",
+				"emoji",
+				"carouse",
+				"everybody_hurts",
+				"share_the_burden",
+				"good_hearted",
+				"veteran"
+			],
+			"base": {
+				"study": "2",
+				"survey": "1",
+				"friends_title": "friends",
+				"gatherinfo1": "gatherinfo_how_is_this_person_hurt",
+				"gatherinfo2": "gatherinfo_how_is_this_person_vulnerable",
+				"gatherinfo3": "gatherinfo_are_they_telling_the_truth",
+				"gatherinfo4": "gatherinfo_what_drives_them",
+				"gatherinfo5": "gatherinfo_what_are_they_really",
+				"gatherinfo6": "gatherinfo_who_is_most_afraid_of_me",
+				"gatherinfo7": "gatherinfo_whats_going_on",
+				"playbook_description": "playbook_empath_description",
+				"xp_condition": "playbook_empath_xp_condition"
+			},
+			"playbookitem": [{
+				"name": "playbook_item_prognostication_tools",
+				"description": "playbook_item_prognostication_tools_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_fine_artistic_tools",
+				"description": "playbook_item_fine_artistic_tools_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_item_personal_emblem",
+				"description": "playbook_item_personal_emblem_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_symbol_of_hope",
+				"description": "playbook_item_symbol_of_hope_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_fine_stun_gun",
+				"description": "playbook_item_fine_stun_gun_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_item_your_custom_vehicle",
+				"description": "playbook_item_your_custom_vehicle_description",
+				"numboxes": "0"
+			}],
+			"playbookvehicleitem": [{
+				"name": "playbook_vehicle_item_inspiring_appearance",
+				"description": "playbook_vehicle_item_inspiring_appearance_description",
+				"numboxes": 1
+			}, {
+				"bold": 1,
+				"name": "playbook_vehicle_item_fine_broadcast_system",
+				"description": "playbook_vehicle_item_fine_broadcast_system_description",
+				"numboxes": 1
+			}, {
+				"bold": 1,
+				"name": "playbook_vehicle_item_fine_social_data_retrieval_program",
+				"description": "playbook_vehicle_item_fine_social_data_retrieval_program_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_psionic_amplifier",
+				"description": "playbook_vehicle_item_psionic_amplifier_description",
+				"numboxes": 1
+		  }]
+		},
 		"technician": {
 			"ability": [
 				"chemist",
@@ -151,6 +224,7 @@
 				"numboxes": 1
 			}]
 		}
+
 	},
 	"factions": {
 	},
