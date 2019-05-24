@@ -28,7 +28,7 @@ mixin makeupgrade(number, numboxes, def, desc)
 		// Logo, Header text fields
 		.col100.header.flex-wrap
 			.col55.bladeslogo
-			.col45.crewheader.label(data-i18n='crew_sheet')
+			.col45.crewheader.label(data-i18n='squad_sheet')
 			label.col55
 				+text-input('crew_name')
 				.label.text.title(data-i18n='name')
@@ -71,13 +71,13 @@ mixin makeupgrade(number, numboxes, def, desc)
 					+radio('hold')(value='strong', checked).tooth.holdtooth
 				// Tier
 				.blackheader
-					+roll('Tier', '{{resist=1}} {{short=1}} {{title=^{crew_tier}}} {{subtitle=^{roll_their}}} @{crew_tier_formula}')(data-i18n='tier').label.inherit.rollbutton
+					+roll('Tier', '{{resist=1}} {{short=1}} {{title=^{squad_tier}}} {{subtitle=^{roll_their}}} @{crew_tier_formula}')(data-i18n='tier').label.inherit.rollbutton
 					+hidden-input('crew_tier_formula')(value=zerodiceFormula)
 				.tier.flex
-					+hidden-checkbox('crew_tier')(value='0', checked).fakeradio
+					+hidden-checkbox('squad_tier')(value='0', checked).fakeradio
 					//- generates 4 tier circles
 					each num in range(1,4)
-						+checkbox('crew_tier')(value=num).checkbox.circlebox.fakeradio
+						+checkbox('squad_tier')(value=num).checkbox.circlebox.fakeradio
 		// Claims
 		.claims.col100.free-repcontrol
 			.claimsrow.flex
@@ -141,9 +141,9 @@ mixin makeupgrade(number, numboxes, def, desc)
 			.crewcoin.col52b
 				.col100.flex
 					.blackheader.crewcoin1
-						.label(data-i18n='coin')
+						.label(data-i18n='cash')
 					.greyheader.crewcoin2
-						.label(data-i18n='vaults')
+						.label(data-i18n='storage')
 				.col100.flex.crewcoin-coins
 					+radio('crewcoin')(value='0', checked).zero
 					each num in range(1,4)
@@ -155,6 +155,41 @@ mixin makeupgrade(number, numboxes, def, desc)
 					each num in range(9,16)
 						+radio('crewcoin')(value=num).radiobox.vaultcoin
 				.col100.crewcoin-desc(data-i18n='upon_crew_advance')
+		// Materiel and Personnel
+		.col100.flex.materiel-and-personnel.def-margin
+			.crewcoin.col47
+				.col100.flex
+					.blackheader.squadresource1
+						.label(data-i18n='materiel')
+					.greyheader.squadresource2
+						.label(data-i18n='storage')
+				.col100.flex.squadresources-resources
+					+radio('squadmateriel')(value='0', checked).zero
+					each num in range(1,4)
+						+radio('squadmateriel')(value=num).radiobox
+					.crewcoinbar
+					each num in range(5,8)
+						+radio('squadmateriel')(value=num).radiobox
+					.crewcoinbar
+					each num in range(9,16)
+						+radio('squadmateriel')(value=num).radiobox
+			.crewcoin.col52b
+				.col100.flex
+					.blackheader.squadresource1
+						.label(data-i18n='personnel')
+					.greyheader.squadresource2
+						.label(data-i18n='storage')
+				.col100.flex.squadresources-resources
+					+radio('squadpersonnel')(value='0', checked).zero
+					each num in range(1,4)
+						+radio('squadpersonnel')(value=num).radiobox
+					.crewcoinbar
+					each num in range(5,8)
+						+radio('squadpersonnel')(value=num).radiobox
+					.crewcoinbar
+					each num in range(9,16)
+						+radio('squadpersonnel')(value=num).radiobox
+
 		// Special abilities
 		.col100.def-margin
 			.specialheader.col100.label(data-i18n='special_abilities')
@@ -169,7 +204,7 @@ mixin makeupgrade(number, numboxes, def, desc)
 		.col100.def-margin
 			.advancement-header.flex.blackheader
 				.label.markxp(data-i18n='mark_xp:')
-				.label(data-i18n='crew_advancement')
+				.label(data-i18n='squad_advancement')
 				.xpholder.flex
 					+radio('crew_xp')(value='0', checked).tooth.zero
 					//- up to 10 XP
@@ -189,8 +224,8 @@ mixin makeupgrade(number, numboxes, def, desc)
 	.col45.flex-wrap.right-column
 		// Crew Type
 		.playbook.flex
-			+text-input('crew_type')(data-i18n-placeholder='crew', placeholder='Crew').label
-			+textarea('crew_description')(data-i18n-placeholder='crew_description', placeholder='A short crew description').label
+			+text-input('squad_type')(data-i18n-placeholder='squad', placeholder='Squad').label
+			+textarea('squad_description')(data-i18n-placeholder='squad_description', placeholder='A short squad description').label
 			+hidden-input('show_playbook_reminder')(value='1').hider
 			.reminder
 				span(data-i18n='autofill_reminder_crew')
@@ -200,7 +235,7 @@ mixin makeupgrade(number, numboxes, def, desc)
 		.col53.small-margin
 			// Upgrades
 			.itemheader.col100
-				span.label(data-i18n='crew_upgrades')
+				span.label(data-i18n='squad_upgrades')
 			.itemholder.col100.upgrades
 				// Specific upgrades
 				.playbookitems.col100.free-repcontrol

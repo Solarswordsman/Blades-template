@@ -317,10 +317,10 @@ const crewAttributes = [...new Set([].concat(...Object.keys(data.crew).map(x => 
 	}, {});
 /* EVENT HANDLERS */
 /* Set default fields when setting crew type or playbook */
-on("change:crew_type change:playbook", event => {
-	getAttrs(["playbook", "crew_type", "changed_attributes", "setting_autofill", ...watchedAttributes], v => {
+on("change:squad_type change:playbook", event => {
+	getAttrs(["playbook", "squad_type", "changed_attributes", "setting_autofill", ...watchedAttributes], v => {
 		const changedAttributes = (v.changed_attributes || "").split(","),
-			sourceName = translatedNames[(event.sourceAttribute === "crew_type" ? v.crew_type : v.playbook).toLowerCase()],
+			sourceName = translatedNames[(event.sourceAttribute === "squad_type" ? v.squad_type : v.playbook).toLowerCase()],
 			fillBaseData = (inputData, defaultAttrNames) => {
 				if (data) {
 					const finalSettings = defaultAttrNames.filter(name => !changedAttributes.includes(name))
@@ -336,11 +336,11 @@ on("change:crew_type change:playbook", event => {
 					mySetAttrs(finalSettings);
 				}
 			};
-		if (event.sourceAttribute === "crew_type" ? v.crew_type : v.playbook) {
+		if (event.sourceAttribute === "squad_type" ? v.squad_type : v.playbook) {
 			setAttr("show_playbook_reminder", "0");
 		}
 		if (v.setting_autofill !== "1") return;
-		if (event.sourceAttribute === "crew_type" && sourceName in data.crew) {
+		if (event.sourceAttribute === "squad_type" && sourceName in data.crew) {
 			fillRepeatingSectionFromData("contact", data.crew[sourceName].contact, true);
 			fillRepeatingSectionFromData("crewability", data.crew[sourceName].crewability, true);
 			fillRepeatingSectionFromData("upgrade", data.crew[sourceName].upgrade, true);
@@ -553,11 +553,11 @@ on("sheet:opened", () => {
 });
 /* INITIALISATION AND UPGRADES */
 on("sheet:opened", () => {
-	getAttrs(["sheet_type", "changed_attributes", "crew_type", "playbook"], v => {
+	getAttrs(["sheet_type", "changed_attributes", "squad_type", "playbook"], v => {
 		/* Make sure sheet_type is never 0 */
 		if (!["crew", "faction"].includes(v.sheet_type)) setAttr("sheet_type", "character");
 		/* Remove reminder box if we have playbook or crew name */
-		if (v.playbook || v.crew_type) setAttr("show_playbook_reminder", "0");
+		if (v.playbook || v.squad_type) setAttr("show_playbook_reminder", "0");
 	});
 	/* Setup and upgrades */
 	getAttrs(["version"], v => {

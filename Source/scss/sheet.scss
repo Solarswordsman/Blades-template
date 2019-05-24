@@ -14,6 +14,7 @@ $redtext: #c43c35;
 
 /* neon teal */
 $neonteal: #0fb49a;
+$darkteal: #0b6f5f;
 $paletteteal: #354B45;
 
 /* GENERALITIES */
@@ -202,7 +203,7 @@ $paletteteal: #354B45;
 	}
 	.sheet-3waybox:not(:checked) + .sheet-3waybox,
 	input[value="character"]:not(:checked) ~ span[data-i18n="character_mode"],
-	input[value="crew"]:not(:checked) ~ span[data-i18n="crew_mode"],
+	input[value="crew"]:not(:checked) ~ span[data-i18n="squad_mode"],
 	input[value="faction"][type=radio]:not(:checked) ~ span[data-i18n="faction_mode"] {
 		display: none;
 	}
@@ -325,6 +326,7 @@ $paletteteal: #354B45;
 .sheet-blackheader, .sheet-black-on-grey, .sheet-greyheader {
 	font-size: 11px;
 	letter-spacing: 1px;
+	color: white;
 }
 .sheet-blackheader, .sheet-greyheader {
 	height: 16px;
@@ -332,7 +334,7 @@ $paletteteal: #354B45;
 	padding: 1px 2px 0 4px;
 }
 .sheet-black-on-grey, .sheet-greyheader {
-	background: $neonteal; // Was a darker grey -- should highlight / darken this
+	background: $darkteal; // Was a darker grey -- should highlight / darken this
 }
 .sheet-black-on-grey {
 	text-align: center;
@@ -341,7 +343,7 @@ $paletteteal: #354B45;
 	padding-left: 1px;
 	height: 13px;
 	line-height: 13px;
-	z-index: -1;
+	//z-index: -1;
 }
 .sheet-plainheader {
 	width: 100%;
@@ -1374,6 +1376,11 @@ input.sheet-zero {
 		top: 3px;
 	}
 }
+.sheet-crewcoin .sheet-squadresources-resources {
+	input.sheet-zero, .sheet-zero + span {
+		left: -3px;
+	}
+}
 .sheet-stress2, .sheet-rep2, .sheet-heat2 {
 	input.sheet-zero, .sheet-zero + span {
 		position: absolute;
@@ -1385,6 +1392,7 @@ input.sheet-zero {
 .sheet-turfbox input[type=radio] {
 	height: 12px;
 	width: calc(100%/12);
+	cursor: copy;
 }
 .sheet-turf-input[value="1"] ~ input[type=radio].sheet-turf1 + span,
 .sheet-turf-input[value="2"] ~ input[type=radio].sheet-turf2 + span,
@@ -1598,6 +1606,10 @@ input.sheet-zero {
 	padding: 4px 0 0 3px;
 	position: relative;
 }
+.sheet-squadresources-resources {
+	padding: 4px 0 0 10px;
+	position: relative;
+}
 .sheet-crewcoin-desc {
 	font-size: 10px;
 	line-height: 14px;
@@ -1626,7 +1638,7 @@ input.sheet-zero {
 		border-color: $lighter;
 	}
 }
-.sheet-coin-and-stash {
+.sheet-coin-and-stash, .sheet-materiel-and-personnel {
 	input.sheet-radiobox {
 		width: 13px;
 		height: 13px;
@@ -1764,7 +1776,7 @@ input.sheet-zero {
 	padding: 1px 7px;
 }
 /* STRESS, REP, et cetera */
-.sheet-rep-and-hold, .sheet-heat-and-vault {
+.sheet-rep-and-hold, .sheet-heat-and-vault, .sheet-materiel-and-personnel {
 	justify-content: space-between;
 }
 .sheet-hold {
@@ -1819,15 +1831,19 @@ input.sheet-zero {
 .sheet-hold > label,
 .sheet-heat > div,
 .sheet-rep > div,
-.sheet-crewcoin2 {
+.sheet-crewcoin2,
+.sheet-squadresource2 {
 	flex-grow: 1;
 }
 .sheet-heat2 {
-	width: 107px;
+	width: 106px;
 	position: relative;
 }
 .sheet-crewcoin1 {
 	width: 26%;
+}
+.sheet-squadresource1 {
+	width: 36%;
 }
 .sheet-regulartooth + span,
 .sheet-rep .sheet-tooth + span,
@@ -2169,7 +2185,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 .sheet-cohort-condition-name {
 	font-size: 7.5px;
 	margin-right: 2px;
-	z-index: -1;
+	//z-index: -1;
 }
 .sheet-cohort-dropdown {
 	background: black;
