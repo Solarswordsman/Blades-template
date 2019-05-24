@@ -214,7 +214,95 @@
 				"name": "playbook_vehicle_item_psionic_amplifier",
 				"description": "playbook_vehicle_item_psionic_amplifier_description",
 				"numboxes": 1
-		  }]
+			}]
+		},
+		"envoy": {
+			"ability": [
+				"rooks_gambit",
+				"cool_under_pressure",
+				"regents_brilliance",
+				"like_looking_in_a_mirror",
+				"a_little_something_on_the_side",
+				"read_em_and_weep",
+				"subterfuge",
+				"trust_in_me",
+				"veteran"
+			],
+			"base": {
+				"consort": "1",
+				"sway": "2",
+				"friends_title": "friends",
+				"gatherinfo1": "gatherinfo_what_do_they_intend",
+				"gatherinfo2": "gatherinfo_how_can_i_get_them",
+				"gatherinfo3": "gatherinfo_are_they_telling_the_truth",
+				"gatherinfo4": "gatherinfo_what_are_they_really",
+				"gatherinfo5": "gatherinfo_what_do_they_really_care_about",
+				"gatherinfo6": "gatherinfo_how_can_i_blend_in_here",
+				"gatherinfo7": "gatherinfo_what_going_on",
+				"playbook_description": "playbook_envoy_description",
+				"xp_condition": "playbook_envoy_xp_condition"
+			},
+			"playbookitem": [{
+				"name": "playbook_item_fine_clothes_and_jewelry_w",
+				"description": "playbook_item_fine_clothes_and_jewelry_w_description",
+				"numboxes": 0,
+				"bold": 1
+			}, {
+				"name": "playbook_item_fine_clothes_and_jewelry_c",
+				"description": "playbook_item_fine_clothes_and_jewelry_c_description",
+				"numboxes": 2,
+				"bold": 1
+			}, {
+				"name": "playbook_item_fine_disguise_kit",
+				"description": "playbook_item_fine_disguise_kit_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_item_fine_trick_gambling_kit",
+				"description": "playbook_item_fine_trick_gambling_kit_description",
+				"numboxes": 0,
+				"bold": 1
+			}, {
+				"name": "playbook_item_fine_espionage_gear",
+				"description": "playbook_item_fine_espionage_gear_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_item_trance_powder",
+				"description": "playbook_item_trance_powder_description",
+				"numboxes": 0
+			},{
+				"name": "playbook_item_cane_sword",
+				"description": "playbook_item_cane_sword_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_your_custom_vehicle",
+				"description": "playbook_item_your_custom_vehicle_description",
+				"numboxes": "0"
+			}],
+			"playbookvehicleitem": [{
+				"name": "playbook_vehicle_item_fine_holo_projector",
+				"description": "playbook_vehicle_item_fine_holo_projector_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_vehicle_item_chaff_countermeasure",
+				"description": "playbook_vehicle_item_chaff_countermeasure_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_vehicle_item_concealed_melee_weapon",
+				"description": "playbook_vehicle_item_concealed_melee_weapon_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_stylish_appearance",
+				"description": "playbook_vehicle_item_stylish_appearance_description",
+				"numboxes": 0
+			}, {
+				"name": "playbook_vehicle_item_luxurious_passenger_space",
+				"description": "playbook_vehicle_item_luxurious_passenger_space_description",
+				"numboxes": 1
+			}]
 		},
 		"technician": {
 			"ability": [
