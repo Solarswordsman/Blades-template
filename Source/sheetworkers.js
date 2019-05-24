@@ -252,7 +252,7 @@ const mySetAttrs = (attrs, options, callback) => {
 	}),
 	calculateCohortDice = prefixes => {
 		const sourceAttrs = [
-			"crew_tier",
+			"squad_tier",
 			...prefixes.map(p => `${p}_impaired`),
 			...prefixes.map(p => `${p}_type`),
 			...prefixes.map(p => `${p}_roll_formula`),
@@ -260,7 +260,7 @@ const mySetAttrs = (attrs, options, callback) => {
 		getAttrs(sourceAttrs, v => {
 			const setting = {};
 			prefixes.forEach(prefix => {
-				const dice = (parseInt(v.crew_tier) || 0) - (parseInt(v[`${prefix}_impaired`]) || 0) +
+				const dice = (parseInt(v.squad_tier) || 0) - (parseInt(v[`${prefix}_impaired`]) || 0) +
 						((v[`${prefix}_type`] === "elite" || v[`${prefix}_type`] === "expert") ? 1 : 0),
 					formula = buildRollFormula(dice);
 				if (formula !== v[`${prefix}_roll_formula`]) setting[`${prefix}_roll_formula`] = formula;
@@ -445,9 +445,9 @@ autogenSections.forEach(sectionName => {
 on("change:setting_extra_stress", event => setAttr("stress_max", 9 + (parseInt(event.newValue) || 0)));
 on("change:setting_extra_trauma", event => setAttr("trauma_max", 4 + (parseInt(event.newValue) || 0)));
 /* Calculate cohort quality */
-on(["crew_tier", "cohort1_impaired", "cohort1_type"].map(x => `change:${x}`).join(" "), () => calculateCohortDice(["cohort1"]));
+on(["squad_tier", "cohort1_impaired", "cohort1_type"].map(x => `change:${x}`).join(" "), () => calculateCohortDice(["cohort1"]));
 on("change:repeating_cohort", () => calculateCohortDice(["repeating_cohort"]));
-on("change:crew_tier", () => {
+on("change:squad_tier", () => {
 	getSectionIDs("repeating_cohort", a => calculateCohortDice(a.map(id => `repeating_cohort_${id}`)));
 });
 on("change:char_cohort_quality change:char_cohort_impaired change:setting_show_cohort", () => {
@@ -470,7 +470,7 @@ handleBoxesFill("bandolier1_check_");
 handleBoxesFill("bandolier2_check_");
 ["item", "playbookitem", "vehicleitem", "playbookvehicleitem", "upgrade"].forEach(sName => handleBoxesFill(`repeating_${sName}:check_`));
 /* Pseudo-radios */
-["crew_tier", ...actionsFlat].forEach(name => {
+["squad_tier", ...actionsFlat].forEach(name => {
 	on(`change:${name}`, event => {
 		if (String(event.newValue) === "0" && event.sourceType === "player") {
 			setAttr(name, (parseInt(event.previousValue) || 1) - 1);

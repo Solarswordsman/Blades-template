@@ -54,7 +54,7 @@ mixin makeupgrade(number, numboxes, def, desc)
 						+radio('rep')(class=['tooth', 'stresstooth', ...((num < 6) ? [] : [...Array(num-6).keys()].map(x => `turf${6-x}`))], value=num)
 				.rep3.blackborder
 					.black-on-grey
-						.label(data-i18n='turf')
+						.label(data-i18n='heart')
 					.turfzero-holder
 						+radio('turf')(value='0', checked).zero
 			// Hold
