@@ -310,7 +310,7 @@
 				"iron_will",
 				"turing_test",
 				"data_pack",
-				"programmer",
+				"crowdsource",
 				"tesla",
 				"warded",
 				"veteran"
@@ -412,9 +412,9 @@
 		},
 		"technician": {
 			"ability": [
-				"chemist",
+				"simulation",
 				"jury_rig",
-				"mechanic",
+				"researcher",
 				"fortitude",
 				"road_master",
 				"doctor",
