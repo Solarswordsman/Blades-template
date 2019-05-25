@@ -482,6 +482,78 @@
 				"numboxes": 1
 			}]
 		},
+		"officer": {
+			"ability": [
+				"tactical_genius",
+				"calculating",
+				"rally",
+				"functioning_vice",
+				"heart_to_heart",
+				"warlord",
+				"mastermind",
+				"weaving_the_web",
+				"veteran"
+			],
+			"base": {
+				"consort": "2",
+				"study": "1",
+				"friends_title": "friends",
+				"gatherinfo1": "gatherinfo_what_do_they_want_most",
+				"gatherinfo2": "gatherinfo_what_should_I_look",
+				"gatherinfo3": "gatherinfo_wheres_the_leverage_here",
+				"gatherinfo4": "gatherinfo_how_can_i_discover",
+				"gatherinfo5": "gatherinfo_what_do_they_intend",
+				"gatherinfo6": "gatherinfo_how_can_i_get_them",
+				"gatherinfo7": "gatherinfo_what_going_on",
+				"playbook_description": "playbook_officer_description",
+				"xp_condition": "playbook_officer_xp_condition"
+			},
+			"playbookitem": [{
+				"name": "playbook_item_fine_cover_identity",
+				"description": "playbook_item_fine_cover_identity_description",
+				"numboxes": 0,
+				"bold": 1
+			}, {
+				"name": "playbook_item_fine_gift",
+				"description": "playbook_item_fine_gift_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_item_blueprints_for_a_facility_or_vehicle",
+				"description": "playbook_item_blueprints_for_a_facility_or_vehicle_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_vial_of_sleep_dust",
+				"description": "playbook_item_vial_of_sleep_dust_description",
+				"numboxes": 0
+			}, {
+				"name": "playbook_item_concealed_palm_pistol",
+				"description": "playbook_item_concealed_palm_pistol_description",
+				"numboxes": 0
+			}, {
+				"name": "playbook_item_your_custom_vehicle",
+				"description": "playbook_item_your_custom_vehicle_description",
+				"numboxes": "0"
+			}],
+			"playbookvehicleitem": [{
+				"name": "playbook_vehicle_item_3d_structural_analysis",
+				"description": "playbook_vehicle_item_3d_structural_analysis_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_fine_friend_or_foe_tags",
+				"description": "playbook_vehicle_item_fine_friend_or_foe_tags_description",
+				"numboxes": 0,
+				"bold": 1
+			}, {
+				"name": "playbook_vehicle_item_concealed_gun",
+				"description": "playbook_vehicle_item_concealed_gun_description",
+				"numboxes": 0
+			}, {
+				"name": "playbook_vehicle_item_small_armoury",
+				"description": "playbook_vehicle_item_small_armoury_description",
+				"numboxes": 1
+			}]
+		},
 		"technician": {
 			"ability": [
 				"simulation",
