@@ -554,6 +554,77 @@
 				"numboxes": 1
 			}]
 		},
+		"scout": {
+			"ability": [
+				"sharpshooter",
+				"focused",
+				"terminator",
+				"ranger",
+				"survivor",
+				"tough_as_nails",
+				"determination",
+				"veteran"
+			],
+			"base": {
+				"hunt": "2",
+				"survey": "1",
+				"friends_title": "friends",
+				"gatherinfo1": "gatherinfo_what_do_they_intend",
+				"gatherinfo2": "gatherinfo_how_can_i_get_them",
+				"gatherinfo3": "gatherinfo_what_are_they_really",
+				"gatherinfo4": "gatherinfo_where_are_they_vulnerable",
+				"gatherinfo5": "gatherinfo_where_did_x_go",
+				"gatherinfo6": "gatherinfo_how_can_i_find",
+				"gatherinfo7": "gatherinfo_what_going_on",
+				"playbook_description": "playbook_scout_description",
+				"xp_condition": "playbook_scout_xp_condition"
+			},
+			"playbookitem": [{
+				"name": "playbook_item_fine_machine_pistol",
+				"description": "playbook_item_fine_machine_pistol_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_item_fine_sniper_rifle",
+				"description": "playbook_item_fine_sniper_rifle_description",
+				"numboxes": 2,
+				"bold": 1
+			}, {
+				"name": "playbook_item_1_type_of_special_ammunition",
+				"description": "playbook_item_1_type_of_special_ammunition",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_rangefinder_laser_painter_binoculars",
+				"description": "playbook_item_rangefinder_laser_painter_binoculars_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_a_well_programmed_hunter_robot",
+				"description": "playbook_item_a_well_programmed_hunter_robot_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_your_custom_vehicle",
+				"description": "playbook_item_your_custom_vehicle_description",
+				"numboxes": "0"
+			}],
+			"playbookvehicleitem": [{
+				"name": "playbook_vehicle_item_fine_heavy_cannon",
+				"description": "playbook_vehicle_item_fine_heavy_cannon_description",
+				"numboxes": 2,
+				"bold": 1
+			}, {
+				"name": "playbook_vehicle_item_special_ammunition",
+				"description": "playbook_vehicle_item_special_ammunition_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_magnification_suite",
+				"description": "playbook_vehicle_item_magnification_suite_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_drone_carrier",
+				"description": "playbook_vehicle_item_drone_carrier_description",
+				"numboxes": 1
+			}]
+		},
 		"technician": {
 			"ability": [
 				"simulation",
