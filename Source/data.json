@@ -591,7 +591,7 @@
 				"bold": 1
 			}, {
 				"name": "playbook_item_1_type_of_special_ammunition",
-				"description": "playbook_item_1_type_of_special_ammunition",
+				"description": "playbook_item_1_type_of_special_ammunition_description",
 				"numboxes": 1
 			}, {
 				"name": "playbook_item_rangefinder_laser_painter_binoculars",
@@ -622,6 +622,93 @@
 			}, {
 				"name": "playbook_vehicle_item_drone_carrier",
 				"description": "playbook_vehicle_item_drone_carrier_description",
+				"numboxes": 1
+			}]
+		},
+		"soldier": {
+			"ability": [
+				"battleborn",
+				"bodyguard",
+				"robot_fighter",
+				"leader",
+				"mule",
+				"not_to_be_trifled_with",
+				"brutal",
+				"vigorous",
+				"veteran"
+			],
+			"base": {
+				"struggle": "2",
+				"command": "1",
+				"friends_title": "friends",
+				"gatherinfo1": "gatherinfo_how_can_i_hurt_them",
+				"gatherinfo2": "gatherinfo_who_is_most_afraid_of_me",
+				"gatherinfo3": "gatherinfo_who_is_most_dangerous_here",
+				"gatherinfo4": "gatherinfo_what_do_they_intend",
+				"gatherinfo5": "gatherinfo_how_can_i_get_them",
+				"gatherinfo6": "gatherinfo_are_they_telling_the_truth",
+				"gatherinfo7": "gatherinfo_what_going_on",
+				"playbook_description": "playbook_soldier_description",
+				"xp_condition": "playbook_soldier_xp_condition"
+			},
+			"playbookitem": [{
+				"name": "playbook_item_fine_melee_weapon",
+				"description": "playbook_item_fine_melee_weapon_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_item_fine_assault_rifle",
+				"description": "playbook_item_fine_assault_rifle_description",
+				"numboxes": 2,
+				"bold": 1
+			}, {
+				"name": "playbook_item_anti_armour_weapon",
+				"description": "playbook_item_anti_armour_weapon_description",
+				"numboxes": 2
+			}, {
+				"name": "playbook_item_frag_flash_or_smoke_grenades",
+				"description": "playbook_item_frag_flash_or_smoke_grenades_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_+grenade",
+				"description": "playbook_item_+grenade_description",
+				"numboxes": 0,
+				"short": "1"
+			}, {
+				"name": "playbook_item_+grenade",
+				"description": "playbook_item_+grenade_description",
+				"numboxes": 0,
+				"short": "1"
+			}, {
+				"name": "playbook_item_handcuffs_or_zipties",
+				"description": "playbook_item_handcuffs_or_zipties_description",
+				"numboxes": 0
+			}, {
+				"name": "playbook_item_stimpack",
+				"description": "playbook_item_stimpack_description",
+				"numboxes": 0
+			}, {
+				"name": "playbook_item_your_custom_vehicle",
+				"description": "playbook_item_your_custom_vehicle_description",
+				"numboxes": "0"
+			}],
+			"playbookvehicleitem": [{
+				"name": "playbook_vehicle_item_fine_melee_weapon",
+				"description": "playbook_vehicle_item_fine_melee_weapon_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_vehicle_item_fine_heavy_melee_weapon",
+				"description": "playbook_vehicle_item_fine_heavy_melee_weapon_description",
+				"numboxes": 2,
+				"bold": 1
+			}, {
+				"name": "playbook_vehicle_item_scary_weapon_or_tool",
+				"description": "playbook_vehicle_item_scary_weapon_or_tool_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_a_tangle_gun",
+				"description": "playbook_vehicle_a_tangle_gun_description",
 				"numboxes": 1
 			}]
 		},
