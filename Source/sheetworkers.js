@@ -85,6 +85,15 @@ Object.keys(data.playbook).forEach(playbook => {
 		}
 		item.boxes_chosen = "1";
 	});
+	if (data.playbook[playbook].hackrigitem) {
+		data.playbook[playbook].hackrigitem.forEach(item => {
+			item.name = getTranslation(item.name);
+			if (item.description) {
+				item.description = getTranslationByKey(item.description) || "";
+			}
+			item.boxes_chosen = "1";
+		});
+	}
 });
 const playbookAbilityMap = new Map([...Object.values(data.playbook).map(x => x.ability).reduce((m, v) => {
 	v.forEach(a => m.add(a));
@@ -282,6 +291,7 @@ const crewAttributes = [...new Set([].concat(...Object.keys(data.crew).map(x => 
 		"repeating_crewability:description",
 		"repeating_playbookitem:name",
 		"repeating_playbookvehicleitem:name",
+		"repeating_hackrigitem:name",
 		"repeating_upgrade:name",
 		"repeating_friend:name",
 		"repeating_contact:name",
@@ -308,6 +318,7 @@ const crewAttributes = [...new Set([].concat(...Object.keys(data.crew).map(x => 
 		"contact",
 		"playbookitem",
 		"playbookvehicleitem",
+		"hackrigitem",
 		"upgrade"
 	],
 	translatedNames = [...Object.keys(data.playbook), ...Object.keys(data.crew)].reduce((m, keyName) => {
@@ -351,6 +362,7 @@ on("change:squad_type change:playbook", event => {
 			fillRepeatingSectionFromData("ability", data.playbook[sourceName].ability, true);
 			fillRepeatingSectionFromData("playbookitem", data.playbook[sourceName].playbookitem, true);
 			fillRepeatingSectionFromData("playbookvehicleitem", data.playbook[sourceName].playbookvehicleitem, true);
+			fillRepeatingSectionFromData("hackrigitem", data.playbook[sourceName].hackrigitem, true);
 			fillBaseData(data.playbook[sourceName].base, playbookAttributes);
 			if (sourceName === "technician") fillRepeatingSectionFromData("alchemical", data.alchemicals);
 		}
@@ -437,6 +449,12 @@ autogenSections.forEach(sectionName => {
 			if (genSource in dataVar) {
 				emptyFirstRowIfUnnamed(sectionName);
 				fillRepeatingSectionFromData(sectionName, dataVar[genSource][sectionName]);
+				if (sectionName === "playbookvehicleitem") {
+					if ("hackrigitem" in dataVar[genSource]) {
+						emptyFirstRowIfUnnamed("hackrigitem");
+						fillRepeatingSectionFromData("hackrigitem", dataVar[genSource]["hackrigitem"]);
+					}
+				}
 			}
 		});
 	});
@@ -468,7 +486,7 @@ on("change:char_cohort_quality change:char_cohort_impaired change:setting_show_c
 handleBoxesFill("upgrade_24_check_", true);
 handleBoxesFill("bandolier1_check_");
 handleBoxesFill("bandolier2_check_");
-["item", "playbookitem", "vehicleitem", "playbookvehicleitem", "upgrade"].forEach(sName => handleBoxesFill(`repeating_${sName}:check_`));
+["item", "playbookitem", "vehicleitem", "playbookvehicleitem", "hackrigitem", "upgrade"].forEach(sName => handleBoxesFill(`repeating_${sName}:check_`));
 /* Pseudo-radios */
 ["squad_tier", ...actionsFlat].forEach(name => {
 	on(`change:${name}`, event => {
@@ -494,7 +512,7 @@ on("change:reset_items", () => {
 		});
 	};
 	mySetAttrs({"load": 0, "vehicle_load": 0});
-	["item", "playbookitem", "vehicleitem", "playbookvehicleitem"].forEach(clearChecks);
+	["item", "playbookitem", "vehicleitem", "playbookvehicleitem", "hackrigitem"].forEach(clearChecks);
 });
 /* Default values for number of upgrades boxes — probably not necessary anymore */
 // on('change:repeating_upgrade:boxes_chosen', () => {
@@ -566,7 +584,7 @@ on("sheet:opened", () => {
 				console.log(`Found version ${version}.`);
 			},
 			initialiseSheet = () => {
-				const setting = ["ability", "friend", "crewability", "contact", "playbookitem", "playbookvehicleitem", "upgrade", "framefeature"]
+				const setting = ["ability", "friend", "crewability", "contact", "playbookitem", "playbookvehicleitem", "hackrigitem", "upgrade", "framefeature"]
 					.reduce((memo, sectionName) => {
 						memo[`repeating_${sectionName}_${generateRowID()}_autogen`] = 1;
 						return memo;

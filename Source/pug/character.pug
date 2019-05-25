@@ -412,6 +412,48 @@
 					fieldset.repeating_alchemical
 						+checkbox('check').checkbox.squarebox
 						+autoexpand('name')(data-i18n-placeholder='description').chemical_name
+			// Hackrig
+			.col100.def-margin
+				input.title-checkbox(type='checkbox', name='attr_show_hackrig', value='1')
+				span.label.plainheader(data-i18n='hackrig')
+				.hackrig.free-repcontrol
+					// Hackrig items
+					.loadheader.flex.col100
+						.label(data-i18n='load')
+						each val, index in ['tablet', 'laptop', 'tower']
+							label
+								+checkbox('load')(value=val).checkbox
+								case index
+									when 0
+										span.loadnumber(name=`attr_setting_load_l`)
+									when 1
+										span.loadnumber(name=`attr_setting_load_n`)
+									when 2
+										span.loadnumber(name=`attr_setting_load_h`)
+								span(data-i18n=val)
+					.itemholder.col100.items
+						.hackrigitems.col100.free-repcontrol
+							fieldset.repeating_hackrigitem
+								+hidden-input('boxes_chosen')(value='0').boxes-chosen
+								.item.numboxes-chooser
+									div(data-i18n='how_much_load')
+									+number-input('numboxes')(min='0', max='3', value='0')
+									label
+										+checkbox('bold')(data-i18n='bold')
+									label
+										+checkbox('boxes_chosen')(data-i18n='ok')
+								.item
+									+hidden-input('bold')(value='0').input-bold
+									+hidden-input('numboxes')(value='0').numboxes
+									+checkbox('check_1').checkbox.squarebox
+									span.floatingbar.boxesgeq2
+									+checkbox('check_2', 'boxesgeq2').checkbox.squarebox
+									span.floatingbar.boxesgeq3.boxesgeq2
+									+checkbox('check_3', 'boxesgeq2 boxesgeq3').checkbox.squarebox
+									+autoexpand('name')(data-i18n-placeholder='item_name').itemname
+								.item-description
+									+checkbox('expand').expand
+									+textarea('description')(data-i18n-placeholder='description')
 			// Planning and Load
 			.planning.col100.def-margin
 				input.title-checkbox(type='checkbox', name='attr_show_planning', value='1', checked)
@@ -454,7 +496,7 @@
 					.bonusdietext
 						.label(data-i18n='push_yourself')
 						span(data-i18n="push_yourself_desc")
-						.label(data-i18n='devils_bargain')
+						.label(data-i18n='collateral_die')
 			// Friends
 			.col100.def-margin.friends
 				.specialheader.col100.label.flex

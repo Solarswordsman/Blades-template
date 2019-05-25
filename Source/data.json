@@ -381,6 +381,33 @@
 				"name": "playbook_vehicle_item_fine_icp",
 				"description": "playbook_vehicle_item_fine_icp_description",
 				"numboxes": 1
+			}],
+			"hackrigitem": [{
+				"name": "playbook_vehicle_item_fine_retrieval_program",
+				"description": "playbook_vehicle_item_fine_retrieval_program_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_vehicle_item_fine_coding_program",
+				"description": "playbook_vehicle_item_fine_coding_program_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_vehicle_item_electronic_filter",
+				"description": "playbook_vehicle_item_electronic_filter_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_stealth_program",
+				"description": "playbook_vehicle_item_stealth_program_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_data_bomb_program",
+				"description": "playbook_vehicle_item_data_bomb_program_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_fine_icp",
+				"description": "playbook_vehicle_item_fine_icp_description",
+				"numboxes": 1
 			}]
 		},
 		"technician": {
