@@ -288,8 +288,7 @@
 			}, {
 				"name": "playbook_vehicle_item_chaff_countermeasure",
 				"description": "playbook_vehicle_item_chaff_countermeasure_description",
-				"numboxes": 1,
-				"bold": 1
+				"numboxes": 1
 			}, {
 				"name": "playbook_vehicle_item_concealed_melee_weapon",
 				"description": "playbook_vehicle_item_concealed_melee_weapon_description",
@@ -301,6 +300,86 @@
 			}, {
 				"name": "playbook_vehicle_item_luxurious_passenger_space",
 				"description": "playbook_vehicle_item_luxurious_passenger_space_description",
+				"numboxes": 1
+			}]
+		},
+		"hacker": {
+			"ability": [
+				"compel",
+				"matrix_mind",
+				"iron_will",
+				"turing_test",
+				"data_pack",
+				"programmer",
+				"tesla",
+				"warded",
+				"veteran"
+			],
+			"base": {
+				"study": "1",
+				"interface": "2",
+				"friends_title": "friends",
+				"gatherinfo1": "gatherinfo_what_is_holographic_or_inorganic",
+				"gatherinfo2": "gatherinfo_what_lingers_in_the_augmented_reality",
+				"gatherinfo3": "gatherinfo_what_is_hidden_or_lost",
+				"gatherinfo4": "gatherinfo_what_do_they_intend",
+				"gatherinfo5": "gatherinfo_what_drives_them",
+				"gatherinfo6": "gatherinfo_how_can_i_reveal",
+				"gatherinfo7": "gatherinfo_what_going_on",
+				"playbook_description": "playbook_hacker_description",
+				"xp_condition": "playbook_hacker_xp_condition"
+			},
+			"playbookitem": [{
+				"name": "playbook_item_portable_exclusion_zone",
+				"description": "playbook_item_portable_exclusion_zone_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_fine_augmented_reality_tool",
+				"description": "playbook_item_fine_augmented_reality_tool_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_item_quantum_drive",
+				"description": "playbook_item_quantum_drive_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_hackrig",
+				"description": "playbook_item_hackrig_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_recursive_data_projector",
+				"description": "playbook_item_recursive_data_projector_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_your_custom_vehicle",
+				"description": "playbook_item_your_custom_vehicle_description",
+				"numboxes": "0"
+			}],
+			"playbookvehicleitem": [{
+				"name": "playbook_vehicle_item_fine_retrieval_program",
+				"description": "playbook_vehicle_item_fine_retrieval_program_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_vehicle_item_fine_coding_program",
+				"description": "playbook_vehicle_item_fine_coding_program_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_vehicle_item_electronic_filter",
+				"description": "playbook_vehicle_item_electronic_filter_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_stealth_program",
+				"description": "playbook_vehicle_item_stealth_program_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_data_bomb_program",
+				"description": "playbook_vehicle_item_data_bomb_program_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_fine_icp",
+				"description": "playbook_vehicle_item_fine_icp_description",
 				"numboxes": 1
 			}]
 		},
