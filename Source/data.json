@@ -410,6 +410,78 @@
 				"numboxes": 1
 			}]
 		},
+		"infiltrator": {
+			"ability": [
+				"ghost",
+				"ambush",
+				"daredevil",
+				"the_devils_footsteps",
+				"expertise",
+				"never_tell_me_the_odds",
+				"reflexes",
+				"shadow",
+				"veteran"
+			],
+			"base": {
+				"prowl": "2",
+				"finesse": "1",
+				"friends_title": "friends",
+				"gatherinfo1": "gatherinfo_what_do_they_intend",
+				"gatherinfo2": "gatherinfo_how_can_i_get_them",
+				"gatherinfo3": "gatherinfo_what_should_I_look",
+				"gatherinfo4": "gatherinfo_whats_the_best_way_in",
+				"gatherinfo5": "gatherinfo_where_can_i_hide",
+				"gatherinfo6": "gatherinfo_how_can_i_find",
+				"gatherinfo7": "gatherinfo_what_going_on",
+				"playbook_description": "playbook_infiltrator_description",
+				"xp_condition": "playbook_infiltrator_xp_condition"
+			},
+			"playbookitem": [{
+				"name": "playbook_item_fine_security_cracker",
+				"description": "playbook_item_fine_security_cracker_description",
+				"numboxes": 0,
+				"bold": 1
+			}, {
+				"name": "playbook_item_fine_optical_camo",
+				"description": "playbook_item_fine_optical_camo_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_item_light_climbing_gear",
+				"description": "playbook_item_light_climbing_gear_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_firearm_silencer",
+				"description": "playbook_item_firearm_silencer_description",
+				"numboxes": 0
+			}, {
+				"name": "playbook_item_nightvision_goggles",
+				"description": "playbook_item_nightvision_goggles_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_item_your_custom_vehicle",
+				"description": "playbook_item_your_custom_vehicle_description",
+				"numboxes": "0"
+			}],
+			"playbookvehicleitem": [{
+				"name": "playbook_vehicle_item_fine_optical_camo",
+				"description": "playbook_vehicle_item_fine_optical_camo_description",
+				"numboxes": 1,
+				"bold": 1
+			}, {
+				"name": "playbook_vehicle_item_light_mobility_suite",
+				"description": "playbook_vehicle_item_light_mobility_suite_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_electronic_countermeasures",
+				"description": "playbook_vehicle_item_electronic_countermeasures_description",
+				"numboxes": 1
+			}, {
+				"name": "playbook_vehicle_item_nvir_sensors",
+				"description": "playbook_vehicle_item_nvir_sensors_description",
+				"numboxes": 1
+			}]
+		},
 		"technician": {
 			"ability": [
 				"simulation",
