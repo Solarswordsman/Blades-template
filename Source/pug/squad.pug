@@ -36,8 +36,8 @@ mixin makeupgrade(number, numboxes, def, desc)
 				+text-input('reputation')
 				.label.text.title(data-i18n='reputation')
 			label.col100
-				+text-input('lair')
-				.label.text.title(data-i18n='lair')
+				+text-input('FOB')
+				.label.text.title(data-i18n='forward_operating_base')
 		// Rep, Hold, and Tier
 		.col100.flex.rep-and-hold.def-margin
 			.rep.flex.col45
@@ -49,7 +49,7 @@ mixin makeupgrade(number, numboxes, def, desc)
 							+radio('turf')(value=num)
 					+hidden-input('turf')(value='0').turf-input
 					+radio('rep')(value='0', checked).tooth.zero
-					//- generates 12 rep boxes. The complicated code for the class assigns the necessary CSS classes for turf to work correctly
+					//- generates 12 rep boxes. The complicated code for the class assigns the necessary CSS classes for heart to work correctly
 					each num in range(1,12)
 						+radio('rep')(class=['tooth', 'stresstooth', ...((num < 6) ? [] : [...Array(num-6).keys()].map(x => `turf${6-x}`))], value=num)
 				.rep3.blackborder
@@ -80,6 +80,12 @@ mixin makeupgrade(number, numboxes, def, desc)
 						+checkbox('squad_tier')(value=num).checkbox.circlebox.fakeradio
 		// Claims
 		.claims.col100.free-repcontrol
+			.regionrow.flex
+				each region in ['far_l', 'near_l', 'immediate', 'near_r', 'far_r']
+					.blackheader.col18b
+						+checkbox(region).checkbox
+						.col100.flex-center
+							.label.text.title(data-i18n=`${region.split("_")[0]}`)
 			.claimsrow.flex
 				each num in range(1,5)
 					+claimbox(num)
@@ -93,7 +99,7 @@ mixin makeupgrade(number, numboxes, def, desc)
 				+claimbridge('6_7', 'hori')
 				+claimbox(7)
 				+claimbridge('7_8', 'hori')
-				.lairbox.flex-center.uppercase(data-i18n='lair')
+				.lairbox.flex-center.uppercase(data-i18n='forward_operating_base')
 				+claimbridge('8_9', 'hori')
 				+claimbox(9)
 				+claimbridge('9_10', 'hori')
@@ -106,6 +112,10 @@ mixin makeupgrade(number, numboxes, def, desc)
 					+claimbox(num)
 					if (num !== 15)
 						+claimbridge(`${num}_${num+1}`, 'hori')
+			.regionstatsrow.flex
+				each region in ['far_l', 'near_l', 'immediate', 'near_r', 'far_r']
+					.col18b
+						+regionstats(region)
 			fieldset.repeating_claim
 				.claims-seprow.flex
 					each num in range(1,5)
@@ -115,6 +125,14 @@ mixin makeupgrade(number, numboxes, def, desc)
 						+claimbox(num)
 						if (num !== 5)
 							+claimbridge(`${num}_${num+1}`, 'hori')
+		// Direct Superior and Patron Faction
+		.col100.header.flex-wrap
+			label.col100
+				+text-input('direct_superior')
+				.label.text.title(data-i18n='direct_superior')
+			label.col100
+				+text-input('patron_faction')
+				.label.text.title(data-i18n='patron_faction')
 		// Heat and Coin
 		.col100.flex.heat-and-vault.def-margin
 			// Heat
@@ -129,14 +147,7 @@ mixin makeupgrade(number, numboxes, def, desc)
 						+radio('heat')(value=num).tooth.stresstooth
 				// Wanted Level
 				.heat3
-					.blackheader
-						+roll('Wanted', '{{vice=1}} {{short=1}} {{title=^{entanglement}}} {{subtitle=^{wantedroll1}@{heat}&nbsp;^{heat}^{wantedroll2}}} @{wanted_formula}')(data-i18n='wanted').label.inherit.rollbutton
-						+hidden-input('wanted_formula')(value=zerodiceFormula)
-					.wantedholder.flex
-						+radio('wanted')(value='0', checked).tooth.zero
-						//- generates 4 wanted boxes
-						each num in range(1,4)
-							+radio('wanted')(value=num).tooth.regulartooth
+					+relationship('squad_employer')
 			// Coin
 			.crewcoin.col52b
 				.col100.flex
@@ -228,9 +239,9 @@ mixin makeupgrade(number, numboxes, def, desc)
 			+textarea('squad_description')(data-i18n-placeholder='squad_description', placeholder='A short squad description').label
 			+hidden-input('show_playbook_reminder')(value='1').hider
 			.reminder
-				span(data-i18n='autofill_reminder_crew')
+				span(data-i18n='autofill_reminder_squad')
 				br
-				span(data-i18n='list_crews')
+				span(data-i18n='list_squads')
 		// Upgrades and Hunting Grounds
 		.col53.small-margin
 			// Upgrades
@@ -260,9 +271,23 @@ mixin makeupgrade(number, numboxes, def, desc)
 				// Regular upgrades
 				.regularitems.flex-wrap.col100
 					.item.col50
-						span.label(data-i18n='lair')
+						span.label(data-i18n='FOB')
 					.item.col50
 						span.label(data-i18n='quality')
+					+makeupgrade(6, 2, 'motor_pool', 'upgrade_motor_pool_description')
+					+makeupgrade(7, 1, 'documents', 'upgrade_documents_description')
+					+makeupgrade(8, 2, 'airfield', 'upgrade_airfield_description')
+					+makeupgrade(9, 1, 'gear', 'upgrade_gear_description')
+					+makeupgrade(10, 1, 'hidden', 'upgrade_hidden_description')
+					+makeupgrade(11, 1, 'programs', 'upgrade_programs_description')
+					+makeupgrade(12, 1, 'quarters', 'upgrade_quarters_description')
+					+makeupgrade(13, 1, 'supplies', 'upgrade_supplies_description')
+					+makeupgrade(14, 2, 'secure', 'upgrade_secure_description')
+					+makeupgrade(15, 1, 'tools', 'upgrade_tools_description')
+					+makeupgrade(16, 2, 'workshop', 'upgrade_workshop_description')
+					+makeupgrade(17, 1, 'pilot_weapons', 'upgrade_pilot_weapons_description')
+					.item.col50
+					+makeupgrade(18, 1, 'vehicle_weapons', 'upgrade_vehicle_weapons_description')
 					.item.upgradecaption.col50
 						span.label(data-i18n='training')
 					.item.upgradecaption.col50
@@ -277,6 +302,8 @@ mixin makeupgrade(number, numboxes, def, desc)
 					.item.col50
 						.upgradecosts(data-i18n='add_type')
 					+makeupgrade(23, 1, 'personal', 'upgrade_personal_description')
+					.item.col50
+					+makeupgrade(25, 1, 'test_facility', 'upgrade_test_facility_description')
 					.col100
 						.item
 							each num in range(1,4)
@@ -287,9 +314,6 @@ mixin makeupgrade(number, numboxes, def, desc)
 						.item-description
 							+checkbox('upgrade_24_expand').expand
 							+textarea('upgrade_24_description', 'upgrade_mastery_description')(data-i18n-placeholder='description')
-			.hunting-grounds.col100.def-margin
-				+autoexpand('hunting_grounds_type')(data-i18n-placeholder='hunting_grounds').plainheader.label
-				+autoexpand('hunting_grounds_description')(data-i18n-placeholder='hunting_grounds_description').description
 			+fortuneroll('Engagement', '{{action=1}} {{short=1}} {{small-title=1}} {{subtitle=^{roll_for}}} {{title=^{engagement}}}')(data-i18n='roll_engagement').engagementbutton.borderbutton
 		// Cohorts and Contacts
 		.col47.right-column.small-margin

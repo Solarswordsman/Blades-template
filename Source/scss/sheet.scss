@@ -428,6 +428,9 @@ $paletteteal: #354B45;
 .sheet-col10 {
 	width: 10%;
 }
+.sheet-col18b {
+	width: 18.44%;
+}
 .sheet-col24b {
 	width: 24.25%;
 }
@@ -1987,6 +1990,39 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 .sheet-checkbox.sheet-squarebox-small:checked + span {
 	background: black;
 }
+.sheet-regionrow {
+	justify-content: space-between;
+	.sheet-checkbox, .sheet-checkbox + span {
+		margin-top: 2px;
+		margin-left: -1px;
+		background: white;
+	}
+	.sheet-checkbox:checked + span {
+		background: $neonteal;
+	}
+	.sheet-blackheader {
+		display: inline-flex;
+		margin-bottom: 4px;
+		background-color: $lightblack;
+	}
+}
+.sheet-regionstatsrow {
+	justify-content: space-around;
+}
+.sheet-regionstats {
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+	font-size: 10px;
+	padding: 0px 2px;
+	color: $neonteal;
+	input[type=text] {
+		text-align: right;
+		font-size: 8px;
+		color: $neonteal;
+		border-bottom: 1px solid white;
+	}
+}
 .sheet-claimbridge {
 	position: relative;
 }
@@ -1995,7 +2031,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 	height: 100%;
 }
 .sheet-claimbridge input:checked + span {
-	background: $lightest;
+	background: $lightblack;
 }
 /* Change text colour when boxes are checked*/
 .sheet-specialability .sheet-checkbox:checked ~ .sheet-abilityname,
@@ -2039,8 +2075,9 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 .sheet-tier .sheet-fakeradio:checked ~ .sheet-fakeradio + span {
 	background: white;
 }
-/* Friend triangles */
-.sheet-friend-contact {
+/* Friend & Relationship triangles */
+.sheet-friend-contact,
+.sheet-relationshipholder {
 	.sheet-checkbox + span {
 		width: 0;
 		height: 0;
@@ -2053,7 +2090,8 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 		position: relative;
 	}
 }
-.sheet-friend label {
+.sheet-friend label,
+.sheet-relationshipholder label {
 	&.sheet-up {
 		margin-right: 1px;
 		top: -1px;
@@ -2073,6 +2111,25 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 		}
 		.sheet-checkbox:checked + span {
 			border-top-color: black;
+		}
+	}
+}
+
+// Modify relationship arrow appearance -- this is a lazy way
+.sheet-relationship .sheet-blackheader .sheet-label {
+	font-size: 8px;
+}
+.sheet-relationshipholder {
+	margin-left: 5px;
+}
+.sheet-relationshipholder label {
+	&.sheet-up {
+		top: 2px;
+	}
+	&.sheet-down {
+		top: 4px;
+		.sheet-checkbox:checked + span {
+			border-top-color: $paletteteal
 		}
 	}
 }
@@ -2272,7 +2329,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 	margin: 0 calc(9.2% - 6px);
 }
 .sheet-claimbox {
-	background: $lightest;
+	background: $neonteal;
 	width: 18.4%;
 	position: relative;
 	transition: all 0.2s;
@@ -2298,7 +2355,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 	}
 }
 input[value="1"] + .sheet-claimbox {
-	background: $lighter;
+	background: $lightblack;
 }
 /* ALCHEMICALS */
 .sheet-title-checkbox ~ div {
