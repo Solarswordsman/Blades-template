@@ -198,7 +198,7 @@ mixin regionstats(prefix)
 	.regionstats
 		.flex.flex-wrap
 			each stat in ['wealth','might','tech','crime']
-				.col50.flex
+				.col50.flex.flex-center
 					label.text.title(data-i18n=`${stat[0]}`)
 					+text-input(`${prefix}_${stat}`)
 

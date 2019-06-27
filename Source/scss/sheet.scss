@@ -2016,11 +2016,15 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 	font-size: 10px;
 	padding: 0px 2px;
 	color: $neonteal;
+	font-weight: bold;
 	input[type=text] {
-		text-align: right;
-		font-size: 8px;
+		text-align: center;
+		font-size: 10px;
+		font-weight: bold;
 		color: $neonteal;
+		width: 12px;
 		border-bottom: 1px solid white;
+		margin-top: -1px;
 	}
 }
 .sheet-claimbridge {
