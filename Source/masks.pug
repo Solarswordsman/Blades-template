@@ -1,0 +1,61 @@
+-
+	const translation = locals.translation,
+		actionData = locals.data.actions,
+		traumaData = locals.data.traumas,
+		playbooks = Object.keys(locals.data.playbook);
+
+	// Javascript really needs a range function
+	const range = (start, end) => [...Array(end+1).keys()].slice(start);
+	const zerodiceFormula = ' {{?{@{bonusdice}|0,zerodice=[[d6]]&#44; [[d6]]|1,dice=[[d6]]|2,dice=[[d6]]&#44; [[d6]]|3,dice=[[d6]]&#44; [[d6]]&#44; [[d6]]|4,dice=[[d6]]&#44; [[d6]]&#44; [[d6]]&#44; [[d6]]|5,dice=[[d6]]&#44; [[d6]]&#44; [[d6]]&#44; [[d6]]&#44; [[d6]]|6,dice=[[d6]]&#44; [[d6]]&#44; [[d6]]&#44; [[d6]]&#44; [[d6]]&#44; [[d6]]|-1,zerodice=[[d6]]&#44; [[d6]]|-2,zerodice=[[d6]]&#44; [[d6]]|-3,zerodice=[[d6]]&#44; [[d6]]}}}';
+
+
+//- Mixins for code reuse
+mixin checkbox(name, extraclass)
+	input(type='checkbox', class=[attributes.class, extraclass || ''], name=`attr_${name}`, value=attributes.value||'1', checked=attributes.checked)
+	span(class=extraclass, data-i18n!=attributes['data-i18n'])
+		block
+
+mixin radio(name)
+	input(type='radio', class!=attributes.class, name=`attr_${name}`, value!=attributes.value, checked=attributes.checked)
+	span(data-i18n!=attributes['data-i18n'])
+		block
+
+mixin text-input(name, i18nvalue)
+	input(type='text', spellcheck='false', name=`attr_${name}`, value=i18nvalue ? translation[i18nvalue] : false)&attributes(attributes)
+
+mixin number-input(name)
+	input(type='number', name=`attr_${name}`)&attributes(attributes)
+
+mixin textarea(name, i18nvalue)
+	textarea(spellcheck='false', name=`attr_${name}`)&attributes(attributes)
+		= i18nvalue ? translation[i18nvalue] : ''
+
+mixin hidden-input(name)
+	input(type='hidden', name=`attr_${name}`)&attributes(attributes)
+
+mixin hidden-checkbox(name)
+	- classes = attributes.class;
+	- delete attributes.class;
+	input(type='checkbox', name=`attr_${name}`, class=['hidden', classes])&attributes(attributes)
+
+mixin autoexpand(name, i18nvalue)
+	div(class=['auto-expand', attributes.class])
+		span(name=`attr_${name}`)= i18nvalue ? translation[i18nvalue] : ''
+		+textarea(name, i18nvalue)(data-i18n-placeholder!=attributes['data-i18n-placeholder'])
+
+
+//- Actual sheet
+.container
+	+hidden-input('sheet_type')(value='hero').type
+	include pug/title.pug
+	include pug/hero.pug
+	include pug/villain.pug
+
+//- Strange syntax is meant fo force a line break
+|
+|
+include pug/rolltemplate.pug
+|
+|
+script(type='text/worker')
+	!= locals.workers
