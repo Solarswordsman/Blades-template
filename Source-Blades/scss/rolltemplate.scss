@@ -1,0 +1,463 @@
+/* ROLL TEMPLATES */
+/* Colors */
+$resistcolor: #8da8bb;
+$fortunecolor: #303032;
+$actioncolor: #e74a10;
+$fortunecolor-light: #1e1e1e;
+$resistcolor-light: #d8e4ef;
+$actioncolor-light: #ffd8ca;
+$resistcolor-notes: #d3dde4;
+$vicecolor-notes: #c9c9c9;
+$broadcast: #180d06;
+$broadcast-white: #ccc;
+
+.withoutavatars {
+	.sheet-rolltemplate-bitd .sheet-holder { margin-left: -15px }
+	.sheet-rolltemplate-bitd-broadcast { margin-left: -15px }
+}
+
+/* Container */
+.sheet-rolltemplate-bitd {
+	.sheet-holder {
+		margin: 0 -5px -4px -45px;
+		padding: 0 20px 0 30px;
+		max-width: 299px;
+		box-sizing: border-box;
+		font-family: Georgia, "Bitstream Charter", "Times New Roman", serif;
+		user-select: none;
+		cursor: default;
+		overflow: hidden;
+		position: relative;
+		background-repeat: no-repeat;
+		font-variant-numeric: lining-nums;
+	}
+	.sheet-action {
+		display: grid;
+		grid: auto / 133px 116px;
+		align-content: start;
+	}
+	.sheet-holder.sheet-resist.sheet-short,
+	.sheet-holder.sheet-vice.sheet-short {
+		height: 171px;
+	}
+	.sheet-holder.sheet-action.sheet-short {
+		height: 195px;
+	}
+	.sheet-holder.sheet-fortune.sheet-short {
+		min-height: 199px;
+	}
+	.sheet-action,
+	.sheet-resist,
+	.sheet-vice {
+		height: 258px;
+	}
+	.sheet-fortune {
+		background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/rolltemplate/rolltemplate-fortune.jpg');
+		background-position: bottom right;
+		background-repeat: no-repeat;
+		background-color: white;
+		height: auto;
+		min-height: 250px;
+	}
+	/* Background images */
+	.sheet-action {
+		background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/rolltemplate/rolltemplate-action.gif');
+	}
+	.sheet-resist {
+		background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/rolltemplate/rolltemplate-resist.jpg');
+	}
+	.sheet-vice {
+		background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/rolltemplate/rolltemplate-vice.jpg');
+	}
+	/* Images */
+	img {
+		display: block;
+		height: 100%;
+	}
+	/* Header */
+	.sheet-header {
+		grid-column: span 2;
+		display: -webkit-box;
+		margin: 16px 0 0;
+		font-size: 15px;
+		height: 35px;
+		line-height: 17.5px;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		font-variant: small-caps;
+		text-overflow: ellipsis;
+		&.sheet-narrow {
+			width: calc(100% - 52px);
+		}
+	}
+	.sheet-resist .sheet-header { color: $resistcolor }
+	.sheet-vice .sheet-header { color: white }
+	.sheet-fortune .sheet-header { color: $fortunecolor }
+	.sheet-action .sheet-header { color: $actioncolor }
+	> .sheet-action .sheet-header,
+	> .sheet-fortune .sheet-header {
+		letter-spacing: 1px;
+		font-weight: 800;
+	}
+	.sheet-holder.sheet-fortune.sheet-short .sheet-header {
+		margin-bottom: -51px;
+	}
+	/* Image */
+	.sheet-char-image {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		line-height: 0;
+		a {
+			cursor: default;
+			pointer-events: none;
+		}
+		img {
+			max-width: 60px;
+			max-height: 80px;
+		}
+	}
+	/* Title */
+	.sheet-title {
+		grid-column: span 2;
+		color: white;
+		position: relative;
+		text-transform: uppercase;
+		font-weight: bold;
+		img {
+			display: block;
+			height: 100%;
+		}
+	}
+	.sheet-action .sheet-title,
+	.sheet-fortune .sheet-title {
+		margin: 22px 0 0;
+		font-size: 36px;
+		line-height: 31px;
+		height: 31px;
+	}
+	.sheet-vice .sheet-title,
+	.sheet-resist .sheet-title {
+		margin: 11px 0 0;
+		font-size: 24px;
+		line-height: 24px;
+		height: 24px;
+	}
+	.sheet-fortune .sheet-title { color: black }
+	.sheet-small-title { font-size: 28px }
+	/* Position and Effect */
+	.sheet-position,
+	.sheet-effect {
+		color: white;
+		text-transform: uppercase;
+		font-size: 12px;
+		letter-spacing: 1px;
+	}
+	/* Dice */
+	.sheet-dice {
+		grid-column: span 2;
+		height: 27px;
+		font-size: 19px;
+		line-height: 20px;
+		color: white;
+	}
+	.sheet-action .sheet-dice { margin: 47px 0 37px }
+	.sheet-resist .sheet-dice,
+	.sheet-vice .sheet-dice { margin: 35px 0 23px }
+	.sheet-fortune .sheet-dice {
+		margin: 15px 0 10px;
+		color: $fortunecolor;
+	}
+	/* Zerodice dice holder */
+	.sheet-action .sheet-zerodice1 {
+		text-shadow: 0px 0px 6px rgb(255, 158, 0);
+		color: white;
+	}
+	.sheet-fortune .sheet-zerodice1 {
+		text-shadow: 0px 0px 6px rgb(136, 219, 215);
+		color: $fortunecolor-light;
+	}
+	.sheet-vice .sheet-zerodice1,
+	.sheet-resist .sheet-zerodice1 {
+		text-shadow: 0px 0px 6px rgb(9, 199, 208);
+		color: white;
+	}
+	/* Zerodice text */
+	.sheet-zerodice2 {
+		line-height: 1;
+		font-size: 12.5px;
+		margin-top: 7px;
+		font-style: italic;
+	}
+	.sheet-vice .sheet-zerodice2,
+	.sheet-resist .sheet-zerodice2 {
+		text-shadow: 0px 0px 6px rgb(9, 199, 208);
+		color: $resistcolor-light;
+	}
+	.sheet-action .sheet-zerodice2 {
+		text-shadow: 0px 0px 6px rgb(255, 158, 0);
+		color: $actioncolor-light
+	}
+	.sheet-fortune .sheet-zerodice2 {
+		width: 60%;
+		text-shadow: 0px 0px 6px rgb(136, 219, 215);
+		color: $fortunecolor-light;
+	}
+
+	/* Inlinerolls */
+	.inlinerollresult {
+		border: none !important;
+		background-color: transparent;
+		font-weight: normal;
+		padding: 0 3px 0 0;
+	}
+	.sheet-comma:last-child {
+		display: none;
+	}
+
+	/* Instructions and Notes */
+	.sheet-instructions {
+		padding: 15px 0 0;
+		line-height: 1.3;
+	}
+	.sheet-resist .sheet-instructions {
+		color: $resistcolor-notes;
+		font-size: 13px;
+	}
+	.sheet-vice .sheet-instructions {
+		color: $vicecolor-notes;
+		font-size: 11px;
+	}
+	.sheet-notes {
+		width: 56%;
+		line-height: 1.2;
+		font-size: 13px;
+		padding: 20px 0;
+		color: fortunegrey;
+	}
+}
+
+/* BROADCAST TEMPLATE */
+.sheet-rolltemplate-bitd-broadcast {
+	margin: 0 -5px -4px -45px;
+	max-width: 299px;
+	padding: 16px 10px 15px 20px;
+	overflow: hidden;
+	box-sizing: border-box;
+	position: relative;
+	font-family: Georgia, "Bitstream Charter", "Times New Roman", serif;
+	background-color: $broadcast;
+
+	.sheet-header {
+		color: $actioncolor;
+		font-size: 15px;
+		line-height: 19px;
+		font-variant: small-caps;
+		letter-spacing: 1px;
+		font-weight: 800;
+		&.sheet-narrow {
+			width: calc(100% - 62px);
+		}
+	}
+		/* Image */
+	.sheet-char-image {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		line-height: 0;
+		a {
+			cursor: default;
+			pointer-events: none;
+		}
+		img {
+			max-width: 60px;
+			max-height: 80px;
+		}
+	}
+	.sheet-flex {
+		display: flex;
+		align-items: center;
+		clear: both;
+		margin: 5px 0 0;
+	}
+	.sheet-flex .sheet-title {
+		margin: 0;
+		font-size: 20px;
+		line-height: 1.2;
+	}
+	.sheet-title {
+		margin: 9px 0 0;
+		color: white;
+		text-transform: uppercase;
+		position: relative;
+		font-weight: bold;
+		word-wrap: normal;
+		font-size: 23px;
+		line-height: 29px;
+		img {
+			margin: 9px 0 0;
+			display: block;
+			height: 31px;
+		}
+	}
+	.sheet-content {
+		padding: 15px 0 5px;
+		line-height: 1.3;
+		font-size: 13px;
+		color: $broadcast-white;
+	}
+	.sheet-harm {
+		color: white;
+		width: 100%;
+		margin: 15px 0 0;
+		border: 1px solid white;
+	}
+	.sheet-harm td {
+		text-align: center;
+		padding: 5px;
+		border: 1px solid white;
+	}
+	.sheet-harm td:first-child { width: 10px }
+	.sheet-harm td:nth-child(2n+1) { font-weight: bold }
+	.sheet-harm td:nth-child(2) { padding: 5px 0 }
+	.sheet-harm td:last-child {
+		width: 60px;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+	.sheet-harm-inner {
+		color: $actioncolor;
+		padding: 0 5px;
+	}
+	.sheet-harm-inner:first-child:not(:last-child) {
+		padding-bottom: 2.5px;
+		border-bottom: 1px solid white;
+	}
+	.sheet-harm-inner:last-child:not(:first-child) {
+		padding-top: 2.5px;
+	}
+	.sheet-clock {
+		width: 88px;
+		flex: 0 0 auto;
+		box-sizing: border-box;
+		position: relative;
+		background: white;
+		height: 88px;
+		border: 4px solid black;
+		border-radius: 50%;
+		margin-right: 4px;
+	}
+	[class^='sheet-spoke'] {
+		height: 88px;
+		width: 4px;
+		position: absolute;
+		background: black;
+		&:not(.sheet-spoke-0) {
+			display: none;
+		}
+	}
+	.sheet-size-4 .sheet-spoke-90,
+	.sheet-size-6 .sheet-spoke-60,
+	.sheet-size-6 .sheet-spoke-120,
+	.sheet-size-8 .sheet-spoke-45,
+	.sheet-size-8 .sheet-spoke-90,
+	.sheet-size-8 .sheet-spoke-135,
+	.sheet-size-10 .sheet-spoke-36,
+	.sheet-size-10 .sheet-spoke-72,
+	.sheet-size-10 .sheet-spoke-108,
+	.sheet-size-10 .sheet-spoke-144,
+	.sheet-size-12 .sheet-spoke-30,
+	.sheet-size-12 .sheet-spoke-60,
+	.sheet-size-12 .sheet-spoke-90,
+	.sheet-size-12 .sheet-spoke-120,
+	.sheet-size-12 .sheet-spoke-150 {
+		display: block;
+	}
+	.sheet-spoke-0 {
+		transform: translate(39px, -4px);
+	}
+	.sheet-spoke-30 {
+		transform: translate(39px, -4px) rotate(30deg);
+	}
+	.sheet-spoke-36 {
+		transform: translate(39px, -4px) rotate(36deg);
+	}
+	.sheet-spoke-45 {
+		transform: translate(39px, -4px) rotate(45deg);
+	}
+	.sheet-spoke-60 {
+		transform: translate(39px, -4px) rotate(60deg);
+	}
+	.sheet-spoke-72 {
+		transform: translate(39px, -4px) rotate(72deg);
+	}
+	.sheet-spoke-90 {
+		transform: translate(39px, -4px) rotate(90deg);
+	}
+	.sheet-spoke-108 {
+		transform: translate(39px, -4px) rotate(108deg);
+	}
+	.sheet-spoke-120 {
+		transform: translate(39px, -4px) rotate(120deg);
+	}
+	.sheet-spoke-135 {
+		transform: translate(39px, -4px) rotate(135deg);
+	}
+	.sheet-spoke-144 {
+		transform: translate(39px, -4px) rotate(144deg);
+	}
+	.sheet-spoke-150 {
+		transform: translate(39px, -4px) rotate(150deg);
+	}
+	.sheet-size-4 {
+		&.sheet-progress-1 {@include clock(90);}
+		&.sheet-progress-2 {@include clock(180);}
+		&.sheet-progress-3 {@include clock(270);}
+		&.sheet-progress-4 {@include clock(360);}
+	}
+	.sheet-size-6 {
+		&.sheet-progress-1 {@include clock(60);}
+		&.sheet-progress-2 {@include clock(120);}
+		&.sheet-progress-3 {@include clock(180);}
+		&.sheet-progress-4 {@include clock(240);}
+		&.sheet-progress-5 {@include clock(300);}
+		&.sheet-progress-6 {@include clock(360);}
+	}
+	.sheet-size-8 {
+		&.sheet-progress-1 {@include clock(45);}
+		&.sheet-progress-2 {@include clock(90);}
+		&.sheet-progress-3 {@include clock(135);}
+		&.sheet-progress-4 {@include clock(180);}
+		&.sheet-progress-5 {@include clock(225);}
+		&.sheet-progress-6 {@include clock(270);}
+		&.sheet-progress-7 {@include clock(315);}
+		&.sheet-progress-8 {@include clock(360);}
+	}
+	.sheet-size-10 {
+		&.sheet-progress-1 {@include clock(36);}
+		&.sheet-progress-2 {@include clock(72);}
+		&.sheet-progress-3 {@include clock(108);}
+		&.sheet-progress-4 {@include clock(144);}
+		&.sheet-progress-5 {@include clock(180);}
+		&.sheet-progress-6 {@include clock(216);}
+		&.sheet-progress-7 {@include clock(252);}
+		&.sheet-progress-8 {@include clock(288);}
+		&.sheet-progress-9 {@include clock(324);}
+		&.sheet-progress-10 {@include clock(360);}
+	}
+	.sheet-size-12 {
+		&.sheet-progress-1 {@include clock(30);}
+		&.sheet-progress-2 {@include clock(60);}
+		&.sheet-progress-3 {@include clock(90);}
+		&.sheet-progress-4 {@include clock(120);}
+		&.sheet-progress-5 {@include clock(150);}
+		&.sheet-progress-6 {@include clock(180);}
+		&.sheet-progress-7 {@include clock(210);}
+		&.sheet-progress-8 {@include clock(240);}
+		&.sheet-progress-9 {@include clock(270);}
+		&.sheet-progress-10 {@include clock(300);}
+		&.sheet-progress-11 {@include clock(330);}
+		&.sheet-progress-12 {@include clock(360);}
+	}
+}

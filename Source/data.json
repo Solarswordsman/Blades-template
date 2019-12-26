@@ -1,39 +1,12 @@
 {
-	"crew": {
-	},
 	"playbook": {
 	},
-	"factions": {
-	},
 	"actions": {
-		"insight": ["hunt", "study", "survey", "tinker"],
-		"prowess": ["finesse", "prowl", "skirmish", "wreck"],
-		"resolve": ["attune", "command", "consort", "sway"]
 	},
-	"traumas": ["cold", "haunted", "obsessed", "paranoid", "reckless", "soft", "unstable", "vicious"],
-	"items": [],
+	"moves": [],
 	"translatedDefaults": {
-		"cohort1_name": "cohort",
-		"contacts_title": "contacts",
-		"factions_title": "factions_title",
-		"factions1_header": "factions1",
-		"factions2_header": "factions2",
-		"factions3_header": "factions3",
-		"factions4_header": "factions4",
-		"factions5_header": "factions5",
-		"friends_title": "friends",
-		"upgrade_20_name": "insight",
-		"upgrade_20_description": "upgrade_insight_description",
-		"upgrade_21_name": "prowess",
-		"upgrade_21_description": "upgrade_prowess_description",
-		"upgrade_22_name": "resolve",
-		"upgrade_22_description": "upgrade_resolve_description",
-		"upgrade_23_name": "personal",
-		"upgrade_23_description": "upgrade_personal_description",
-		"upgrade_24_name": "mastery",
-		"upgrade_24_description": "upgrade_mastery_description",
-		"xp_condition2": "xp_beliefs",
-		"xp_condition3": "xp_vice"
+		"bull_lover": "lover",
+		"bull_rival": "rival"
 	},
 	"defaultValues": {
 		"attune": "0",
@@ -48,10 +21,5 @@
 		"sway": "0",
 		"tinker": "0",
 		"wreck": "0"
-	},
-	"maxFriendsPerPlaybook": 5,
-	"maxContactsPerCrew": 6,
-	"friendlessPlaybooks": [],
-	"translatedCrewAttributes": ["crew_description", "crew_xp_condition"],
-	"translatedPlaybookAttributes": ["friends_title", "gatherinfo1", "gatherinfo2", "gatherinfo3", "gatherinfo4", "gatherinfo5", "gatherinfo6", "playbook_description","xp_condition"]
+	}
 }
