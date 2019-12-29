@@ -1,5 +1,14 @@
 {
 	"playbook": {
+		"beacon": {
+			"base": {
+				"danger": -1,
+				"freak": -1,
+				"savior": 2,
+				"superior": 0,
+				"mundane": 2
+			}
+		}
 	},
 	"actions": {
 	},
