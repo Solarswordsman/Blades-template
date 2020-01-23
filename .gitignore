@@ -2,3 +2,4 @@ node_modules/
 deploy.sh
 sheet.json
 
+.DS_Store
