@@ -27,48 +27,61 @@
 				"playbook_description": "playbook_ace_description",
 				"xp_condition": "playbook_ace_xp_condition"
 			},
-			"playbookitem": [{
-				"name": "playbook_item_grav_chute",
-				"numboxes": "1"
-			}, {
-				"bold": "1",
-				"name": "playbook_item_fine_remote_vehicle_control",
-				"numboxes": "1"
-			}, {
-				"name": "playbook_item_self_destruct_remote",
-				"numboxes": "0"
-			}, {
-				"bold": "1",
-				"name": "playbook_item_fine_environmental_suit_wearing",
-				"numboxes": "0"
-			}, {
-				"bold": "1",
-				"name": "playbook_item_fine_environmental_suit_carried",
-				"numboxes": "2"
-			}, {
-				"name": "playbook_item_your_custom_vehicle",
-				"description": "playbook_item_your_custom_vehicle_description",
-				"numboxes": "0"
-			}],
-			"playbookvehicleitem": [{
-				"bold": "1",
-				"name": "playbook_vehicle_item_fine_mobility_suite",
-				"numboxes": "2"
-			}, {
-				"name": "playbook_vehicle_item_boosted_reactor",
-				"numboxes": "1"
-			}, {
-				"bold": "1",
-				"name": "playbook_vehicle_item_fine_machine_gun",
-				"numboxes": "1"
-			}, {
-				"bold": "1",
-				"name": "playbook_vehicle_item_fine_shield_or_forcefield",
-				"numboxes": "1"
-			}, {
-				"name": "playbook_vehicle_item_rage",
-				"numboxes": "0"
-			}]
+			"playbookitem": [
+				{
+					"name": "playbook_item_grav_chute",
+					"numboxes": "1"
+				},
+				{
+					"bold": "1",
+					"name": "playbook_item_fine_remote_vehicle_control",
+					"numboxes": "1"
+				},
+				{
+					"name": "playbook_item_self_destruct_remote",
+					"numboxes": "0"
+				},
+				{
+					"bold": "1",
+					"name": "playbook_item_fine_environmental_suit_wearing",
+					"numboxes": "0"
+				},
+				{
+					"bold": "1",
+					"name": "playbook_item_fine_environmental_suit_carried",
+					"numboxes": "2"
+				},
+				{
+					"name": "playbook_item_your_custom_vehicle",
+					"description": "playbook_item_your_custom_vehicle_description",
+					"numboxes": "0"
+				}
+			],
+			"playbookvehicleitem": [
+				{
+					"bold": "1",
+					"name": "playbook_vehicle_item_fine_mobility_suite",
+					"numboxes": "2"
+				},
+				{
+					"name": "playbook_vehicle_item_boosted_reactor",
+					"numboxes": "1"
+				},
+				{
+					"bold": "1",
+					"name": "playbook_vehicle_item_fine_machine_gun",
+					"numboxes": "1"
+				},
+				{
+					"bold": "1",
+					"name": "playbook_vehicle_item_fine_shield_or_forcefield",
+					"numboxes": "1"
+				},
+				{
+					"name": "playbook_vehicle_item_rage",
+					"numboxes": "0"
+				}
+			]
 		},
 		"bureaucrat": {
 			"ability": [
@@ -96,52 +109,63 @@
 				"playbook_description": "playbook_bureaucrat_description",
 				"xp_condition": "playbook_bureaucrat_xp_condition"
 			},
-			"playbookitem": [{
-				"name": "playbook_item_fine_official_documents",
-				"description": "playbook_item_fine_official_documents_description",
-				"numboxes": "1",
-				"bold": "1"
-			}, {
-				"name": "playbook_item_body_scanner_wand",
-				"description": "playbook_item_body_scanner_wand_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_travel_reports",
-				"description": "playbook_item_travel_reports_description",
-				"numboxes": 0
-			}, {
-				"name": "playbook_item_high_priority_comm_decoder",
-				"description": "playbook_item_high_priority_comm_decoder_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_barricade_tape_projector",
-				"description": "playbook_item_barricade_tape_projector_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_item_your_custom_vehicle",
-				"description": "playbook_item_your_custom_vehicle_description",
-				"numboxes": "0"
-			}],
-			"playbookvehicleitem": [{
-				"name": "playbook_vehicle_item_inconspicuous_style",
-				"description": "playbook_vehicle_item_inconspicuous_style_description",
-				"numboxes": "0"
-			}, {
-				"name": "playbook_vehicle_item_several_hand_tool_sets",
-				"description": "playbook_vehicle_item_several_hand_tool_sets_description",
-				"numboxes": "1"
-			}, {
-				"bold": "1",
-				"name": "playbook_vehicle_item_fine_cargo_container",
-				"description": "playbook_vehicle_item_fine_cargo_container_description",
-				"bold": "1",
-				"numboxes": "1"
-			}, {
-				"name": "playbook_vehicle_item_inhibitor_clamp",
-				"description": "playbook_vehicle_item_inhibitor_clamp_description",
-				"numboxes": "1"
-			}]
+			"playbookitem": [
+				{
+					"name": "playbook_item_fine_official_documents",
+					"description": "playbook_item_fine_official_documents_description",
+					"numboxes": "1",
+					"bold": "1"
+				},
+				{
+					"name": "playbook_item_body_scanner_wand",
+					"description": "playbook_item_body_scanner_wand_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_travel_reports",
+					"description": "playbook_item_travel_reports_description",
+					"numboxes": 0
+				},
+				{
+					"name": "playbook_item_high_priority_comm_decoder",
+					"description": "playbook_item_high_priority_comm_decoder_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_barricade_tape_projector",
+					"description": "playbook_item_barricade_tape_projector_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_your_custom_vehicle",
+					"description": "playbook_item_your_custom_vehicle_description",
+					"numboxes": "0"
+				}
+			],
+			"playbookvehicleitem": [
+				{
+					"name": "playbook_vehicle_item_inconspicuous_style",
+					"description": "playbook_vehicle_item_inconspicuous_style_description",
+					"numboxes": "0"
+				},
+				{
+					"name": "playbook_vehicle_item_several_hand_tool_sets",
+					"description": "playbook_vehicle_item_several_hand_tool_sets_description",
+					"numboxes": "1"
+				},
+				{
+					"bold": "1",
+					"name": "playbook_vehicle_item_fine_cargo_container",
+					"description": "playbook_vehicle_item_fine_cargo_container_description",
+					"numboxes": "1"
+				},
+				{
+					"name": "playbook_vehicle_item_inhibitor_clamp",
+					"description": "playbook_vehicle_item_inhibitor_clamp_description",
+					"numboxes": "1"
+				}
+			]
 		},
 		"empath": {
 			"ability": [
@@ -169,52 +193,64 @@
 				"playbook_description": "playbook_empath_description",
 				"xp_condition": "playbook_empath_xp_condition"
 			},
-			"playbookitem": [{
-				"name": "playbook_item_prognostication_tools",
-				"description": "playbook_item_prognostication_tools_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_fine_artistic_tools",
-				"description": "playbook_item_fine_artistic_tools_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_item_personal_emblem",
-				"description": "playbook_item_personal_emblem_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_symbol_of_hope",
-				"description": "playbook_item_symbol_of_hope_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_fine_stun_gun",
-				"description": "playbook_item_fine_stun_gun_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_item_your_custom_vehicle",
-				"description": "playbook_item_your_custom_vehicle_description",
-				"numboxes": "0"
-			}],
-			"playbookvehicleitem": [{
-				"name": "playbook_vehicle_item_inspiring_appearance",
-				"description": "playbook_vehicle_item_inspiring_appearance_description",
-				"numboxes": 1
-			}, {
-				"bold": 1,
-				"name": "playbook_vehicle_item_fine_broadcast_system",
-				"description": "playbook_vehicle_item_fine_broadcast_system_description",
-				"numboxes": 1
-			}, {
-				"bold": 1,
-				"name": "playbook_vehicle_item_fine_social_data_retrieval_program",
-				"description": "playbook_vehicle_item_fine_social_data_retrieval_program_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_psionic_amplifier",
-				"description": "playbook_vehicle_item_psionic_amplifier_description",
-				"numboxes": 1
-			}]
+			"playbookitem": [
+				{
+					"name": "playbook_item_prognostication_tools",
+					"description": "playbook_item_prognostication_tools_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_fine_artistic_tools",
+					"description": "playbook_item_fine_artistic_tools_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_personal_emblem",
+					"description": "playbook_item_personal_emblem_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_symbol_of_hope",
+					"description": "playbook_item_symbol_of_hope_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_fine_stun_gun",
+					"description": "playbook_item_fine_stun_gun_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_your_custom_vehicle",
+					"description": "playbook_item_your_custom_vehicle_description",
+					"numboxes": "0"
+				}
+			],
+			"playbookvehicleitem": [
+				{
+					"name": "playbook_vehicle_item_inspiring_appearance",
+					"description": "playbook_vehicle_item_inspiring_appearance_description",
+					"numboxes": 1
+				},
+				{
+					"bold": 1,
+					"name": "playbook_vehicle_item_fine_broadcast_system",
+					"description": "playbook_vehicle_item_fine_broadcast_system_description",
+					"numboxes": 1
+				},
+				{
+					"bold": 1,
+					"name": "playbook_vehicle_item_fine_social_data_retrieval_program",
+					"description": "playbook_vehicle_item_fine_social_data_retrieval_program_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_psionic_amplifier",
+					"description": "playbook_vehicle_item_psionic_amplifier_description",
+					"numboxes": 1
+				}
+			]
 		},
 		"envoy": {
 			"ability": [
@@ -242,66 +278,81 @@
 				"playbook_description": "playbook_envoy_description",
 				"xp_condition": "playbook_envoy_xp_condition"
 			},
-			"playbookitem": [{
-				"name": "playbook_item_fine_clothes_and_jewelry_w",
-				"description": "playbook_item_fine_clothes_and_jewelry_w_description",
-				"numboxes": 0,
-				"bold": 1
-			}, {
-				"name": "playbook_item_fine_clothes_and_jewelry_c",
-				"description": "playbook_item_fine_clothes_and_jewelry_c_description",
-				"numboxes": 2,
-				"bold": 1
-			}, {
-				"name": "playbook_item_fine_disguise_kit",
-				"description": "playbook_item_fine_disguise_kit_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_item_fine_trick_gambling_kit",
-				"description": "playbook_item_fine_trick_gambling_kit_description",
-				"numboxes": 0,
-				"bold": 1
-			}, {
-				"name": "playbook_item_fine_espionage_gear",
-				"description": "playbook_item_fine_espionage_gear_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_item_trance_powder",
-				"description": "playbook_item_trance_powder_description",
-				"numboxes": 0
-			},{
-				"name": "playbook_item_cane_sword",
-				"description": "playbook_item_cane_sword_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_your_custom_vehicle",
-				"description": "playbook_item_your_custom_vehicle_description",
-				"numboxes": "0"
-			}],
-			"playbookvehicleitem": [{
-				"name": "playbook_vehicle_item_fine_holo_projector",
-				"description": "playbook_vehicle_item_fine_holo_projector_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_vehicle_item_chaff_countermeasure",
-				"description": "playbook_vehicle_item_chaff_countermeasure_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_concealed_melee_weapon",
-				"description": "playbook_vehicle_item_concealed_melee_weapon_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_stylish_appearance",
-				"description": "playbook_vehicle_item_stylish_appearance_description",
-				"numboxes": 0
-			}, {
-				"name": "playbook_vehicle_item_luxurious_passenger_space",
-				"description": "playbook_vehicle_item_luxurious_passenger_space_description",
-				"numboxes": 1
-			}]
+			"playbookitem": [
+				{
+					"name": "playbook_item_fine_clothes_and_jewelry_w",
+					"description": "playbook_item_fine_clothes_and_jewelry_w_description",
+					"numboxes": 0,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_fine_clothes_and_jewelry_c",
+					"description": "playbook_item_fine_clothes_and_jewelry_c_description",
+					"numboxes": 2,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_fine_disguise_kit",
+					"description": "playbook_item_fine_disguise_kit_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_fine_trick_gambling_kit",
+					"description": "playbook_item_fine_trick_gambling_kit_description",
+					"numboxes": 0,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_fine_espionage_gear",
+					"description": "playbook_item_fine_espionage_gear_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_trance_powder",
+					"description": "playbook_item_trance_powder_description",
+					"numboxes": 0
+				},
+				{
+					"name": "playbook_item_cane_sword",
+					"description": "playbook_item_cane_sword_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_your_custom_vehicle",
+					"description": "playbook_item_your_custom_vehicle_description",
+					"numboxes": "0"
+				}
+			],
+			"playbookvehicleitem": [
+				{
+					"name": "playbook_vehicle_item_fine_holo_projector",
+					"description": "playbook_vehicle_item_fine_holo_projector_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_vehicle_item_chaff_countermeasure",
+					"description": "playbook_vehicle_item_chaff_countermeasure_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_concealed_melee_weapon",
+					"description": "playbook_vehicle_item_concealed_melee_weapon_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_stylish_appearance",
+					"description": "playbook_vehicle_item_stylish_appearance_description",
+					"numboxes": 0
+				},
+				{
+					"name": "playbook_vehicle_item_luxurious_passenger_space",
+					"description": "playbook_vehicle_item_luxurious_passenger_space_description",
+					"numboxes": 1
+				}
+			]
 		},
 		"hacker": {
 			"ability": [
@@ -329,86 +380,107 @@
 				"playbook_description": "playbook_hacker_description",
 				"xp_condition": "playbook_hacker_xp_condition"
 			},
-			"playbookitem": [{
-				"name": "playbook_item_portable_exclusion_zone",
-				"description": "playbook_item_portable_exclusion_zone_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_fine_augmented_reality_tool",
-				"description": "playbook_item_fine_augmented_reality_tool_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_item_quantum_drive",
-				"description": "playbook_item_quantum_drive_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_hackrig",
-				"description": "playbook_item_hackrig_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_recursive_data_projector",
-				"description": "playbook_item_recursive_data_projector_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_your_custom_vehicle",
-				"description": "playbook_item_your_custom_vehicle_description",
-				"numboxes": "0"
-			}],
-			"playbookvehicleitem": [{
-				"name": "playbook_vehicle_item_fine_retrieval_program",
-				"description": "playbook_vehicle_item_fine_retrieval_program_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_vehicle_item_fine_coding_program",
-				"description": "playbook_vehicle_item_fine_coding_program_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_vehicle_item_electronic_filter",
-				"description": "playbook_vehicle_item_electronic_filter_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_stealth_program",
-				"description": "playbook_vehicle_item_stealth_program_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_data_bomb_program",
-				"description": "playbook_vehicle_item_data_bomb_program_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_fine_icp",
-				"description": "playbook_vehicle_item_fine_icp_description",
-				"numboxes": 1
-			}],
-			"hackrigitem": [{
-				"name": "playbook_vehicle_item_fine_retrieval_program",
-				"description": "playbook_vehicle_item_fine_retrieval_program_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_vehicle_item_fine_coding_program",
-				"description": "playbook_vehicle_item_fine_coding_program_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_vehicle_item_electronic_filter",
-				"description": "playbook_vehicle_item_electronic_filter_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_stealth_program",
-				"description": "playbook_vehicle_item_stealth_program_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_data_bomb_program",
-				"description": "playbook_vehicle_item_data_bomb_program_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_fine_icp",
-				"description": "playbook_vehicle_item_fine_icp_description",
-				"numboxes": 1
-			}]
+			"playbookitem": [
+				{
+					"name": "playbook_item_portable_exclusion_zone",
+					"description": "playbook_item_portable_exclusion_zone_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_fine_augmented_reality_tool",
+					"description": "playbook_item_fine_augmented_reality_tool_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_quantum_drive",
+					"description": "playbook_item_quantum_drive_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_hackrig",
+					"description": "playbook_item_hackrig_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_recursive_data_projector",
+					"description": "playbook_item_recursive_data_projector_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_your_custom_vehicle",
+					"description": "playbook_item_your_custom_vehicle_description",
+					"numboxes": "0"
+				}
+			],
+			"playbookvehicleitem": [
+				{
+					"name": "playbook_vehicle_item_fine_retrieval_program",
+					"description": "playbook_vehicle_item_fine_retrieval_program_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_vehicle_item_fine_coding_program",
+					"description": "playbook_vehicle_item_fine_coding_program_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_vehicle_item_electronic_filter",
+					"description": "playbook_vehicle_item_electronic_filter_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_stealth_program",
+					"description": "playbook_vehicle_item_stealth_program_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_data_bomb_program",
+					"description": "playbook_vehicle_item_data_bomb_program_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_fine_icp",
+					"description": "playbook_vehicle_item_fine_icp_description",
+					"numboxes": 1
+				}
+			],
+			"hackrigitem": [
+				{
+					"name": "playbook_vehicle_item_fine_retrieval_program",
+					"description": "playbook_vehicle_item_fine_retrieval_program_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_vehicle_item_fine_coding_program",
+					"description": "playbook_vehicle_item_fine_coding_program_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_vehicle_item_electronic_filter",
+					"description": "playbook_vehicle_item_electronic_filter_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_stealth_program",
+					"description": "playbook_vehicle_item_stealth_program_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_data_bomb_program",
+					"description": "playbook_vehicle_item_data_bomb_program_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_fine_icp",
+					"description": "playbook_vehicle_item_fine_icp_description",
+					"numboxes": 1
+				}
+			]
 		},
 		"infiltrator": {
 			"ability": [
@@ -436,51 +508,63 @@
 				"playbook_description": "playbook_infiltrator_description",
 				"xp_condition": "playbook_infiltrator_xp_condition"
 			},
-			"playbookitem": [{
-				"name": "playbook_item_fine_security_cracker",
-				"description": "playbook_item_fine_security_cracker_description",
-				"numboxes": 0,
-				"bold": 1
-			}, {
-				"name": "playbook_item_fine_optical_camo",
-				"description": "playbook_item_fine_optical_camo_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_item_light_climbing_gear",
-				"description": "playbook_item_light_climbing_gear_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_firearm_silencer",
-				"description": "playbook_item_firearm_silencer_description",
-				"numboxes": 0
-			}, {
-				"name": "playbook_item_nightvision_goggles",
-				"description": "playbook_item_nightvision_goggles_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_your_custom_vehicle",
-				"description": "playbook_item_your_custom_vehicle_description",
-				"numboxes": "0"
-			}],
-			"playbookvehicleitem": [{
-				"name": "playbook_vehicle_item_fine_optical_camo",
-				"description": "playbook_vehicle_item_fine_optical_camo_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_vehicle_item_light_mobility_suite",
-				"description": "playbook_vehicle_item_light_mobility_suite_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_electronic_countermeasures",
-				"description": "playbook_vehicle_item_electronic_countermeasures_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_nvir_sensors",
-				"description": "playbook_vehicle_item_nvir_sensors_description",
-				"numboxes": 1
-			}]
+			"playbookitem": [
+				{
+					"name": "playbook_item_fine_security_cracker",
+					"description": "playbook_item_fine_security_cracker_description",
+					"numboxes": 0,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_fine_optical_camo",
+					"description": "playbook_item_fine_optical_camo_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_light_climbing_gear",
+					"description": "playbook_item_light_climbing_gear_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_firearm_silencer",
+					"description": "playbook_item_firearm_silencer_description",
+					"numboxes": 0
+				},
+				{
+					"name": "playbook_item_nightvision_goggles",
+					"description": "playbook_item_nightvision_goggles_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_your_custom_vehicle",
+					"description": "playbook_item_your_custom_vehicle_description",
+					"numboxes": "0"
+				}
+			],
+			"playbookvehicleitem": [
+				{
+					"name": "playbook_vehicle_item_fine_optical_camo",
+					"description": "playbook_vehicle_item_fine_optical_camo_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_vehicle_item_light_mobility_suite",
+					"description": "playbook_vehicle_item_light_mobility_suite_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_electronic_countermeasures",
+					"description": "playbook_vehicle_item_electronic_countermeasures_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_nvir_sensors",
+					"description": "playbook_vehicle_item_nvir_sensors_description",
+					"numboxes": 1
+				}
+			]
 		},
 		"officer": {
 			"ability": [
@@ -508,51 +592,63 @@
 				"playbook_description": "playbook_officer_description",
 				"xp_condition": "playbook_officer_xp_condition"
 			},
-			"playbookitem": [{
-				"name": "playbook_item_fine_cover_identity",
-				"description": "playbook_item_fine_cover_identity_description",
-				"numboxes": 0,
-				"bold": 1
-			}, {
-				"name": "playbook_item_fine_gift",
-				"description": "playbook_item_fine_gift_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_item_blueprints_for_a_facility_or_vehicle",
-				"description": "playbook_item_blueprints_for_a_facility_or_vehicle_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_vial_of_sleep_dust",
-				"description": "playbook_item_vial_of_sleep_dust_description",
-				"numboxes": 0
-			}, {
-				"name": "playbook_item_concealed_palm_pistol",
-				"description": "playbook_item_concealed_palm_pistol_description",
-				"numboxes": 0
-			}, {
-				"name": "playbook_item_your_custom_vehicle",
-				"description": "playbook_item_your_custom_vehicle_description",
-				"numboxes": "0"
-			}],
-			"playbookvehicleitem": [{
-				"name": "playbook_vehicle_item_3d_structural_analysis",
-				"description": "playbook_vehicle_item_3d_structural_analysis_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_fine_friend_or_foe_tags",
-				"description": "playbook_vehicle_item_fine_friend_or_foe_tags_description",
-				"numboxes": 0,
-				"bold": 1
-			}, {
-				"name": "playbook_vehicle_item_concealed_gun",
-				"description": "playbook_vehicle_item_concealed_gun_description",
-				"numboxes": 0
-			}, {
-				"name": "playbook_vehicle_item_small_armoury",
-				"description": "playbook_vehicle_item_small_armoury_description",
-				"numboxes": 1
-			}]
+			"playbookitem": [
+				{
+					"name": "playbook_item_fine_cover_identity",
+					"description": "playbook_item_fine_cover_identity_description",
+					"numboxes": 0,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_fine_gift",
+					"description": "playbook_item_fine_gift_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_blueprints_for_a_facility_or_vehicle",
+					"description": "playbook_item_blueprints_for_a_facility_or_vehicle_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_vial_of_sleep_dust",
+					"description": "playbook_item_vial_of_sleep_dust_description",
+					"numboxes": 0
+				},
+				{
+					"name": "playbook_item_concealed_palm_pistol",
+					"description": "playbook_item_concealed_palm_pistol_description",
+					"numboxes": 0
+				},
+				{
+					"name": "playbook_item_your_custom_vehicle",
+					"description": "playbook_item_your_custom_vehicle_description",
+					"numboxes": "0"
+				}
+			],
+			"playbookvehicleitem": [
+				{
+					"name": "playbook_vehicle_item_3d_structural_analysis",
+					"description": "playbook_vehicle_item_3d_structural_analysis_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_fine_friend_or_foe_tags",
+					"description": "playbook_vehicle_item_fine_friend_or_foe_tags_description",
+					"numboxes": 0,
+					"bold": 1
+				},
+				{
+					"name": "playbook_vehicle_item_concealed_gun",
+					"description": "playbook_vehicle_item_concealed_gun_description",
+					"numboxes": 0
+				},
+				{
+					"name": "playbook_vehicle_item_small_armoury",
+					"description": "playbook_vehicle_item_small_armoury_description",
+					"numboxes": 1
+				}
+			]
 		},
 		"scout": {
 			"ability": [
@@ -579,51 +675,63 @@
 				"playbook_description": "playbook_scout_description",
 				"xp_condition": "playbook_scout_xp_condition"
 			},
-			"playbookitem": [{
-				"name": "playbook_item_fine_machine_pistol",
-				"description": "playbook_item_fine_machine_pistol_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_item_fine_sniper_rifle",
-				"description": "playbook_item_fine_sniper_rifle_description",
-				"numboxes": 2,
-				"bold": 1
-			}, {
-				"name": "playbook_item_1_type_of_special_ammunition",
-				"description": "playbook_item_1_type_of_special_ammunition_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_rangefinder_laser_painter_binoculars",
-				"description": "playbook_item_rangefinder_laser_painter_binoculars_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_a_well_programmed_hunter_robot",
-				"description": "playbook_item_a_well_programmed_hunter_robot_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_your_custom_vehicle",
-				"description": "playbook_item_your_custom_vehicle_description",
-				"numboxes": "0"
-			}],
-			"playbookvehicleitem": [{
-				"name": "playbook_vehicle_item_fine_heavy_cannon",
-				"description": "playbook_vehicle_item_fine_heavy_cannon_description",
-				"numboxes": 2,
-				"bold": 1
-			}, {
-				"name": "playbook_vehicle_item_special_ammunition",
-				"description": "playbook_vehicle_item_special_ammunition_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_magnification_suite",
-				"description": "playbook_vehicle_item_magnification_suite_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_drone_carrier",
-				"description": "playbook_vehicle_item_drone_carrier_description",
-				"numboxes": 1
-			}]
+			"playbookitem": [
+				{
+					"name": "playbook_item_fine_machine_pistol",
+					"description": "playbook_item_fine_machine_pistol_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_fine_sniper_rifle",
+					"description": "playbook_item_fine_sniper_rifle_description",
+					"numboxes": 2,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_1_type_of_special_ammunition",
+					"description": "playbook_item_1_type_of_special_ammunition_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_rangefinder_laser_painter_binoculars",
+					"description": "playbook_item_rangefinder_laser_painter_binoculars_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_a_well_programmed_hunter_robot",
+					"description": "playbook_item_a_well_programmed_hunter_robot_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_your_custom_vehicle",
+					"description": "playbook_item_your_custom_vehicle_description",
+					"numboxes": "0"
+				}
+			],
+			"playbookvehicleitem": [
+				{
+					"name": "playbook_vehicle_item_fine_heavy_cannon",
+					"description": "playbook_vehicle_item_fine_heavy_cannon_description",
+					"numboxes": 2,
+					"bold": 1
+				},
+				{
+					"name": "playbook_vehicle_item_special_ammunition",
+					"description": "playbook_vehicle_item_special_ammunition_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_magnification_suite",
+					"description": "playbook_vehicle_item_magnification_suite_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_drone_carrier",
+					"description": "playbook_vehicle_item_drone_carrier_description",
+					"numboxes": 1
+				}
+			]
 		},
 		"soldier": {
 			"ability": [
@@ -651,66 +759,81 @@
 				"playbook_description": "playbook_soldier_description",
 				"xp_condition": "playbook_soldier_xp_condition"
 			},
-			"playbookitem": [{
-				"name": "playbook_item_fine_melee_weapon",
-				"description": "playbook_item_fine_melee_weapon_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_item_fine_assault_rifle",
-				"description": "playbook_item_fine_assault_rifle_description",
-				"numboxes": 2,
-				"bold": 1
-			}, {
-				"name": "playbook_item_anti_armour_weapon",
-				"description": "playbook_item_anti_armour_weapon_description",
-				"numboxes": 2
-			}, {
-				"name": "playbook_item_frag_flash_or_smoke_grenades",
-				"description": "playbook_item_frag_flash_or_smoke_grenades_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_+grenade",
-				"description": "playbook_item_+grenade_description",
-				"numboxes": 0,
-				"short": "1"
-			}, {
-				"name": "playbook_item_+grenade",
-				"description": "playbook_item_+grenade_description",
-				"numboxes": 0,
-				"short": "1"
-			}, {
-				"name": "playbook_item_handcuffs_or_zipties",
-				"description": "playbook_item_handcuffs_or_zipties_description",
-				"numboxes": 0
-			}, {
-				"name": "playbook_item_stimpack",
-				"description": "playbook_item_stimpack_description",
-				"numboxes": 0
-			}, {
-				"name": "playbook_item_your_custom_vehicle",
-				"description": "playbook_item_your_custom_vehicle_description",
-				"numboxes": "0"
-			}],
-			"playbookvehicleitem": [{
-				"name": "playbook_vehicle_item_fine_melee_weapon",
-				"description": "playbook_vehicle_item_fine_melee_weapon_description",
-				"numboxes": 1,
-				"bold": 1
-			}, {
-				"name": "playbook_vehicle_item_fine_heavy_melee_weapon",
-				"description": "playbook_vehicle_item_fine_heavy_melee_weapon_description",
-				"numboxes": 2,
-				"bold": 1
-			}, {
-				"name": "playbook_vehicle_item_scary_weapon_or_tool",
-				"description": "playbook_vehicle_item_scary_weapon_or_tool_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_a_tangle_gun",
-				"description": "playbook_vehicle_a_tangle_gun_description",
-				"numboxes": 1
-			}]
+			"playbookitem": [
+				{
+					"name": "playbook_item_fine_melee_weapon",
+					"description": "playbook_item_fine_melee_weapon_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_fine_assault_rifle",
+					"description": "playbook_item_fine_assault_rifle_description",
+					"numboxes": 2,
+					"bold": 1
+				},
+				{
+					"name": "playbook_item_anti_armour_weapon",
+					"description": "playbook_item_anti_armour_weapon_description",
+					"numboxes": 2
+				},
+				{
+					"name": "playbook_item_frag_flash_or_smoke_grenades",
+					"description": "playbook_item_frag_flash_or_smoke_grenades_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_+grenade",
+					"description": "playbook_item_+grenade_description",
+					"numboxes": 0,
+					"short": "1"
+				},
+				{
+					"name": "playbook_item_+grenade",
+					"description": "playbook_item_+grenade_description",
+					"numboxes": 0,
+					"short": "1"
+				},
+				{
+					"name": "playbook_item_handcuffs_or_zipties",
+					"description": "playbook_item_handcuffs_or_zipties_description",
+					"numboxes": 0
+				},
+				{
+					"name": "playbook_item_stimpack",
+					"description": "playbook_item_stimpack_description",
+					"numboxes": 0
+				},
+				{
+					"name": "playbook_item_your_custom_vehicle",
+					"description": "playbook_item_your_custom_vehicle_description",
+					"numboxes": "0"
+				}
+			],
+			"playbookvehicleitem": [
+				{
+					"name": "playbook_vehicle_item_fine_melee_weapon",
+					"description": "playbook_vehicle_item_fine_melee_weapon_description",
+					"numboxes": 1,
+					"bold": 1
+				},
+				{
+					"name": "playbook_vehicle_item_fine_heavy_melee_weapon",
+					"description": "playbook_vehicle_item_fine_heavy_melee_weapon_description",
+					"numboxes": 2,
+					"bold": 1
+				},
+				{
+					"name": "playbook_vehicle_item_scary_weapon_or_tool",
+					"description": "playbook_vehicle_item_scary_weapon_or_tool_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_a_tangle_gun",
+					"description": "playbook_vehicle_a_tangle_gun_description",
+					"numboxes": 1
+				}
+			]
 		},
 		"technician": {
 			"ability": [
@@ -738,267 +861,360 @@
 				"playbook_description": "playbook_technician_description",
 				"xp_condition": "playbook_technician_xp_condition"
 			},
-			"playbookitem": [{
-				"bold": 1,
-				"name": "playbook_item_fine_engineering_tools",
-				"description": "playbook_item_fine_engineering_tools_description",
-				"numboxes": 1
-			}, {
-				"bold": 1,
-				"name": "playbook_item_fine_demolition_tools",
-				"description": "playbook_item_fine_demolition_tools_description",
-				"numboxes": 2
-			}, {
-				"name": "playbook_item_airgun_darts_syringe",
-				"description": "playbook_item_airgun_darts_syringe_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_bandolier",
-				"description": "playbook_item_bandolier_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_gadgets",
-				"description": "playbook_item_gadgets_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_gadgets",
-				"description": "playbook_item_gadgets_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_item_your_custom_vehicle",
-				"description": "playbook_item_your_custom_vehicle_description",
-				"numboxes": "0"
-			}],
-			"playbookvehicleitem": [ {
-				"bold": 1,
-				"name": "playbook_vehicle_item_fine_modding_tools",
-				"description": "playbook_vehicle_item_fine_modding_tools_description",
-				"numboxes": 1
-			}, {
-				"bold": 1,
-				"name": "playbook_vehicle_item_fine_destruction_tools",
-				"description": "playbook_vehicle_item_fine_destruction_tools_description",
-				"numboxes": 2
-			}, {
-				"name": "playbook_vehicle_item_payload_bay",
-				"description": "playbook_vehicle_item_payload_bay_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_assisted_repair_system",
-				"description": "playbook_vehicle_item_assisted_repair_system_description",
-				"numboxes": 1
-			}, {
-				"name": "playbook_vehicle_item_analytics_suite",
-				"description": "playbook_vehicle_item_analytics_suite_description",
-				"numboxes": 1
-			}]
+			"playbookitem": [
+				{
+					"bold": 1,
+					"name": "playbook_item_fine_engineering_tools",
+					"description": "playbook_item_fine_engineering_tools_description",
+					"numboxes": 1
+				},
+				{
+					"bold": 1,
+					"name": "playbook_item_fine_demolition_tools",
+					"description": "playbook_item_fine_demolition_tools_description",
+					"numboxes": 2
+				},
+				{
+					"name": "playbook_item_airgun_darts_syringe",
+					"description": "playbook_item_airgun_darts_syringe_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_bandolier",
+					"description": "playbook_item_bandolier_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_gadgets",
+					"description": "playbook_item_gadgets_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_gadgets",
+					"description": "playbook_item_gadgets_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_item_your_custom_vehicle",
+					"description": "playbook_item_your_custom_vehicle_description",
+					"numboxes": "0"
+				}
+			],
+			"playbookvehicleitem": [
+				{
+					"bold": 1,
+					"name": "playbook_vehicle_item_fine_modding_tools",
+					"description": "playbook_vehicle_item_fine_modding_tools_description",
+					"numboxes": 1
+				},
+				{
+					"bold": 1,
+					"name": "playbook_vehicle_item_fine_destruction_tools",
+					"description": "playbook_vehicle_item_fine_destruction_tools_description",
+					"numboxes": 2
+				},
+				{
+					"name": "playbook_vehicle_item_payload_bay",
+					"description": "playbook_vehicle_item_payload_bay_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_assisted_repair_system",
+					"description": "playbook_vehicle_item_assisted_repair_system_description",
+					"numboxes": 1
+				},
+				{
+					"name": "playbook_vehicle_item_analytics_suite",
+					"description": "playbook_vehicle_item_analytics_suite_description",
+					"numboxes": 1
+				}
+			]
 		}
-
 	},
 	"factions": {
 	},
 	"actions": {
-		"insight": ["hunt", "study", "survey", "engineer"],
-		"prowess": ["finesse", "prowl", "struggle", "wreck"],
-		"resolve": ["command", "consort", "sway", "interface"]
+		"insight": [
+			"hunt",
+			"study",
+			"survey",
+			"engineer"
+		],
+		"prowess": [
+			"finesse",
+			"prowl",
+			"struggle",
+			"wreck"
+		],
+		"resolve": [
+			"command",
+			"consort",
+			"sway",
+			"interface"
+		]
 	},
 	"vehicleActions": {
-		"expertise": ["battle", "destroy", "maneuver"],
-		"acuity": ["bombard", "manipulate", "scan"]
+		"expertise": [
+			"battle",
+			"destroy",
+			"maneuver"
+		],
+		"acuity": [
+			"bombard",
+			"manipulate",
+			"scan"
+		]
 	},
-	"traumas": ["cold", "haunted", "obsessed", "paranoid", "reckless", "soft", "unstable", "vicious"],
-	"items": [{
-		"name": "a_blade_or_two",
-		"description": "a_blade_or_two_description",
-		"numboxes": "1"
-	}, {
-		"name": "throwing_knives",
-		"description": "throwing_knives_description",
-		"numboxes": "1"
-	}, {
-		"name": "a_heavy_weapon",
-		"description": "a_heavy_weapon_description",
-		"numboxes": "2"
-	}, {
-		"name": "an_unusual_weapon",
-		"description": "an_unusual_weapon_description",
-		"numboxes": "1"
-	}, {
-		"name": "burglary_gear",
-		"description": "burglary_gear_description",
-		"numboxes": "1"
-	}, {
-		"name": "climbing_gear",
-		"description": "climbing_gear_description",
-		"numboxes": "2"
-	}, {
-		"name": "a_pistol",
-		"description": "a_pistol_description",
-		"numboxes": "1"
-	}, {
-		"name": "a_rifle_or_shotgun",
-		"description": "a_rifle_or_shotgun_description",
-		"numboxes": "2"
-	}, {
-		"name": "palm_computer_with_useful_programs",
-		"description": "palm_computer_with_useful_programs_description",
-		"numboxes": "1"
-	}, {
-		"name": "documents",
-		"description": "documents_description",
-		"numboxes": "1"
-	}, {
-		"name": "subterfuge_supplies",
-		"description": "subterfuge_supplies_description",
-		"numboxes": "1"
-	}, {
-		"name": "demolition_tools",
-		"description": "demolition_tools_description",
-		"numboxes": "2"
-	}, {
-		"name": "placed_explosives",
-		"description": "placed_explosives_description",
-		"numboxes": "1"
-	}, {
-		"name": "flashlight_flares_or_glow_sticks",
-		"description": "flashlight_flares_or_glow_sticks_description",
-		"numboxes": "1"
-	}, {
-		"name": "intrusion_countermeasures_program_icp",
-		"description": "intrusion_countermeasures_program_icp_description",
-		"numboxes": "0"
-	}, {
-		"name": "armor",
-		"description": "armor_description",
-		"numboxes": "2",
-		"short": "1"
-	}, {
-		"name": "+heavy",
-		"description": "+heavy_description",
-		"numboxes": "3",
-		"short": "1"
-	}, {
-		"name": "intel",
-		"description": "intel_description",
-		"numboxes": "0"
-	}, {
-		"name": "parachute",
-		"description": "parachute_description",
-		"numboxes": "2"
-	}, {
-		"name": "throat_mic_transceiver",
-		"description": "throat_mic_transceiver_description",
-		"numboxes": "0"
-	}, {
-		"name": "long_range_transmitter",
-		"description": "long_range_transmitter_description",
-		"numboxes": "1"
-	}, {
-		"name": "smartphone",
-		"description": "smartphone_description",
-		"numboxes": "0"
-	}, {
-		"name": "environmental_suit_wearing",
-		"description": "environmental_suit_description",
-		"numboxes": "0"
-	}, {
-		"name": "environmental_suit_carried",
-		"description": "environmental_suit_description",
-		"numboxes": "2"
-	}, {
-		"name": "remote_vehicle_control",
-		"description": "remote_vehicle_control_description",
-		"numboxes": "1"
-	}],
-	"vehicleitems": [{
-		"name": "supply_reserves",
-		"description": "supply_reserves_description",
-		"numboxes": "2"
-	}, {
-		"name": "armor",
-		"description": "vehicle_armor_description",
-		"numboxes": "2",
-		"short": "1"
-	}, {
-		"name": "+armor",
-		"description": "vehicle_armor_description",
-		"numboxes": "2",
-		"short": "1"
-	}, {
-		"name": "+armor",
-		"description": "vehicle_armor_description",
-		"numboxes": "2",
-		"short": "1"
-	}, {
-		"name": "+armor",
-		"description": "vehicle_armor_description",
-		"numboxes": "2",
-		"short": "1"
-	}, {
-		"name": "a_melee_weapon_or_two",
-		"description": "a_melee_weapon_or_two_description",
-		"numboxes": "1"
-	}, {
-		"name": "a_rack_of_missiles_or_rockets",
-		"description": "a_rack_of_missiles_or_rockets_description",
-		"numboxes": "1"
-	}, {
-		"name": "a_machine_gun",
-		"description": "a_machine_gun_description",
-		"numboxes": "1"
-	}, {
-		"name": "a_heavy_cannon",
-		"description": "a_heavy_cannon_description",
-		"numboxes": "2"
-	}, {
-		"name": "a_flamethrower",
-		"description": "a_flamethrower_description",
-		"numboxes": "1"
-	}, {
-		"name": "a_directed_energy_weapon",
-		"description": "a_directed_energy_weapon_description",
-		"numboxes": "1"
-	}, {
-		"name": "a_shield_or_forcefield",
-		"description": "a_shield_or_forcefield_description",
-		"numboxes": "1"
-	}, {
-		"name": "a_spotlight_or_flare_mortar",
-		"description": "a_spotlight_or_flare_mortar_description",
-		"numboxes": "1"
-	}, {
-		"name": "mobility_suite",
-		"description": "mobility_suite_description",
-		"numboxes": "2"
-	}, {
-		"name": "grapnel_anchor_system",
-		"description": "grapnel_anchor_system_description",
-		"numboxes": "1"
-	}, {
-		"name": "intrusion_countermeasures_electronics_ice",
-		"description": "intrusion_countermeasures_electronics_ice_description",
-		"numboxes": "1"
-	}, {
-		"name": "programming_suite",
-		"description": "programming_suite_description",
-		"numboxes": "0"
-	}, {
-		"name": "retrieval_software",
-		"description": "retrieval_software_description",
-		"numboxes": "0"
-	}, {
-		"name": "cargo_space",
-		"description": "cargo_space_description",
-		"numboxes": "1"
-	}, {
-		"name": "anti_infantry_defenses",
-		"description": "anti_infantry_defenses_description",
-		"numboxes": "1"
-	}, {
-		"name": "passenger_space",
-		"description": "passenger_space_description",
-		"numboxes": "1"
-	}],
+	"traumas": [
+		"cold",
+		"haunted",
+		"obsessed",
+		"paranoid",
+		"reckless",
+		"soft",
+		"unstable",
+		"vicious"
+	],
+	"items": [
+		{
+			"name": "a_blade_or_two",
+			"description": "a_blade_or_two_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "throwing_knives",
+			"description": "throwing_knives_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "a_heavy_weapon",
+			"description": "a_heavy_weapon_description",
+			"numboxes": "2"
+		},
+		{
+			"name": "an_unusual_weapon",
+			"description": "an_unusual_weapon_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "burglary_gear",
+			"description": "burglary_gear_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "climbing_gear",
+			"description": "climbing_gear_description",
+			"numboxes": "2"
+		},
+		{
+			"name": "a_pistol",
+			"description": "a_pistol_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "a_rifle_or_shotgun",
+			"description": "a_rifle_or_shotgun_description",
+			"numboxes": "2"
+		},
+		{
+			"name": "palm_computer_with_useful_programs",
+			"description": "palm_computer_with_useful_programs_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "documents",
+			"description": "documents_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "subterfuge_supplies",
+			"description": "subterfuge_supplies_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "demolition_tools",
+			"description": "demolition_tools_description",
+			"numboxes": "2"
+		},
+		{
+			"name": "placed_explosives",
+			"description": "placed_explosives_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "flashlight_flares_or_glow_sticks",
+			"description": "flashlight_flares_or_glow_sticks_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "intrusion_countermeasures_program_icp",
+			"description": "intrusion_countermeasures_program_icp_description",
+			"numboxes": "0"
+		},
+		{
+			"name": "armor",
+			"description": "armor_description",
+			"numboxes": "2",
+			"short": "1"
+		},
+		{
+			"name": "+heavy",
+			"description": "+heavy_description",
+			"numboxes": "3",
+			"short": "1"
+		},
+		{
+			"name": "intel",
+			"description": "intel_description",
+			"numboxes": "0"
+		},
+		{
+			"name": "parachute",
+			"description": "parachute_description",
+			"numboxes": "2"
+		},
+		{
+			"name": "throat_mic_transceiver",
+			"description": "throat_mic_transceiver_description",
+			"numboxes": "0"
+		},
+		{
+			"name": "long_range_transmitter",
+			"description": "long_range_transmitter_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "smartphone",
+			"description": "smartphone_description",
+			"numboxes": "0"
+		},
+		{
+			"name": "environmental_suit_wearing",
+			"description": "environmental_suit_description",
+			"numboxes": "0"
+		},
+		{
+			"name": "environmental_suit_carried",
+			"description": "environmental_suit_description",
+			"numboxes": "2"
+		},
+		{
+			"name": "remote_vehicle_control",
+			"description": "remote_vehicle_control_description",
+			"numboxes": "1"
+		}
+	],
+	"vehicleitems": [
+		{
+			"name": "supply_reserves",
+			"description": "supply_reserves_description",
+			"numboxes": "2"
+		},
+		{
+			"name": "armor",
+			"description": "vehicle_armor_description",
+			"numboxes": "2",
+			"short": "1"
+		},
+		{
+			"name": "+armor",
+			"description": "vehicle_armor_description",
+			"numboxes": "2",
+			"short": "1"
+		},
+		{
+			"name": "+armor",
+			"description": "vehicle_armor_description",
+			"numboxes": "2",
+			"short": "1"
+		},
+		{
+			"name": "+armor",
+			"description": "vehicle_armor_description",
+			"numboxes": "2",
+			"short": "1"
+		},
+		{
+			"name": "a_melee_weapon_or_two",
+			"description": "a_melee_weapon_or_two_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "a_rack_of_missiles_or_rockets",
+			"description": "a_rack_of_missiles_or_rockets_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "a_machine_gun",
+			"description": "a_machine_gun_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "a_heavy_cannon",
+			"description": "a_heavy_cannon_description",
+			"numboxes": "2"
+		},
+		{
+			"name": "a_flamethrower",
+			"description": "a_flamethrower_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "a_directed_energy_weapon",
+			"description": "a_directed_energy_weapon_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "a_shield_or_forcefield",
+			"description": "a_shield_or_forcefield_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "a_spotlight_or_flare_mortar",
+			"description": "a_spotlight_or_flare_mortar_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "mobility_suite",
+			"description": "mobility_suite_description",
+			"numboxes": "2"
+		},
+		{
+			"name": "grapnel_anchor_system",
+			"description": "grapnel_anchor_system_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "intrusion_countermeasures_electronics_ice",
+			"description": "intrusion_countermeasures_electronics_ice_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "programming_suite",
+			"description": "programming_suite_description",
+			"numboxes": "0"
+		},
+		{
+			"name": "retrieval_software",
+			"description": "retrieval_software_description",
+			"numboxes": "0"
+		},
+		{
+			"name": "cargo_space",
+			"description": "cargo_space_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "anti_infantry_defenses",
+			"description": "anti_infantry_defenses_description",
+			"numboxes": "1"
+		},
+		{
+			"name": "passenger_space",
+			"description": "passenger_space_description",
+			"numboxes": "1"
+		}
+	],
 	"alchemicals": [
 		"bandolier_neutralize",
 		"bandolier_fuse",
@@ -1057,8 +1273,6 @@
 		"upgrade_22_description": "upgrade_resolve_description",
 		"upgrade_23_name": "personal",
 		"upgrade_23_description": "upgrade_personal_description",
-		"upgrade_24_name": "mastery",
-		"upgrade_24_description": "upgrade_mastery_description",
 		"upgrade_24_name": "test_facility",
 		"upgrade_24_description": "upgrade_test_facility_description",
 		"xp_condition2": "xp_backstory",
@@ -1086,7 +1300,22 @@
 	},
 	"maxFriendsPerPlaybook": 4,
 	"maxContactsPerCrew": 6,
-	"friendlessPlaybooks": [],
-	"translatedCrewAttributes": ["squad_description", "crew_xp_condition"],
-	"translatedPlaybookAttributes": ["friends_title", "gatherinfo1", "gatherinfo2", "gatherinfo3", "gatherinfo4", "gatherinfo5", "gatherinfo6", "playbook_description","xp_condition"]
+	"friendlessPlaybooks": [
+
+	],
+	"translatedCrewAttributes": [
+		"squad_description",
+		"crew_xp_condition"
+	],
+	"translatedPlaybookAttributes": [
+		"friends_title",
+		"gatherinfo1",
+		"gatherinfo2",
+		"gatherinfo3",
+		"gatherinfo4",
+		"gatherinfo5",
+		"gatherinfo6",
+		"playbook_description",
+		"xp_condition"
+	]
 }
